@@ -1,0 +1,1544 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="../../../style.css" type="text/css" media="screen">
+<link rel="stylesheet" href="../../../print.css" type="text/css" media="print">
+<meta content="Matrix4,sandy.core.data.Matrix4,USE_FAST_MATH,n11,n12,n13,n14,n21,n22,n23,n24,n31,n32,n33,n34,n41,n42,n43,n44,addMatrix,axisRotation,axisRotationPoint3D,axisRotationWithReference,clone,copy,deserialize,det,det3x3,eulerRotation,fromPoint3Ds,getEulerAngles,getTrace,getTranslation,identity,inverse,multiply,multiply3x3,multiply4x3,rotationX,rotationY,rotationZ,scale,scalePoint3D,serialize,toString,transform,transform3x3,translation,translationPoint3D,zero" name="keywords">
+<title>sandy.core.data.Matrix4</title>
+</head>
+<body>
+<script type="text/javascript" language="javascript" src="../../../asdoc.js"></script><script type="text/javascript" language="javascript" src="../../../cookies.js"></script><script type="text/javascript" language="javascript">
+<!--
+				asdocTitle = 'Matrix4 - Sandy 3.1.2 API Documentation';
+				var baseRef = '../../../';
+				window.onload = configPage;
+			--></script>
+<table style="display:none" id="titleTable" cellspacing="0" cellpadding="0" class="titleTable">
+<tr>
+<td align="left" class="titleTableTitle">Sandy 3D Engine, 3.1.2</td><td align="right" class="titleTableTopNav"><a onclick="loadClassListFrame('../../../all-classes.html')" href="../../../package-summary.html">All&nbsp;Packages</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('../../../all-classes.html')" href="../../../class-summary.html">All&nbsp;Classes</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('../../../index-list.html')" href="../../../all-index-A.html">Index</a>&nbsp;|&nbsp;<a href="../../../index.html?sandy/core/data/Matrix4.html&amp;sandy/core/data/class-list.html" id="framesLink1">Frames</a><a onclick="parent.location=document.location" href="" style="display:none" id="noFramesLink1">No&nbsp;Frames</a></td><td rowspan="3" align="right" class="titleTableLogo"><img alt="Adobe Logo" title="Adobe Logo" class="logoImage" src="../../../images/logo.jpg"></td>
+</tr>
+<tr class="titleTableRow2">
+<td align="left" id="subTitle" class="titleTableSubTitle">Class&nbsp;Matrix4</td><td align="right" id="subNav" class="titleTableSubNav"><a href="#propertySummary">Properties</a>&nbsp;| <a href="#methodSummary">Methods</a>&nbsp;| <a href="#constantSummary">Constants</a></td>
+</tr>
+<tr class="titleTableRow3">
+<td colspan="2">&nbsp;</td>
+</tr>
+</table>
+<script type="text/javascript" language="javascript">
+<!--
+if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Class Matrix4"); titleBar_setSubNav(true,true,false,false,false,false,true,false,false,false,false,false,false,false);}
+--></script>
+<div class="MainContent">
+<table cellspacing="0" cellpadding="0" class="classHeaderTable">
+<tr>
+<td class="classHeaderTableLabel">Package</td><td><a onclick="javascript:loadClassListFrame('class-list.html')" href="package-detail.html">sandy.core.data</a></td>
+</tr>
+<tr>
+<td class="classHeaderTableLabel">Class</td><td class="classSignature">public final  class Matrix4</td>
+</tr>
+</table>
+<p></p>
+  A 4x4 matrix for transformations in 3D space.
+    <p></p>
+<br>
+<hr>
+</div>
+<a name="propertySummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Properties</div>
+<table id="summaryTableProperty" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Property</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#n11">n11</a> : Number<div class="summaryTableDescription">
+   Matrix4 cell.</div>
+</td><td class="summaryTableOwnerCol">Matrix4</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#n12">n12</a> : Number<div class="summaryTableDescription">
+   Matrix4 cell.</div>
+</td><td class="summaryTableOwnerCol">Matrix4</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#n13">n13</a> : Number<div class="summaryTableDescription">
+   Matrix4 cell.</div>
+</td><td class="summaryTableOwnerCol">Matrix4</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#n14">n14</a> : Number<div class="summaryTableDescription">
+   Matrix4 cell.</div>
+</td><td class="summaryTableOwnerCol">Matrix4</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#n21">n21</a> : Number<div class="summaryTableDescription">
+   Matrix4 cell.</div>
+</td><td class="summaryTableOwnerCol">Matrix4</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#n22">n22</a> : Number<div class="summaryTableDescription">
+   Matrix4 cell.</div>
+</td><td class="summaryTableOwnerCol">Matrix4</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#n23">n23</a> : Number<div class="summaryTableDescription">
+   Matrix4 cell.</div>
+</td><td class="summaryTableOwnerCol">Matrix4</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#n24">n24</a> : Number<div class="summaryTableDescription">
+   Matrix4 cell.</div>
+</td><td class="summaryTableOwnerCol">Matrix4</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#n31">n31</a> : Number<div class="summaryTableDescription">
+   Matrix4 cell.</div>
+</td><td class="summaryTableOwnerCol">Matrix4</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#n32">n32</a> : Number<div class="summaryTableDescription">
+   Matrix4 cell.</div>
+</td><td class="summaryTableOwnerCol">Matrix4</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#n33">n33</a> : Number<div class="summaryTableDescription">
+   Matrix4 cell.</div>
+</td><td class="summaryTableOwnerCol">Matrix4</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#n34">n34</a> : Number<div class="summaryTableDescription">
+   Matrix4 cell.</div>
+</td><td class="summaryTableOwnerCol">Matrix4</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#n41">n41</a> : Number<div class="summaryTableDescription">
+   Matrix4 cell.</div>
+</td><td class="summaryTableOwnerCol">Matrix4</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#n42">n42</a> : Number<div class="summaryTableDescription">
+   Matrix4 cell.</div>
+</td><td class="summaryTableOwnerCol">Matrix4</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#n43">n43</a> : Number<div class="summaryTableDescription">
+   Matrix4 cell.</div>
+</td><td class="summaryTableOwnerCol">Matrix4</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#n44">n44</a> : Number<div class="summaryTableDescription">
+   Matrix4 cell.</div>
+</td><td class="summaryTableOwnerCol">Matrix4</td>
+</tr>
+</table>
+</div>
+<a name="methodSummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Methods</div>
+<table id="summaryTableMethod" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Method</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#Matrix4()">Matrix4</a>(pn11:Number = 1, pn12:Number = 0, pn13:Number = 0, pn14:Number = 0, pn21:Number = 0, pn22:Number = 1, pn23:Number = 0, pn24:Number = 0, pn31:Number = 0, pn32:Number = 0, pn33:Number = 1, pn34:Number = 0, pn41:Number = 0, pn42:Number = 0, pn43:Number = 0, pn44:Number = 1)</div>
+<div class="summaryTableDescription">
+   Creates a new 4x4 matrix.</div>
+</td><td class="summaryTableOwnerCol">Matrix4</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#addMatrix()">addMatrix</a>(m2:<a href="Matrix4.html">Matrix4</a>):void</div>
+<div class="summaryTableDescription">
+   Adds the passed in matrix to this matrix.</div>
+</td><td class="summaryTableOwnerCol">Matrix4</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#axisRotation()">axisRotation</a>(u:Number, v:Number, w:Number, angle:Number):void</div>
+<div class="summaryTableDescription">
+   Computes a rotation around an axis.</div>
+</td><td class="summaryTableOwnerCol">Matrix4</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#axisRotationPoint3D()">axisRotationPoint3D</a>(v:<a href="Point3D.html">Point3D</a>, angle:Number):void</div>
+<div class="summaryTableDescription">
+   Makes this matrix a rotation matrix for a rotation around a given axis.</div>
+</td><td class="summaryTableOwnerCol">Matrix4</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#axisRotationWithReference()">axisRotationWithReference</a>(axis:<a href="Point3D.html">Point3D</a>, ref:<a href="Point3D.html">Point3D</a>, pAngle:Number):void</div>
+<div class="summaryTableDescription">
+   Realize a rotation around a specific axis through a specified point.</div>
+</td><td class="summaryTableOwnerCol">Matrix4</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#clone()">clone</a>():<a href="../data/Matrix4.html">Matrix4</a>
+</div>
+<div class="summaryTableDescription">
+   Returns a new Matrix4 object that is a clone of the original instance.</div>
+</td><td class="summaryTableOwnerCol">Matrix4</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#copy()">copy</a>(m:<a href="Matrix4.html">Matrix4</a>):void</div>
+<div class="summaryTableDescription">
+   Makes this matrix a copy of a passed in matrix.</div>
+</td><td class="summaryTableOwnerCol">Matrix4</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#deserialize()">deserialize</a>(convertFrom:String):<a href="../data/Matrix4.html">Matrix4</a>
+</div>
+<div class="summaryTableDescription">[static]
+   Convert a string representation in a {</div>
+</td><td class="summaryTableOwnerCol">Matrix4</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#det()">det</a>():Number</div>
+<div class="summaryTableDescription">
+  Returns the determinant of this matrix.</div>
+</td><td class="summaryTableOwnerCol">Matrix4</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#det3x3()">det3x3</a>():Number</div>
+<div class="summaryTableDescription">
+  Returns the determinant of the upper left 3x3 sub matrix of this matrix.</div>
+</td><td class="summaryTableOwnerCol">Matrix4</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#eulerRotation()">eulerRotation</a>(ax:Number, ay:Number, az:Number):void</div>
+<div class="summaryTableDescription">
+   Computes a rotation from the Euler angle in degrees.</div>
+</td><td class="summaryTableOwnerCol">Matrix4</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#fromPoint3Ds()">fromPoint3Ds</a>(px:<a href="Point3D.html">Point3D</a>, py:<a href="Point3D.html">Point3D</a>, pz:<a href="Point3D.html">Point3D</a>, pt:<a href="Point3D.html">Point3D</a>):void</div>
+<div class="summaryTableDescription">
+   Creates transformation matrix from axis and translation Point3Ds.</div>
+</td><td class="summaryTableOwnerCol">Matrix4</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#getEulerAngles()">getEulerAngles</a>():<a href="../data/Point3D.html">Point3D</a>
+</div>
+<div class="summaryTableDescription">
+   Get the Euler angles from the rotation matrix.</div>
+</td><td class="summaryTableOwnerCol">Matrix4</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#getTrace()">getTrace</a>():Number</div>
+<div class="summaryTableDescription">
+   Returns the trace of the matrix.</div>
+</td><td class="summaryTableOwnerCol">Matrix4</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#getTranslation()">getTranslation</a>():<a href="../data/Point3D.html">Point3D</a>
+</div>
+<div class="summaryTableDescription">
+   Returns a Point3D that contains the 3D position information.</div>
+</td><td class="summaryTableOwnerCol">Matrix4</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#identity()">identity</a>():void</div>
+<div class="summaryTableDescription">
+   Makes this matrix into an identity matrix.</div>
+</td><td class="summaryTableOwnerCol">Matrix4</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#inverse()">inverse</a>():void</div>
+<div class="summaryTableDescription">
+  Inverts this matrix.</div>
+</td><td class="summaryTableOwnerCol">Matrix4</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#multiply()">multiply</a>(m2:<a href="Matrix4.html">Matrix4</a>):void</div>
+<div class="summaryTableDescription">
+   Multiplies this matrix by the passed in matrix.</div>
+</td><td class="summaryTableOwnerCol">Matrix4</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#multiply3x3()">multiply3x3</a>(m2:<a href="Matrix4.html">Matrix4</a>):void</div>
+<div class="summaryTableDescription">
+   Multiplies this matrix by the matrix passed in as if they were 3x3 matrices.</div>
+</td><td class="summaryTableOwnerCol">Matrix4</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#multiply4x3()">multiply4x3</a>(m2:<a href="Matrix4.html">Matrix4</a>):void</div>
+<div class="summaryTableDescription">
+   Multiplies the upper left 3x3 sub matrix of this matrix by the passed in matrix.</div>
+</td><td class="summaryTableOwnerCol">Matrix4</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#rotationX()">rotationX</a>(angle:Number):void</div>
+<div class="summaryTableDescription">
+   Makes this matrix a rotation matrix for the given angle of rotation around the x axis.</div>
+</td><td class="summaryTableOwnerCol">Matrix4</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#rotationY()">rotationY</a>(angle:Number):void</div>
+<div class="summaryTableDescription">
+   Makes this matrix a rotation matrix for the given angle of rotation around the y axis.</div>
+</td><td class="summaryTableOwnerCol">Matrix4</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#rotationZ()">rotationZ</a>(angle:Number):void</div>
+<div class="summaryTableDescription">
+   Makes this matrix a rotation matrix for the given angle of rotation around the z axis.</div>
+</td><td class="summaryTableOwnerCol">Matrix4</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#scale()">scale</a>(nXScale:Number, nYScale:Number, nZScale:Number):void</div>
+<div class="summaryTableDescription">
+   Makes this matrix a scale matrix from coordinates.</div>
+</td><td class="summaryTableOwnerCol">Matrix4</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#scalePoint3D()">scalePoint3D</a>(v:<a href="Point3D.html">Point3D</a>):void</div>
+<div class="summaryTableDescription">
+   Makes this matrix a scale matrix from a Point3D.</div>
+</td><td class="summaryTableOwnerCol">Matrix4</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#serialize()">serialize</a>(d:Number = .000001):String</div>
+<div class="summaryTableDescription">
+   Get a string representation of the {</div>
+</td><td class="summaryTableOwnerCol">Matrix4</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#toString()">toString</a>():String</div>
+<div class="summaryTableDescription">
+   Returns a string representation of this object.</div>
+</td><td class="summaryTableOwnerCol">Matrix4</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#transform()">transform</a>(pv:<a href="Point3D.html">Point3D</a>):void</div>
+<div class="summaryTableDescription">
+   Multiplies a Point3D with this matrix.</div>
+</td><td class="summaryTableOwnerCol">Matrix4</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#transform3x3()">transform3x3</a>(pv:<a href="Point3D.html">Point3D</a>):void</div>
+<div class="summaryTableDescription">
+   Multiplies a Point3D with the upper left 3x3 sub matrix of this matrix.</div>
+</td><td class="summaryTableOwnerCol">Matrix4</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#translation()">translation</a>(nTx:Number, nTy:Number, nTz:Number):void</div>
+<div class="summaryTableDescription">
+   Makes this matrix a translation matrix from coordinates.</div>
+</td><td class="summaryTableOwnerCol">Matrix4</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#translationPoint3D()">translationPoint3D</a>(v:<a href="Point3D.html">Point3D</a>):void</div>
+<div class="summaryTableDescription">
+   Makes this matrix a translation matrix from a Point3D.</div>
+</td><td class="summaryTableOwnerCol">Matrix4</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#zero()">zero</a>():void</div>
+<div class="summaryTableDescription">
+   Makes this matrix into a zero matrix.</div>
+</td><td class="summaryTableOwnerCol">Matrix4</td>
+</tr>
+</table>
+</div>
+<a name="constantSummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Constants</div>
+<table id="summaryTableConstant" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Constant</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#USE_FAST_MATH">USE_FAST_MATH</a> : Boolean = false<div class="summaryTableDescription">[static]
+   Specifies whether fast math should be used.</div>
+</td><td class="summaryTableOwnerCol">Matrix4</td>
+</tr>
+</table>
+</div>
+<script type="text/javascript" language="javascript">
+<!--
+showHideInherited();
+--></script>
+<div class="MainContent">
+<a name="propertyDetail"></a>
+<div class="detailSectionHeader">Property detail</div>
+<a name="n11"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">n11</td><td class="detailHeaderType">property</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var n11:Number</code><p>
+   Matrix4 cell.
+      <pre>
+   1 0 0 0
+   0 0 0 0
+   0 0 0 0
+   0 0 0 0
+   </pre>
+   </p></div>
+<a name="n12"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">n12</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var n12:Number</code><p>
+   Matrix4 cell.
+      <pre>
+   0 1 0 0
+   0 0 0 0
+   0 0 0 0
+   0 0 0 0
+   </pre>
+   </p></div>
+<a name="n13"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">n13</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var n13:Number</code><p>
+   Matrix4 cell.
+      <pre>
+   0 0 1 0
+   0 0 0 0
+   0 0 0 0
+   0 0 0 0
+   </pre>
+   </p></div>
+<a name="n14"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">n14</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var n14:Number</code><p>
+   Matrix4 cell.
+      <pre>
+   0 0 0 1
+   0 0 0 0
+   0 0 0 0
+   0 0 0 0
+   </pre>
+   </p></div>
+<a name="n21"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">n21</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var n21:Number</code><p>
+   Matrix4 cell.
+      <pre>
+   0 0 0 0
+   1 0 0 0
+   0 0 0 0
+   0 0 0 0
+   </pre>
+   </p></div>
+<a name="n22"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">n22</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var n22:Number</code><p>
+   Matrix4 cell.
+      <pre>
+   0 0 0 0
+   0 1 0 0
+   0 0 0 0
+   0 0 0 0
+   </pre>
+   </p></div>
+<a name="n23"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">n23</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var n23:Number</code><p>
+   Matrix4 cell.
+      <pre>
+   0 0 0 0
+   0 0 1 0
+   0 0 0 0
+   0 0 0 0
+   </pre>
+   </p></div>
+<a name="n24"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">n24</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var n24:Number</code><p>
+   Matrix4 cell.
+      <pre>
+   0 0 0 0
+   0 0 0 1
+   0 0 0 0
+   0 0 0 0
+   </pre>
+   </p></div>
+<a name="n31"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">n31</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var n31:Number</code><p>
+   Matrix4 cell.
+      <pre>
+   0 0 0 0
+   0 0 0 0
+   1 0 0 0
+   0 0 0 0
+   </pre>
+   </p></div>
+<a name="n32"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">n32</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var n32:Number</code><p>
+   Matrix4 cell.
+      <pre>
+   0 0 0 0
+   0 0 0 0
+   0 1 0 0
+   0 0 0 0
+   </pre>
+   </p></div>
+<a name="n33"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">n33</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var n33:Number</code><p>
+   Matrix4 cell.
+      <pre>
+   0 0 0 0
+   0 0 0 0
+   0 0 1 0
+   0 0 0 0
+   </pre>
+   </p></div>
+<a name="n34"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">n34</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var n34:Number</code><p>
+   Matrix4 cell.
+      <pre>
+   0 0 0 0
+   0 0 0 0
+   0 0 0 1
+   0 0 0 0
+   </pre>
+   </p></div>
+<a name="n41"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">n41</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var n41:Number</code><p>
+   Matrix4 cell.
+      <pre>
+   0 0 0 0
+   0 0 0 0
+   0 0 0 0
+   1 0 0 0
+   </pre>
+   </p></div>
+<a name="n42"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">n42</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var n42:Number</code><p>
+   Matrix4 cell.
+      <pre>
+   0 0 0 0
+   0 0 0 0
+   0 0 0 0
+   0 1 0 0
+   </pre>
+   </p></div>
+<a name="n43"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">n43</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var n43:Number</code><p>
+   Matrix4 cell.
+      <pre>
+   0 0 0 0
+   0 0 0 0
+   0 0 0 0
+   0 0 1 0
+   </pre>
+   </p></div>
+<a name="n44"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">n44</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var n44:Number</code><p>
+   Matrix4 cell.
+      <pre>
+   0 0 0 0
+   0 0 0 0
+   0 0 0 0
+   0 0 0 1
+   </pre>
+   </p></div>
+<a name="constructorDetail"></a>
+<div class="detailSectionHeader">Constructor detail</div>
+<a name="Matrix4()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">Matrix4</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">constructor</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function Matrix4(pn11:Number = 1, pn12:Number = 0, pn13:Number = 0, pn14:Number = 0, pn21:Number = 0, pn22:Number = 1, pn23:Number = 0, pn24:Number = 0, pn31:Number = 0, pn32:Number = 0, pn33:Number = 1, pn34:Number = 0, pn41:Number = 0, pn42:Number = 0, pn43:Number = 0, pn44:Number = 1)</code><p>
+   Creates a new 4x4 matrix. The default is an identity matrix.
+      </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">pn11</span>:Number</code> (default = <code>1</code>)<code></code> &mdash; Matrix cell n11.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">pn12</span>:Number</code> (default = <code>0</code>)<code></code> &mdash; Matrix cell n12.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">pn13</span>:Number</code> (default = <code>0</code>)<code></code> &mdash; Matrix cell n13.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">pn14</span>:Number</code> (default = <code>0</code>)<code></code> &mdash; Matrix cell n14.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">pn21</span>:Number</code> (default = <code>0</code>)<code></code> &mdash; Matrix cell n21.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">pn22</span>:Number</code> (default = <code>1</code>)<code></code> &mdash; Matrix cell n22.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">pn23</span>:Number</code> (default = <code>0</code>)<code></code> &mdash; Matrix cell n23.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">pn24</span>:Number</code> (default = <code>0</code>)<code></code> &mdash; Matrix cell n24.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">pn31</span>:Number</code> (default = <code>0</code>)<code></code> &mdash; Matrix cell n31.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">pn32</span>:Number</code> (default = <code>0</code>)<code></code> &mdash; Matrix cell n32.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">pn33</span>:Number</code> (default = <code>1</code>)<code></code> &mdash; Matrix cell n33.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">pn34</span>:Number</code> (default = <code>0</code>)<code></code> &mdash; Matrix cell n34.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">pn41</span>:Number</code> (default = <code>0</code>)<code></code> &mdash; Matrix cell n41.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">pn42</span>:Number</code> (default = <code>0</code>)<code></code> &mdash; Matrix cell n42.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">pn43</span>:Number</code> (default = <code>0</code>)<code></code> &mdash; Matrix cell n43.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">pn44</span>:Number</code> (default = <code>1</code>)<code></code> &mdash; Matrix cell n44.
+   </td>
+</tr>
+</table>
+<br>
+<span class="label">Example</span>
+<br>The examples below shows the results of calling the constructor with and without parameters. 
+   <div class='listing'><pre>
+   var m:Matrix4 = new Matrix4();
+   </pre></div>
+      <pre>
+   1 0 0 0
+   0 1 0 0
+   0 0 1 0
+   0 0 0 1
+   </pre>
+      <div class='listing'><pre>
+   var m:Matrix4 = new Matrix4(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16);
+   </pre></div>
+      <pre>
+   1  2  3  4
+   5  6  7  8
+   9  10 11 12
+   13 14 15 16
+   </pre>
+      <p></p>
+</div>
+<a name="methodDetail"></a>
+<div class="detailSectionHeader">Method detail</div>
+<a name="addMatrix()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">addMatrix</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public final function addMatrix(m2:<a href="Matrix4.html">Matrix4</a>):void</code><p>
+   Adds the passed in matrix to this matrix.
+      </p><p>This passed in matrix is added to this matrix element by element:<br />
+   <code>n11 = n11 + m2.n11</code><br />
+   <code>n11 = n12 + m2.n12</code><br />
+   ...</p>
+      <span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">m2</span>:<a href="Matrix4.html">Matrix4</a></code> &mdash; The matrix to add to this matrix.
+   </td>
+</tr>
+</table>
+</div>
+<a name="axisRotation()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">axisRotation</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public final function axisRotation(u:Number, v:Number, w:Number, angle:Number):void</code><p>
+   Computes a rotation around an axis.
+      </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">u</span>:Number</code> &mdash;  X rotation.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">v</span>:Number</code> &mdash;  Y rotation.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">w</span>:Number</code> &mdash;  Z rotation.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">angle</span>:Number</code> &mdash; The angle of rotation in degrees.
+   </td>
+</tr>
+</table>
+</div>
+<a name="axisRotationPoint3D()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">axisRotationPoint3D</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public final function axisRotationPoint3D(v:<a href="Point3D.html">Point3D</a>, angle:Number):void</code><p>
+   Makes this matrix a rotation matrix for a rotation around a given axis.
+      </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">v</span>:<a href="Point3D.html">Point3D</a></code> &mdash;  The axis of rotation.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">angle</span>:Number</code> &mdash; The angle of rotation in degrees.
+   </td>
+</tr>
+</table>
+</div>
+<a name="axisRotationWithReference()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">axisRotationWithReference</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public final function axisRotationWithReference(axis:<a href="Point3D.html">Point3D</a>, ref:<a href="Point3D.html">Point3D</a>, pAngle:Number):void</code><p>
+   Realize a rotation around a specific axis through a specified point.
+      </p><p>A rotation by a specified angle around a specified axis through a specific position (the reference point),
+   is applied to this matrix.</p>
+      <span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">axis</span>:<a href="Point3D.html">Point3D</a></code> &mdash;  A Point3D representing the axis of the rotation.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">ref</span>:<a href="Point3D.html">Point3D</a></code> &mdash;   The reference point.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">pAngle</span>:Number</code> &mdash; The angle of rotation in degrees.
+   </td>
+</tr>
+</table>
+</div>
+<a name="clone()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">clone</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public final function clone():<a href="../data/Matrix4.html">Matrix4</a></code><p>
+   Returns a new Matrix4 object that is a clone of the original instance. 
+   
+   </p><p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="../data/Matrix4.html">Matrix4</a></code> &mdash; 
+                        A new Matrix4 object that is identical to the original. 
+   
+                        
+                     </td>
+</tr>
+</table>
+</div>
+<a name="copy()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">copy</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public final function copy(m:<a href="Matrix4.html">Matrix4</a>):void</code><p>
+   Makes this matrix a copy of a passed in matrix.
+      </p><p>All elements of the argument matrix are copied into this matrix.</p>
+      <span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">m</span>:<a href="Matrix4.html">Matrix4</a></code> &mdash; The matrix to copy.
+   </td>
+</tr>
+</table>
+</div>
+<a name="deserialize()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">deserialize</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static function deserialize(convertFrom:String):<a href="../data/Matrix4.html">Matrix4</a></code><p>
+   Convert a string representation in a {</p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">convertFrom</span>:String</code></td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="../data/Matrix4.html">Matrix4</a></code> &mdash; 
+                        A {
+                        
+                     </td>
+</tr>
+</table>
+</div>
+<a name="det()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">det</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public final function det():Number</code><p>
+  Returns the determinant of this matrix.
+    </p><p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>Number</code> &mdash; The determinant.
+  </td>
+</tr>
+</table>
+</div>
+<a name="det3x3()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">det3x3</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public final function det3x3():Number</code><p>
+  Returns the determinant of the upper left 3x3 sub matrix of this matrix.
+    </p><p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>Number</code> &mdash; The determinant.
+  </td>
+</tr>
+</table>
+</div>
+<a name="eulerRotation()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">eulerRotation</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public final function eulerRotation(ax:Number, ay:Number, az:Number):void</code><p>
+   Computes a rotation from the Euler angle in degrees.
+      </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">ax</span>:Number</code> &mdash; The angle of rotation around the X axis in degrees.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">ay</span>:Number</code> &mdash; The angle of rotation around the Y axis in degrees.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">az</span>:Number</code> &mdash; The angle of rotation around the Z axis in degrees.
+   </td>
+</tr>
+</table>
+</div>
+<a name="fromPoint3Ds()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">fromPoint3Ds</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public final function fromPoint3Ds(px:<a href="Point3D.html">Point3D</a>, py:<a href="Point3D.html">Point3D</a>, pz:<a href="Point3D.html">Point3D</a>, pt:<a href="Point3D.html">Point3D</a>):void</code><p>
+   Creates transformation matrix from axis and translation Point3Ds.
+   
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">px</span>:<a href="Point3D.html">Point3D</a></code> &mdash; X axis Point3D.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">py</span>:<a href="Point3D.html">Point3D</a></code> &mdash; Y axis Point3D.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">pz</span>:<a href="Point3D.html">Point3D</a></code> &mdash; Z axis Point3D.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">pt</span>:<a href="Point3D.html">Point3D</a></code> &mdash; translation Point3D.
+   </td>
+</tr>
+</table>
+</div>
+<a name="getEulerAngles()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">getEulerAngles</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public final function getEulerAngles():<a href="../data/Point3D.html">Point3D</a></code><p>
+   Get the Euler angles from the rotation matrix.
+      </p><p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="../data/Point3D.html">Point3D</a></code> &mdash; 
+                        A Point3D representing the Euler angles.
+   
+                        
+                     </td>
+</tr>
+</table>
+</div>
+<a name="getTrace()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">getTrace</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public final function getTrace():Number</code><p>
+   Returns the trace of the matrix.
+      </p><p>The trace value is the sum of the elements on the corners of the matrix.</p>
+      <p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>Number</code> &mdash; The trace value.
+   </td>
+</tr>
+</table>
+</div>
+<a name="getTranslation()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">getTranslation</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public final function getTranslation():<a href="../data/Point3D.html">Point3D</a></code><p>
+   Returns a Point3D that contains the 3D position information.
+   
+   </p><p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="../data/Point3D.html">Point3D</a></code> &mdash; 
+                        A Point3D.
+   
+                        
+                     </td>
+</tr>
+</table>
+</div>
+<a name="identity()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">identity</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public final function identity():void</code><p>
+   Makes this matrix into an identity matrix.
+      </p><p>Below is a representation of a identity matrix:</p>
+      <pre>
+   1 0 0 0
+   0 1 0 0
+   0 0 1 0
+   0 0 0 1
+   </pre>
+      </div>
+<a name="inverse()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">inverse</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public final function inverse():void</code><p>
+  Inverts this matrix.
+  </p></div>
+<a name="multiply()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">multiply</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public final function multiply(m2:<a href="Matrix4.html">Matrix4</a>):void</code><p>
+   Multiplies this matrix by the passed in matrix.
+      </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">m2</span>:<a href="Matrix4.html">Matrix4</a></code> &mdash; The matrix to multiply with.
+   </td>
+</tr>
+</table>
+</div>
+<a name="multiply3x3()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">multiply3x3</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public final function multiply3x3(m2:<a href="Matrix4.html">Matrix4</a>):void</code><p>
+   Multiplies this matrix by the matrix passed in as if they were 3x3 matrices.
+      </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">m2</span>:<a href="Matrix4.html">Matrix4</a></code> &mdash; The matrix to multiply with.
+   </td>
+</tr>
+</table>
+</div>
+<a name="multiply4x3()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">multiply4x3</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public final function multiply4x3(m2:<a href="Matrix4.html">Matrix4</a>):void</code><p>
+   Multiplies the upper left 3x3 sub matrix of this matrix by the passed in matrix.
+      </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">m2</span>:<a href="Matrix4.html">Matrix4</a></code> &mdash; The matrix to multiply with.
+   </td>
+</tr>
+</table>
+</div>
+<a name="rotationX()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">rotationX</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public final function rotationX(angle:Number):void</code><p>
+   Makes this matrix a rotation matrix for the given angle of rotation around the x axis.
+   
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">angle</span>:Number</code> &mdash; The angle of rotation around the x axis in degrees.
+   </td>
+</tr>
+</table>
+</div>
+<a name="rotationY()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">rotationY</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public final function rotationY(angle:Number):void</code><p>
+   Makes this matrix a rotation matrix for the given angle of rotation around the y axis.
+   
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">angle</span>:Number</code> &mdash; The angle of rotation around the y axis in degrees.
+   </td>
+</tr>
+</table>
+</div>
+<a name="rotationZ()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">rotationZ</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public final function rotationZ(angle:Number):void</code><p>
+   Makes this matrix a rotation matrix for the given angle of rotation around the z axis.
+   
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">angle</span>:Number</code> &mdash; The angle of rotation around the z axis in degrees.
+   </td>
+</tr>
+</table>
+</div>
+<a name="scale()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">scale</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public final function scale(nXScale:Number, nYScale:Number, nZScale:Number):void</code><p>
+   Makes this matrix a scale matrix from coordinates.
+      <pre>
+   Sx 0  0  0
+   0  Sy 0  0
+   0  0  Sz 0
+   0  0  0  1
+   </pre>
+      </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">nXScale</span>:Number</code> &mdash;  x-scale.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">nYScale</span>:Number</code> &mdash;  y-scale.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">nZScale</span>:Number</code> &mdash; z-scale.
+   </td>
+</tr>
+</table>
+</div>
+<a name="scalePoint3D()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">scalePoint3D</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public final function scalePoint3D(v:<a href="Point3D.html">Point3D</a>):void</code><p>
+   Makes this matrix a scale matrix from a Point3D.
+      <pre>
+   Sx 0  0  0
+   0  Sy 0  0
+   0  0  Sz 0
+   0  0  0  1
+   </pre>
+      </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">v</span>:<a href="Point3D.html">Point3D</a></code> &mdash; The scale Point3D.
+   </td>
+</tr>
+</table>
+</div>
+<a name="serialize()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">serialize</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function serialize(d:Number = .000001):String</code><p>
+   Get a string representation of the {</p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">d</span>:Number</code> (default = <code>.000001</code>)<code></code></td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>String</code> &mdash; A serialized String representing the {</td>
+</tr>
+</table>
+</div>
+<a name="toString()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">toString</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public final function toString():String</code><p>
+   Returns a string representation of this object.
+      </p><p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>String</code> &mdash; The fully qualified name of this object.
+   </td>
+</tr>
+</table>
+</div>
+<a name="transform()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">transform</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public final function transform(pv:<a href="Point3D.html">Point3D</a>):void</code><p>
+   Multiplies a Point3D with this matrix.
+      </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">pv</span>:<a href="Point3D.html">Point3D</a></code> &mdash; The Point3D to be mutliplied.
+   </td>
+</tr>
+</table>
+</div>
+<a name="transform3x3()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">transform3x3</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public final function transform3x3(pv:<a href="Point3D.html">Point3D</a>):void</code><p>
+   Multiplies a Point3D with the upper left 3x3 sub matrix of this matrix.
+      </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">pv</span>:<a href="Point3D.html">Point3D</a></code> &mdash; The Point3D to be mutliplied.
+   </td>
+</tr>
+</table>
+</div>
+<a name="translation()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">translation</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public final function translation(nTx:Number, nTy:Number, nTz:Number):void</code><p>
+   Makes this matrix a translation matrix from coordinates.
+   
+   <pre>
+   1  0  0  0
+   0  1  0  0
+   0  0  1  0
+   Tx Ty Tz 1
+   </pre>
+      </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">nTx</span>:Number</code> &mdash; Translation in the x direction.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">nTy</span>:Number</code> &mdash; Translation in the y direction.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">nTz</span>:Number</code> &mdash; Translation in the z direction.
+   </td>
+</tr>
+</table>
+</div>
+<a name="translationPoint3D()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">translationPoint3D</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public final function translationPoint3D(v:<a href="Point3D.html">Point3D</a>):void</code><p>
+   Makes this matrix a translation matrix from a Point3D.
+      <pre>
+   1   0   0   0
+   0   1   0   0
+   0   0   1   0
+   v.x v.y v.z 1
+   </pre>
+      </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">v</span>:<a href="Point3D.html">Point3D</a></code> &mdash;  The translation Point3D.
+   </td>
+</tr>
+</table>
+</div>
+<a name="zero()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">zero</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public final function zero():void</code><p>
+   Makes this matrix into a zero matrix.
+      </p><p>Below is a representation of a zero matrix:</p>
+      <pre>
+   0 0 0 0
+   0 0 0 0
+   0 0 0 0
+   0 0 0 0
+   </pre>
+      </div>
+<a name="constantDetail"></a>
+<div class="detailSectionHeader">Constant detail</div>
+<a name="USE_FAST_MATH"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">USE_FAST_MATH</td><td class="detailHeaderType">constant</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const USE_FAST_MATH:Boolean = false</code><p>
+   Specifies whether fast math should be used.
+   </p></div>
+<br>
+<br>
+<hr>
+<br>
+<p></p>
+<center class="copyright">API documentation for Sandy 3D Engine, Ver. 3.1.2</center>
+</div>
+</body>
+</html>
+<!--API documentation for Sandy 3D Engine, Ver. 3.1.2-->

@@ -1,0 +1,1049 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="../../../style.css" type="text/css" media="screen">
+<link rel="stylesheet" href="../../../print.css" type="text/css" media="print">
+<meta content="Polygon,sandy.core.data.Polygon,POLYGON_MAP,a,aEdges,aNeighboors,aUVCoord,caUVCoord,cvertices,id,isClipped,minZ,shape,uvBounds,vertexNormals,vertices,visible,appearance,area,broadcaster,changed,container,depth,enableEvents,enableInteractivity,material,normal,scene,addEventListener,clear,clip,clipFrontPlane,createNormal,createTransformedNormal,destroy,display,get3DFrom2D,getUVFrom2D,precompute,removeEventListener,swapCulling,toString,updateNormal" name="keywords">
+<title>sandy.core.data.Polygon</title>
+</head>
+<body>
+<script type="text/javascript" language="javascript" src="../../../asdoc.js"></script><script type="text/javascript" language="javascript" src="../../../cookies.js"></script><script type="text/javascript" language="javascript">
+<!--
+				asdocTitle = 'Polygon - Sandy 3.1.2 API Documentation';
+				var baseRef = '../../../';
+				window.onload = configPage;
+			--></script>
+<table style="display:none" id="titleTable" cellspacing="0" cellpadding="0" class="titleTable">
+<tr>
+<td align="left" class="titleTableTitle">Sandy 3D Engine, 3.1.2</td><td align="right" class="titleTableTopNav"><a onclick="loadClassListFrame('../../../all-classes.html')" href="../../../package-summary.html">All&nbsp;Packages</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('../../../all-classes.html')" href="../../../class-summary.html">All&nbsp;Classes</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('../../../index-list.html')" href="../../../all-index-A.html">Index</a>&nbsp;|&nbsp;<a href="../../../index.html?sandy/core/data/Polygon.html&amp;sandy/core/data/class-list.html" id="framesLink1">Frames</a><a onclick="parent.location=document.location" href="" style="display:none" id="noFramesLink1">No&nbsp;Frames</a></td><td rowspan="3" align="right" class="titleTableLogo"><img alt="Adobe Logo" title="Adobe Logo" class="logoImage" src="../../../images/logo.jpg"></td>
+</tr>
+<tr class="titleTableRow2">
+<td align="left" id="subTitle" class="titleTableSubTitle">Class&nbsp;Polygon</td><td align="right" id="subNav" class="titleTableSubNav"><a href="#propertySummary">Properties</a>&nbsp;| <a href="#methodSummary">Methods</a>&nbsp;| <a href="#constantSummary">Constants</a></td>
+</tr>
+<tr class="titleTableRow3">
+<td colspan="2">&nbsp;</td>
+</tr>
+</table>
+<script type="text/javascript" language="javascript">
+<!--
+if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Class Polygon"); titleBar_setSubNav(true,true,false,false,false,false,true,false,false,false,false,false,false,false);}
+--></script>
+<div class="MainContent">
+<table cellspacing="0" cellpadding="0" class="classHeaderTable">
+<tr>
+<td class="classHeaderTableLabel">Package</td><td><a onclick="javascript:loadClassListFrame('class-list.html')" href="package-detail.html">sandy.core.data</a></td>
+</tr>
+<tr>
+<td class="classHeaderTableLabel">Class</td><td class="classSignature">public final  class Polygon</td>
+</tr>
+<tr>
+<td class="classHeaderTableLabel">Implements</td><td><a href="../scenegraph/IDisplayable.html">IDisplayable</a></td>
+</tr>
+</table>
+<p></p>
+  Polygon's are the building blocks of visible 3D shapes.
+    <p></p>
+<p>
+<span class="classHeaderTableLabel">See also</span>
+</p>
+<div class="seeAlso">
+<a href="../scenegraph/Shape3D.html" target="">sandy.core.scenegraph.Shape3D</a>
+</div>
+<br>
+<hr>
+</div>
+<a name="propertySummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Properties</div>
+<table id="summaryTableProperty" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Property</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#a">a</a> : <a href="../data/Vertex.html">Vertex</a>
+<div class="summaryTableDescription"></div>
+</td><td class="summaryTableOwnerCol">Polygon</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#aEdges">aEdges</a> : Array<div class="summaryTableDescription">
+   An array of the polygon's edges.</div>
+</td><td class="summaryTableOwnerCol">Polygon</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#aNeighboors">aNeighboors</a> : Array<div class="summaryTableDescription">
+   An array of polygons that share an edge with this polygon.</div>
+</td><td class="summaryTableOwnerCol">Polygon</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#appearance">appearance</a> : <a href="../../materials/Appearance.html">Appearance</a>
+<div class="summaryTableDescription">
+   The appearance of this polygon.</div>
+</td><td class="summaryTableOwnerCol">Polygon</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#area">area</a> : Number<div class="summaryTableDescription">[read-only]</div>
+</td><td class="summaryTableOwnerCol">Polygon</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#aUVCoord">aUVCoord</a> : Array<div class="summaryTableDescription"></div>
+</td><td class="summaryTableOwnerCol">Polygon</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#broadcaster">broadcaster</a> : <a href="../../events/BubbleEventBroadcaster.html">BubbleEventBroadcaster</a>
+<div class="summaryTableDescription">[read-only]
+   The broadcaster of the polygon that sends events to listeners.</div>
+</td><td class="summaryTableOwnerCol">Polygon</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#caUVCoord">caUVCoord</a> : Array<div class="summaryTableDescription"></div>
+</td><td class="summaryTableOwnerCol">Polygon</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#changed">changed</a> : Boolean<div class="summaryTableDescription">[read-only]</div>
+</td><td class="summaryTableOwnerCol">Polygon</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#container">container</a> : Sprite<div class="summaryTableDescription">[read-only]
+   The polygon's container.</div>
+</td><td class="summaryTableOwnerCol">Polygon</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#cvertices">cvertices</a> : Array<div class="summaryTableDescription">
+   An array of clipped vertices.</div>
+</td><td class="summaryTableOwnerCol">Polygon</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#depth">depth</a> : Number<div class="summaryTableDescription">
+   The depth of the polygon.</div>
+</td><td class="summaryTableOwnerCol">Polygon</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#enableEvents">enableEvents</a> : Boolean<div class="summaryTableDescription">
+   Specifies whether mouse events are enabled for this polygon.</div>
+</td><td class="summaryTableOwnerCol">Polygon</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#enableInteractivity">enableInteractivity</a> : Boolean<div class="summaryTableDescription">
+   Specifies whether <code>MouseEvent.ROLL_&#42;</code> events are enabled for this polygon.</div>
+</td><td class="summaryTableOwnerCol">Polygon</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#isClipped">isClipped</a> : Boolean = false<div class="summaryTableDescription">
+   Specifies if the polygon has been clipped.</div>
+</td><td class="summaryTableOwnerCol">Polygon</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#material">material</a> : <a href="../../materials/Material.html">Material</a>
+<div class="summaryTableDescription">[read-only]
+   Returns the material currently used by the renderer
+   </div>
+</td><td class="summaryTableOwnerCol">Polygon</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#minZ">minZ</a> : Number<div class="summaryTableDescription">
+   Minimum depth value of that polygon in the camera space
+   </div>
+</td><td class="summaryTableOwnerCol">Polygon</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#normal">normal</a> : <a href="../data/Vertex.html">Vertex</a>
+<div class="summaryTableDescription"></div>
+</td><td class="summaryTableOwnerCol">Polygon</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#POLYGON_MAP">POLYGON_MAP</a> : Dictionary<div class="summaryTableDescription">[static]
+   This property lists all the polygons.</div>
+</td><td class="summaryTableOwnerCol">Polygon</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#scene">scene</a> : <a href="../../core/Scene3D.html">Scene3D</a>
+<div class="summaryTableDescription"></div>
+</td><td class="summaryTableOwnerCol">Polygon</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#shape">shape</a> : <a href="../scenegraph/Shape3D.html">Shape3D</a>
+<div class="summaryTableDescription">
+   A reference to the Shape3D object this polygon belongs to.</div>
+</td><td class="summaryTableOwnerCol">Polygon</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#uvBounds">uvBounds</a> : Rectangle<div class="summaryTableDescription">
+   The texture bounds.</div>
+</td><td class="summaryTableOwnerCol">Polygon</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#vertexNormals">vertexNormals</a> : Array<div class="summaryTableDescription">
+   An array of the polygon's vertex normals.</div>
+</td><td class="summaryTableOwnerCol">Polygon</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#vertices">vertices</a> : Array<div class="summaryTableDescription">
+   An array of the polygon's original vertices.</div>
+</td><td class="summaryTableOwnerCol">Polygon</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#visible">visible</a> : Boolean<div class="summaryTableDescription">
+   Specifies whether the face of the polygon is visible.</div>
+</td><td class="summaryTableOwnerCol">Polygon</td>
+</tr>
+</table>
+</div>
+<a name="methodSummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Methods</div>
+<table id="summaryTableMethod" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Method</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#Polygon()">Polygon</a>(p_oOwner:<a href="../scenegraph/Shape3D.html">Shape3D</a>, p_geometry:<a href="../scenegraph/Geometry3D.html">Geometry3D</a>, p_aVertexID:Array, p_aUVCoordsID:Array = null, p_nFaceNormalID:Number = 0, p_nEdgesID:uint = 0)</div>
+<div class="summaryTableDescription">
+   Creates a new polygon.</div>
+</td><td class="summaryTableOwnerCol">Polygon</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#addEventListener()">addEventListener</a>(p_sEvent:String, oL:*):void</div>
+<div class="summaryTableDescription">
+   Adds an event listener to the polygon.</div>
+</td><td class="summaryTableOwnerCol">Polygon</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#clear()">clear</a>():void</div>
+<div class="summaryTableDescription">
+   Clears the polygon's container.</div>
+</td><td class="summaryTableOwnerCol">Polygon</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#clip()">clip</a>(p_oFrustum:<a href="../../view/Frustum.html">Frustum</a>):Array</div>
+<div class="summaryTableDescription">
+   Clips the polygon.</div>
+</td><td class="summaryTableOwnerCol">Polygon</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#clipFrontPlane()">clipFrontPlane</a>(p_oFrustum:<a href="../../view/Frustum.html">Frustum</a>):Array</div>
+<div class="summaryTableDescription">
+   Perform a clipping against the camera frustum's front plane.</div>
+</td><td class="summaryTableOwnerCol">Polygon</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#createNormal()">createNormal</a>():<a href="../data/Point3D.html">Point3D</a>
+</div>
+<div class="summaryTableDescription">
+   Returns the normal Point3D of the polygon.</div>
+</td><td class="summaryTableOwnerCol">Polygon</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#createTransformedNormal()">createTransformedNormal</a>():<a href="../data/Point3D.html">Point3D</a>
+</div>
+<div class="summaryTableDescription">
+   Returns the transformed normal Point3D of the polygon.</div>
+</td><td class="summaryTableOwnerCol">Polygon</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#destroy()">destroy</a>():void</div>
+<div class="summaryTableDescription">
+   Removes the polygon's container from the stage.</div>
+</td><td class="summaryTableOwnerCol">Polygon</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#display()">display</a>(p_oContainer:Sprite = null):void</div>
+<div class="summaryTableDescription">
+   Draws the polygon on its container if visible.</div>
+</td><td class="summaryTableOwnerCol">Polygon</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#get3DFrom2D()">get3DFrom2D</a>(p_oScreenPoint:Point):<a href="../data/Point3D.html">Point3D</a>
+</div>
+<div class="summaryTableDescription">
+   Returns a Point3D (3D position) on the polygon relative to the specified point on the 2D screen.</div>
+</td><td class="summaryTableOwnerCol">Polygon</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#getUVFrom2D()">getUVFrom2D</a>(p_oScreenPoint:Point):<a href="../data/UVCoord.html">UVCoord</a>
+</div>
+<div class="summaryTableDescription">
+   Returns a UV coordinate elative to the specified point on the 2D screen.</div>
+</td><td class="summaryTableOwnerCol">Polygon</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#precompute()">precompute</a>():void</div>
+<div class="summaryTableDescription">
+   Computes several properties of the polygon.</div>
+</td><td class="summaryTableOwnerCol">Polygon</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#removeEventListener()">removeEventListener</a>(p_sEvent:String, oL:*):void</div>
+<div class="summaryTableDescription">
+   Removes an event listener to the polygon.</div>
+</td><td class="summaryTableOwnerCol">Polygon</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#swapCulling()">swapCulling</a>():void</div>
+<div class="summaryTableDescription">
+   Changes which side is the "normal" culling side.</div>
+</td><td class="summaryTableOwnerCol">Polygon</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#toString()">toString</a>():String</div>
+<div class="summaryTableDescription">
+   Returns a string representation of this object.</div>
+</td><td class="summaryTableOwnerCol">Polygon</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#updateNormal()">updateNormal</a>():void</div>
+<div class="summaryTableDescription"></div>
+</td><td class="summaryTableOwnerCol">Polygon</td>
+</tr>
+</table>
+</div>
+<a name="constantSummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Constants</div>
+<table id="summaryTableConstant" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Constant</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#id">id</a> : uint<div class="summaryTableDescription">
+   The unique identifier for this polygon.</div>
+</td><td class="summaryTableOwnerCol">Polygon</td>
+</tr>
+</table>
+</div>
+<script type="text/javascript" language="javascript">
+<!--
+showHideInherited();
+--></script>
+<div class="MainContent">
+<a name="propertyDetail"></a>
+<div class="detailSectionHeader">Property detail</div>
+<a name="a"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">a</td><td class="detailHeaderType">property</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var a:<a href="../data/Vertex.html">Vertex</a></code>
+</div>
+<a name="aEdges"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">aEdges</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var aEdges:Array</code><p>
+   An array of the polygon's edges.
+   </p></div>
+<a name="aNeighboors"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">aNeighboors</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var aNeighboors:Array</code><p>
+   An array of polygons that share an edge with this polygon.
+   </p></div>
+<a name="appearance"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">appearance</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>appearance:<a href="../../materials/Appearance.html">Appearance</a></code>&nbsp;&nbsp;[read-write]<p>
+   The appearance of this polygon.
+   </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get appearance():<a href="../../materials/Appearance.html">Appearance</a></code>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set appearance(value:<a href="../../materials/Appearance.html">Appearance</a>):void</code>
+<br>
+</div>
+<a name="area"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">area</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>area:Number</code>&nbsp;&nbsp;[read-only]<span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get area():Number</code>
+<br>
+</div>
+<a name="aUVCoord"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">aUVCoord</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var aUVCoord:Array</code>
+</div>
+<a name="broadcaster"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">broadcaster</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>broadcaster:<a href="../../events/BubbleEventBroadcaster.html">BubbleEventBroadcaster</a></code>&nbsp;&nbsp;[read-only]<p>
+   The broadcaster of the polygon that sends events to listeners.
+   </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get broadcaster():<a href="../../events/BubbleEventBroadcaster.html">BubbleEventBroadcaster</a></code>
+<br>
+</div>
+<a name="caUVCoord"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">caUVCoord</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var caUVCoord:Array</code>
+</div>
+<a name="changed"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">changed</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>changed:Boolean</code>&nbsp;&nbsp;[read-only]<span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get changed():Boolean</code>
+<br>
+</div>
+<a name="container"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">container</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>container:Sprite</code>&nbsp;&nbsp;[read-only]<p>
+   The polygon's container.
+   </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get container():Sprite</code>
+<br>
+</div>
+<a name="cvertices"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">cvertices</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var cvertices:Array</code><p>
+   An array of clipped vertices. Check the <code>isClipped</code> property first to see if this array will contain the useful data.
+   </p></div>
+<a name="depth"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">depth</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>depth:Number</code>&nbsp;&nbsp;[read-write]<p>
+   The depth of the polygon.
+   </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get depth():Number</code>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set depth(value:Number):void</code>
+<br>
+</div>
+<a name="enableEvents"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">enableEvents</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>enableEvents:Boolean</code>&nbsp;&nbsp;[read-write]<p>
+   Specifies whether mouse events are enabled for this polygon.
+      </p><p>To apply events to a polygon, listeners must be added with the <code>addEventListener()</code> method.</p>
+      <span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get enableEvents():Boolean</code>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set enableEvents(value:Boolean):void</code>
+<br>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="../data/Polygon.html#addEventListener()" target="">addEventListener()</a>
+</div>
+</div>
+<a name="enableInteractivity"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">enableInteractivity</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>enableInteractivity:Boolean</code>&nbsp;&nbsp;[read-write]<p>
+   Specifies whether <code>MouseEvent.ROLL_&#42;</code> events are enabled for this polygon.
+      </p><p>To apply events to a polygon, listeners must be added with the <code>addEventListener()</code> method.</p>
+      <span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get enableInteractivity():Boolean</code>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set enableInteractivity(value:Boolean):void</code>
+<br>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="../data/Polygon.html#addEventListener()" target="">addEventListener()</a>
+</div>
+</div>
+<a name="isClipped"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">isClipped</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var isClipped:Boolean = false</code><p>
+   Specifies if the polygon has been clipped.
+   </p></div>
+<a name="material"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">material</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>material:<a href="../../materials/Material.html">Material</a></code>&nbsp;&nbsp;[read-only]<p>
+   Returns the material currently used by the renderer
+   </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get material():<a href="../../materials/Material.html">Material</a></code>
+<br>
+</div>
+<a name="minZ"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">minZ</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var minZ:Number</code><p>
+   Minimum depth value of that polygon in the camera space
+   </p></div>
+<a name="normal"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">normal</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>normal:<a href="../data/Vertex.html">Vertex</a></code>&nbsp;&nbsp;[read-write]<span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get normal():<a href="../data/Vertex.html">Vertex</a></code>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set normal(value:<a href="../data/Vertex.html">Vertex</a>):void</code>
+<br>
+</div>
+<a name="POLYGON_MAP"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">POLYGON_MAP</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static var POLYGON_MAP:Dictionary</code><p>
+   This property lists all the polygons.
+   This is a helper property since it allows all polygons of a scene to be retrieved from a single list by its unique identifier.
+   A polygon's unique identifier can be retrieved useing <code>myPolygon.id</code>.
+      </p><br>
+<span class="label">Example</span>
+<br>The examples below shows how to retrieve a ploygon from this property. 
+   <div class='listing'><pre>
+   var p:Polygon = Polygon.POLYGON_MAP[myPolygon.id];
+   </pre></div>
+   <p></p>
+</div>
+<a name="scene"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">scene</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>scene:<a href="../../core/Scene3D.html">Scene3D</a></code>&nbsp;&nbsp;[read-write]<span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get scene():<a href="../../core/Scene3D.html">Scene3D</a></code>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set scene(value:<a href="../../core/Scene3D.html">Scene3D</a>):void</code>
+<br>
+</div>
+<a name="shape"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">shape</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var shape:<a href="../scenegraph/Shape3D.html">Shape3D</a></code><p>
+   A reference to the Shape3D object this polygon belongs to.
+   </p></div>
+<a name="uvBounds"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">uvBounds</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var uvBounds:Rectangle</code><p>
+   The texture bounds.
+   </p></div>
+<a name="vertexNormals"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">vertexNormals</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var vertexNormals:Array</code><p>
+   An array of the polygon's vertex normals.
+   </p></div>
+<a name="vertices"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">vertices</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var vertices:Array</code><p>
+   An array of the polygon's original vertices.
+   </p></div>
+<a name="visible"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">visible</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var visible:Boolean</code><p>
+   Specifies whether the face of the polygon is visible.
+   </p></div>
+<a name="constructorDetail"></a>
+<div class="detailSectionHeader">Constructor detail</div>
+<a name="Polygon()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">Polygon</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">constructor</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function Polygon(p_oOwner:<a href="../scenegraph/Shape3D.html">Shape3D</a>, p_geometry:<a href="../scenegraph/Geometry3D.html">Geometry3D</a>, p_aVertexID:Array, p_aUVCoordsID:Array = null, p_nFaceNormalID:Number = 0, p_nEdgesID:uint = 0)</code><p>
+   Creates a new polygon.
+      </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">p_oOwner</span>:<a href="../scenegraph/Shape3D.html">Shape3D</a></code> &mdash;   The shape the polygon belongs to.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">p_geometry</span>:<a href="../scenegraph/Geometry3D.html">Geometry3D</a></code> &mdash;  The geometry the polygon belongs to.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">p_aVertexID</span>:Array</code> &mdash;  An array of verticies of the polygon.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">p_aUVCoordsID</span>:Array</code> (default = <code>null</code>)<code></code> &mdash;  An array of UV coordinates of this polygon.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">p_nFaceNormalID</span>:Number</code> (default = <code>0</code>)<code></code> &mdash; The faceNormalID of this polygon.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">p_nEdgesID</span>:uint</code> (default = <code>0</code>)<code></code> &mdash;  The edgesID of this polygon.
+   </td>
+</tr>
+</table>
+</div>
+<a name="methodDetail"></a>
+<div class="detailSectionHeader">Method detail</div>
+<a name="addEventListener()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">addEventListener</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function addEventListener(p_sEvent:String, oL:*):void</code><p>
+   Adds an event listener to the polygon.
+      </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">p_sEvent</span>:String</code> &mdash;  The name of the event to add.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">oL</span>:*</code> &mdash;   The listener object.
+   </td>
+</tr>
+</table>
+</div>
+<a name="clear()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">clear</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function clear():void</code><p>
+   Clears the polygon's container.
+   </p></div>
+<a name="clip()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">clip</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function clip(p_oFrustum:<a href="../../view/Frustum.html">Frustum</a>):Array</code><p>
+   Clips the polygon.
+      </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">p_oFrustum</span>:<a href="../../view/Frustum.html">Frustum</a></code></td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>Array</code> &mdash; An array of vertices clipped by the camera frustum.
+   </td>
+</tr>
+</table>
+</div>
+<a name="clipFrontPlane()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">clipFrontPlane</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function clipFrontPlane(p_oFrustum:<a href="../../view/Frustum.html">Frustum</a>):Array</code><p>
+   Perform a clipping against the camera frustum's front plane.
+      </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">p_oFrustum</span>:<a href="../../view/Frustum.html">Frustum</a></code></td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>Array</code> &mdash; An array of vertices clipped by the camera frustum's front plane.
+   </td>
+</tr>
+</table>
+</div>
+<a name="createNormal()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">createNormal</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function createNormal():<a href="../data/Point3D.html">Point3D</a></code><p>
+   Returns the normal Point3D of the polygon.
+      </p><p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="../data/Point3D.html">Point3D</a></code> &mdash; 
+                        The normal Point3D of the polygon.
+   
+                        
+                     </td>
+</tr>
+</table>
+</div>
+<a name="createTransformedNormal()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">createTransformedNormal</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function createTransformedNormal():<a href="../data/Point3D.html">Point3D</a></code><p>
+   Returns the transformed normal Point3D of the polygon.
+      </p><p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="../data/Point3D.html">Point3D</a></code> &mdash; 
+                        The transformed normal Point3D of the polygon.
+   
+                        
+                     </td>
+</tr>
+</table>
+</div>
+<a name="destroy()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">destroy</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function destroy():void</code><p>
+   Removes the polygon's container from the stage.
+   </p></div>
+<a name="display()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">display</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function display(p_oContainer:Sprite = null):void</code><p>
+   Draws the polygon on its container if visible.
+      </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">p_oContainer</span>:Sprite</code> (default = <code>null</code>)<code></code> &mdash;  The scene this polygon is rendered in.
+   </td>
+</tr>
+</table>
+</div>
+<a name="get3DFrom2D()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">get3DFrom2D</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function get3DFrom2D(p_oScreenPoint:Point):<a href="../data/Point3D.html">Point3D</a></code><p>
+   Returns a Point3D (3D position) on the polygon relative to the specified point on the 2D screen.
+      </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">p_oScreenPoint</span>:Point</code></td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="../data/Point3D.html">Point3D</a></code> &mdash; 
+                        A Point3D that corresponds to the specified point.
+         
+                        
+                     </td>
+</tr>
+</table>
+<br>
+<span class="label">Example</span>
+<br>Below is an example of how to get the 3D coordinate of the polygon under the position of the mouse:
+   <div class='listing'><pre>
+   var screenPoint:Point = new Point(myPolygon.container.mouseX, myPolygon.container.mouseY);
+   var scenePosition:Point3D = myPolygon.get3DFrom2D(screenPoint);
+         </pre></div>
+         
+         <p></p>
+</div>
+<a name="getUVFrom2D()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">getUVFrom2D</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function getUVFrom2D(p_oScreenPoint:Point):<a href="../data/UVCoord.html">UVCoord</a></code><p>
+   Returns a UV coordinate elative to the specified point on the 2D screen.
+      </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">p_oScreenPoint</span>:Point</code></td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="../data/UVCoord.html">UVCoord</a></code> &mdash; 
+                        A the UV coordinate that corresponds to the specified point.
+         
+                        
+                     </td>
+</tr>
+</table>
+<br>
+<span class="label">Example</span>
+<br>Below is an example of how to get the UV coordinate under the position of the mouse:
+   <div class='listing'><pre>
+   var screenPoint:Point = new Point(myPolygon.container.mouseX, myPolygon.container.mouseY);
+   var scenePosition:Point3D = myPolygon.getUVFrom2D(screenPoint);
+         </pre></div>
+         
+         <p></p>
+</div>
+<a name="precompute()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">precompute</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function precompute():void</code><p>
+   Computes several properties of the polygon.
+   </p><p>The computed properties are listed below:</p>
+   <ul>
+    <li><code>visible</code></li>
+    <li><code>minZ</code></li>
+    <li><code>depth</code></li>
+   </ul>
+   </div>
+<a name="removeEventListener()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">removeEventListener</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function removeEventListener(p_sEvent:String, oL:*):void</code><p>
+   Removes an event listener to the polygon.
+      </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">p_sEvent</span>:String</code> &mdash;  The name of the event to remove.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">oL</span>:*</code> &mdash;   The listener object.
+   </td>
+</tr>
+</table>
+</div>
+<a name="swapCulling()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">swapCulling</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function swapCulling():void</code><p>
+   Changes which side is the "normal" culling side.
+      </p><p>This method also swaps the front and back skins.</p>
+   </div>
+<a name="toString()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">toString</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function toString():String</code><p>
+   Returns a string representation of this object.
+      </p><p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>String</code> &mdash; The fully qualified name of this object.
+   </td>
+</tr>
+</table>
+</div>
+<a name="updateNormal()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">updateNormal</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function updateNormal():void</code>
+</div>
+<a name="constantDetail"></a>
+<div class="detailSectionHeader">Constant detail</div>
+<a name="id"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">id</td><td class="detailHeaderType">constant</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public const id:uint</code><p>
+   The unique identifier for this polygon.
+   </p></div>
+<br>
+<br>
+<hr>
+<br>
+<p></p>
+<center class="copyright">API documentation for Sandy 3D Engine, Ver. 3.1.2</center>
+</div>
+</body>
+</html>
+<!--API documentation for Sandy 3D Engine, Ver. 3.1.2-->

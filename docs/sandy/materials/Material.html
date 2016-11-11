@@ -1,0 +1,611 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="../../style.css" type="text/css" media="screen">
+<link rel="stylesheet" href="../../print.css" type="text/css" media="print">
+<meta content="Material,sandy.materials.Material,attributes,autoDispose,lightingEnable,m_nRefCounting,m_oPolygonMap,repeat,useVertexNormal,filters,flags,id,modified,type,begin,dispose,finish,init,renderPolygon,renderSprite,unlink,unlinkAll" name="keywords">
+<title>sandy.materials.Material</title>
+</head>
+<body>
+<script type="text/javascript" language="javascript" src="../../asdoc.js"></script><script type="text/javascript" language="javascript" src="../../cookies.js"></script><script type="text/javascript" language="javascript">
+<!--
+				asdocTitle = 'Material - Sandy 3.1.2 API Documentation';
+				var baseRef = '../../';
+				window.onload = configPage;
+			--></script>
+<table style="display:none" id="titleTable" cellspacing="0" cellpadding="0" class="titleTable">
+<tr>
+<td align="left" class="titleTableTitle">Sandy 3D Engine, 3.1.2</td><td align="right" class="titleTableTopNav"><a onclick="loadClassListFrame('../../all-classes.html')" href="../../package-summary.html">All&nbsp;Packages</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('../../all-classes.html')" href="../../class-summary.html">All&nbsp;Classes</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('../../index-list.html')" href="../../all-index-A.html">Index</a>&nbsp;|&nbsp;<a href="../../index.html?sandy/materials/Material.html&amp;sandy/materials/class-list.html" id="framesLink1">Frames</a><a onclick="parent.location=document.location" href="" style="display:none" id="noFramesLink1">No&nbsp;Frames</a></td><td rowspan="3" align="right" class="titleTableLogo"><img alt="Adobe Logo" title="Adobe Logo" class="logoImage" src="../../images/logo.jpg"></td>
+</tr>
+<tr class="titleTableRow2">
+<td align="left" id="subTitle" class="titleTableSubTitle">Class&nbsp;Material</td><td align="right" id="subNav" class="titleTableSubNav"><a href="#propertySummary">Properties</a>&nbsp;| <a href="#methodSummary">Methods</a></td>
+</tr>
+<tr class="titleTableRow3">
+<td colspan="2">&nbsp;</td>
+</tr>
+</table>
+<script type="text/javascript" language="javascript">
+<!--
+if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Class Material"); titleBar_setSubNav(false,true,false,false,false,false,true,false,false,false,false,false,false,false);}
+--></script>
+<div class="MainContent">
+<table cellspacing="0" cellpadding="0" class="classHeaderTable">
+<tr>
+<td class="classHeaderTableLabel">Package</td><td><a onclick="javascript:loadClassListFrame('class-list.html')" href="package-detail.html">sandy.materials</a></td>
+</tr>
+<tr>
+<td class="classHeaderTableLabel">Class</td><td class="classSignature">public class Material</td>
+</tr>
+<tr>
+<td class="classHeaderTableLabel">Subclasses</td><td><a href="../materials/BitmapMaterial.html">BitmapMaterial</a>, <a href="../materials/ColorMaterial.html">ColorMaterial</a>, <a href="../materials/WireFrameMaterial.html">WireFrameMaterial</a></td>
+</tr>
+</table>
+<p></p>
+  The Material class is the base class for all materials.
+  
+  <p>Since the Material object is essentially a blank material, this class can be used
+  to apply attributes without any material to a 3D object.</p>
+    <p></p>
+<p>
+<span class="classHeaderTableLabel">See also</span>
+</p>
+<div class="seeAlso">
+<a href="Appearance.html" target="">Appearance</a>
+</div>
+<br>
+<hr>
+</div>
+<a name="propertySummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Properties</div>
+<table id="summaryTableProperty" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Property</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#attributes">attributes</a> : <a href="attributes/MaterialAttributes.html">MaterialAttributes</a>
+<div class="summaryTableDescription">
+   The attributes of this material.</div>
+</td><td class="summaryTableOwnerCol">Material</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#autoDispose">autoDispose</a> : Boolean = true<div class="summaryTableDescription">
+   Specifies if the material can automatically be disposed when unused
+   Default value is to true
+   </div>
+</td><td class="summaryTableOwnerCol">Material</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#filters">filters</a> : Array<div class="summaryTableDescription">
+   The array of filters for this material.</div>
+</td><td class="summaryTableOwnerCol">Material</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#flags">flags</a> : uint<div class="summaryTableDescription">[read-only]
+   Contains specific material flags.</div>
+</td><td class="summaryTableOwnerCol">Material</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#id">id</a> : Number<div class="summaryTableDescription">[read-only]
+   The unique id of this material.</div>
+</td><td class="summaryTableOwnerCol">Material</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#lightingEnable">lightingEnable</a> : Boolean = false<div class="summaryTableDescription">
+   Specifies if the material can receive light and have light attributes applied to it.</div>
+</td><td class="summaryTableOwnerCol">Material</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#modified">modified</a> : Boolean<div class="summaryTableDescription">[read-only]
+   The modified state of this material.</div>
+</td><td class="summaryTableOwnerCol">Material</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#repeat">repeat</a> : Boolean = true<div class="summaryTableDescription">
+   The repeat property.</div>
+</td><td class="summaryTableOwnerCol">Material</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#type">type</a> : <a href="../materials/MaterialType.html">MaterialType</a>
+<div class="summaryTableDescription">[read-only]
+   The material type of this material.</div>
+</td><td class="summaryTableOwnerCol">Material</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#useVertexNormal">useVertexNormal</a> : Boolean = false<div class="summaryTableDescription">
+   Specify if the material use the vertex normal information.</div>
+</td><td class="summaryTableOwnerCol">Material</td>
+</tr>
+</table>
+</div>
+<a name="protectedPropertySummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Protected Properties</div>
+<table id="summaryTableProtectedProperty" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Property</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#m_nRefCounting">m_nRefCounting</a> : int<div class="summaryTableDescription"></div>
+</td><td class="summaryTableOwnerCol">Material</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#m_oPolygonMap">m_oPolygonMap</a> : Dictionary<div class="summaryTableDescription"></div>
+</td><td class="summaryTableOwnerCol">Material</td>
+</tr>
+</table>
+</div>
+<a name="methodSummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Methods</div>
+<table id="summaryTableMethod" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Method</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#Material()">Material</a>(p_oAttr:<a href="attributes/MaterialAttributes.html">MaterialAttributes</a> = null)</div>
+<div class="summaryTableDescription">
+   Creates a material.</div>
+</td><td class="summaryTableOwnerCol">Material</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#begin()">begin</a>(p_oScene:<a href="../core/Scene3D.html">Scene3D</a>):void</div>
+<div class="summaryTableDescription">
+   Calls begin method of the MaterialAttributes associated with this material.</div>
+</td><td class="summaryTableOwnerCol">Material</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#dispose()">dispose</a>():void</div>
+<div class="summaryTableDescription">
+   Method to call when you want to release the resources of that material (filters, attributes and lreferences to polygons)
+   Shape3D.DEFAULT_MATERIAL Material can't be disposed because might be used for later shape3D creations
+   </div>
+</td><td class="summaryTableOwnerCol">Material</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#finish()">finish</a>(p_oScene:<a href="../core/Scene3D.html">Scene3D</a>):void</div>
+<div class="summaryTableDescription">
+   Calls finish method of the MaterialAttributes associated with this material.</div>
+</td><td class="summaryTableOwnerCol">Material</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#init()">init</a>(p_oPolygon:<a href="../core/data/Polygon.html">Polygon</a>):void</div>
+<div class="summaryTableDescription">
+   Calls init method of the MaterialAttributes associated with this material.</div>
+</td><td class="summaryTableOwnerCol">Material</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#renderPolygon()">renderPolygon</a>(p_oScene:<a href="../core/Scene3D.html">Scene3D</a>, p_oPolygon:<a href="../core/data/Polygon.html">Polygon</a>, p_mcContainer:Sprite):void</div>
+<div class="summaryTableDescription">
+   Renders the polygon dress in this material.</div>
+</td><td class="summaryTableOwnerCol">Material</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#renderSprite()">renderSprite</a>(p_oSprite:<a href="../core/scenegraph/Sprite2D.html">Sprite2D</a>, p_oMaterial:<a href="Material.html">Material</a>, p_oScene:<a href="../core/Scene3D.html">Scene3D</a>):void</div>
+<div class="summaryTableDescription">
+   Renders the sprite dress in this material.</div>
+</td><td class="summaryTableOwnerCol">Material</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#unlink()">unlink</a>(p_oPolygon:<a href="../core/data/Polygon.html">Polygon</a>):void</div>
+<div class="summaryTableDescription">
+   Calls unlink method of the MaterialAttributes associated with this material.</div>
+</td><td class="summaryTableOwnerCol">Material</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#unlinkAll()">unlinkAll</a>():Array</div>
+<div class="summaryTableDescription">
+   Unlink all the non used polygons
+   </div>
+</td><td class="summaryTableOwnerCol">Material</td>
+</tr>
+</table>
+</div>
+<script type="text/javascript" language="javascript">
+<!--
+showHideInherited();
+--></script>
+<div class="MainContent">
+<a name="propertyDetail"></a>
+<div class="detailSectionHeader">Property detail</div>
+<a name="attributes"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">attributes</td><td class="detailHeaderType">property</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var attributes:<a href="attributes/MaterialAttributes.html">MaterialAttributes</a></code><p>
+   The attributes of this material.
+   </p></div>
+<a name="autoDispose"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">autoDispose</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var autoDispose:Boolean = true</code><p>
+   Specifies if the material can automatically be disposed when unused
+   Default value is to true
+   </p></div>
+<a name="filters"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">filters</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>filters:Array</code>&nbsp;&nbsp;[read-write]<p>
+   The array of filters for this material.
+   
+   </p><p>You use this property to add an array of filters you want to apply to this material<br>
+   To remove the filters, just assign an empty array.</p>
+   <span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get filters():Array</code>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set filters(value:Array):void</code>
+<br>
+</div>
+<a name="flags"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">flags</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>flags:uint</code>&nbsp;&nbsp;[read-only]<p>
+   Contains specific material flags.
+   </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get flags():uint</code>
+<br>
+</div>
+<a name="id"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">id</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>id:Number</code>&nbsp;&nbsp;[read-only]<p>
+   The unique id of this material.
+   </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get id():Number</code>
+<br>
+</div>
+<a name="lightingEnable"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">lightingEnable</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var lightingEnable:Boolean = false</code><p>
+   Specifies if the material can receive light and have light attributes applied to it.
+   Can be useful to rapidly disable light on the object when unneeded.
+   </p></div>
+<a name="m_nRefCounting"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">m_nRefCounting</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>protected var m_nRefCounting:int</code>
+</div>
+<a name="modified"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">modified</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>modified:Boolean</code>&nbsp;&nbsp;[read-only]<p>
+   The modified state of this material.
+      </p><p>true if this material or its line attributes were modified since last rendered, false otherwise.</p> 
+   <span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get modified():Boolean</code>
+<br>
+</div>
+<a name="m_oPolygonMap"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">m_oPolygonMap</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>protected var m_oPolygonMap:Dictionary</code>
+</div>
+<a name="repeat"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">repeat</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var repeat:Boolean = true</code><p>
+   The repeat property.
+   
+   This affects the way textured materials are mapped for U or V out of 0-1 range.
+   </p></div>
+<a name="type"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">type</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>type:<a href="../materials/MaterialType.html">MaterialType</a></code>&nbsp;&nbsp;[read-only]<p>
+   The material type of this material.
+   
+   </p><p>The default value is <code>MaterialType.NONE</code>.</p>
+<span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get type():<a href="../materials/MaterialType.html">MaterialType</a></code>
+<br>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="MaterialType.html" target="">MaterialType</a>
+</div>
+</div>
+<a name="useVertexNormal"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">useVertexNormal</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var useVertexNormal:Boolean = false</code><p>
+   Specify if the material use the vertex normal information.
+   
+   </p><p>The default value is <code>false</code>.</p>
+</div>
+<a name="constructorDetail"></a>
+<div class="detailSectionHeader">Constructor detail</div>
+<a name="Material()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">Material</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">constructor</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function Material(p_oAttr:<a href="attributes/MaterialAttributes.html">MaterialAttributes</a> = null)</code><p>
+   Creates a material.
+      </p><p>This constructor is never called directly - but by sub class constructors.</p>
+   <span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">p_oAttr</span>:<a href="attributes/MaterialAttributes.html">MaterialAttributes</a></code> (default = <code>null</code>)<code></code> &mdash; The attributes for this material.
+   </td>
+</tr>
+</table>
+</div>
+<a name="methodDetail"></a>
+<div class="detailSectionHeader">Method detail</div>
+<a name="begin()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">begin</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function begin(p_oScene:<a href="../core/Scene3D.html">Scene3D</a>):void</code><p>
+   Calls begin method of the MaterialAttributes associated with this material.
+      </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">p_oScene</span>:<a href="../core/Scene3D.html">Scene3D</a></code> &mdash; The scene.
+      </td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="attributes/MaterialAttributes.html#begin()" target="">sandy.materials.attributes.MaterialAttributes.begin()</a>
+</div>
+</div>
+<a name="dispose()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">dispose</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function dispose():void</code><p>
+   Method to call when you want to release the resources of that material (filters, attributes and lreferences to polygons)
+   Shape3D.DEFAULT_MATERIAL Material can't be disposed because might be used for later shape3D creations
+   </p></div>
+<a name="finish()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">finish</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function finish(p_oScene:<a href="../core/Scene3D.html">Scene3D</a>):void</code><p>
+   Calls finish method of the MaterialAttributes associated with this material.
+      </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">p_oScene</span>:<a href="../core/Scene3D.html">Scene3D</a></code> &mdash; The scene.
+      </td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="attributes/MaterialAttributes.html#finish()" target="">sandy.materials.attributes.MaterialAttributes.finish()</a>
+</div>
+</div>
+<a name="init()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">init</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function init(p_oPolygon:<a href="../core/data/Polygon.html">Polygon</a>):void</code><p>
+   Calls init method of the MaterialAttributes associated with this material.
+      </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">p_oPolygon</span>:<a href="../core/data/Polygon.html">Polygon</a></code></td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="attributes/MaterialAttributes.html#init()" target="">sandy.materials.attributes.MaterialAttributes.init()</a>
+</div>
+</div>
+<a name="renderPolygon()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">renderPolygon</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function renderPolygon(p_oScene:<a href="../core/Scene3D.html">Scene3D</a>, p_oPolygon:<a href="../core/data/Polygon.html">Polygon</a>, p_mcContainer:Sprite):void</code><p>
+   Renders the polygon dress in this material.
+      </p><p>Implemented by sub classes.</p>
+      <span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">p_oScene</span>:<a href="../core/Scene3D.html">Scene3D</a></code></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">p_oPolygon</span>:<a href="../core/data/Polygon.html">Polygon</a></code></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">p_mcContainer</span>:Sprite</code></td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="../core/Scene3D.html" target="">sandy.core.Scene3D</a>
+<br>
+<a href="../core/data/Polygon.html" target="">sandy.core.data.Polygon</a>
+</div>
+</div>
+<a name="renderSprite()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">renderSprite</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function renderSprite(p_oSprite:<a href="../core/scenegraph/Sprite2D.html">Sprite2D</a>, p_oMaterial:<a href="Material.html">Material</a>, p_oScene:<a href="../core/Scene3D.html">Scene3D</a>):void</code><p>
+   Renders the sprite dress in this material.
+      </p><p>Basically only needed to apply attributes to sprites</p>
+      <span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">p_oSprite</span>:<a href="../core/scenegraph/Sprite2D.html">Sprite2D</a></code></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">p_oMaterial</span>:<a href="Material.html">Material</a></code></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">p_oScene</span>:<a href="../core/Scene3D.html">Scene3D</a></code></td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="../core/scenegraph/Sprite2D.html" target="">sandy.core.scenegraph.Sprite2D</a>
+<br>
+<a href="../core/Scene3D.html" target="">sandy.core.Scene3D</a>
+</div>
+</div>
+<a name="unlink()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">unlink</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function unlink(p_oPolygon:<a href="../core/data/Polygon.html">Polygon</a>):void</code><p>
+   Calls unlink method of the MaterialAttributes associated with this material.
+      </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">p_oPolygon</span>:<a href="../core/data/Polygon.html">Polygon</a></code></td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="attributes/MaterialAttributes.html#unlink()" target="">sandy.materials.attributes.MaterialAttributes.unlink()</a>
+</div>
+</div>
+<a name="unlinkAll()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">unlinkAll</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function unlinkAll():Array</code><p>
+   Unlink all the non used polygons
+   </p><p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>Array</code></td>
+</tr>
+</table>
+</div>
+<br>
+<br>
+<hr>
+<br>
+<p></p>
+<center class="copyright">API documentation for Sandy 3D Engine, Ver. 3.1.2</center>
+</div>
+</body>
+</html>
+<!--API documentation for Sandy 3D Engine, Ver. 3.1.2-->

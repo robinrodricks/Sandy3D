@@ -1,0 +1,1433 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="../../../style.css" type="text/css" media="screen">
+<link rel="stylesheet" href="../../../print.css" type="text/css" media="print">
+<meta content="ATransformable,sandy.core.scenegraph.ATransformable,_oScale,_p,_vOut,_vSide,_vUp,disable,invModelMatrix,m_oPreviousOffsetRotation,m_tmpMt,matrix,out,scaleX,scaleY,scaleZ,side,tilt,up,x,y,z,pan,roll,rotateX,rotateY,rotateZ,getLookAt,getPosition,initFrame,lookAt,lookAtPoint,moveForward,moveHorizontally,moveLateraly,moveSideways,moveUpwards,moveVertically,resetCoords,rotateAxis,setPosition,toString,translate,update,updateTransform" name="keywords">
+<title>sandy.core.scenegraph.ATransformable</title>
+</head>
+<body>
+<script type="text/javascript" language="javascript" src="../../../asdoc.js"></script><script type="text/javascript" language="javascript" src="../../../cookies.js"></script><script type="text/javascript" language="javascript">
+<!--
+				asdocTitle = 'ATransformable - Sandy 3.1.2 API Documentation';
+				var baseRef = '../../../';
+				window.onload = configPage;
+			--></script>
+<table style="display:none" id="titleTable" cellspacing="0" cellpadding="0" class="titleTable">
+<tr>
+<td align="left" class="titleTableTitle">Sandy 3D Engine, 3.1.2</td><td align="right" class="titleTableTopNav"><a onclick="loadClassListFrame('../../../all-classes.html')" href="../../../package-summary.html">All&nbsp;Packages</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('../../../all-classes.html')" href="../../../class-summary.html">All&nbsp;Classes</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('../../../index-list.html')" href="../../../all-index-A.html">Index</a>&nbsp;|&nbsp;<a href="../../../index.html?sandy/core/scenegraph/ATransformable.html&amp;sandy/core/scenegraph/class-list.html" id="framesLink1">Frames</a><a onclick="parent.location=document.location" href="" style="display:none" id="noFramesLink1">No&nbsp;Frames</a></td><td rowspan="3" align="right" class="titleTableLogo"><img alt="Adobe Logo" title="Adobe Logo" class="logoImage" src="../../../images/logo.jpg"></td>
+</tr>
+<tr class="titleTableRow2">
+<td align="left" id="subTitle" class="titleTableSubTitle">Class&nbsp;ATransformable</td><td align="right" id="subNav" class="titleTableSubNav"><a href="#propertySummary">Properties</a>&nbsp;| <a href="#methodSummary">Methods</a>&nbsp;| <a href="#constantSummary">Constants</a></td>
+</tr>
+<tr class="titleTableRow3">
+<td colspan="2">&nbsp;</td>
+</tr>
+</table>
+<script type="text/javascript" language="javascript">
+<!--
+if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Class ATransformable"); titleBar_setSubNav(true,true,false,false,false,false,true,false,false,false,false,false,false,false);}
+--></script>
+<div class="MainContent">
+<table cellspacing="0" cellpadding="0" class="classHeaderTable">
+<tr>
+<td class="classHeaderTableLabel">Package</td><td><a onclick="javascript:loadClassListFrame('class-list.html')" href="package-detail.html">sandy.core.scenegraph</a></td>
+</tr>
+<tr>
+<td class="classHeaderTableLabel">Class</td><td class="classSignature">public class ATransformable</td>
+</tr>
+<tr>
+<td class="classHeaderTableLabel">Inheritance</td><td class="inheritanceList">ATransformable <img class="inheritArrow" alt="Inheritance" title="Inheritance" src="../../../images/inherit-arrow.gif"> <a href="Node.html">Node</a></td>
+</tr>
+<tr>
+<td class="classHeaderTableLabel">Subclasses</td><td><a href="../scenegraph/Camera3D.html">Camera3D</a>, <a href="../scenegraph/Shape3D.html">Shape3D</a>, <a href="../scenegraph/Sound3D.html">Sound3D</a>, <a href="../scenegraph/Sprite2D.html">Sprite2D</a>, <a href="../scenegraph/StarField.html">StarField</a>, <a href="../scenegraph/TransformGroup.html">TransformGroup</a></td>
+</tr>
+</table>
+<p></p>
+  ABSTRACT CLASS - super class for all movable objects in the object tree.
+    <p> This class should not be directly instatiated, but sub classed.<br/>
+  The Atransformable class is resposible for scaling, rotation and translation of objects in 3D space.</p>
+    <p>Rotations and translations are performed in one of three coordinate systems or reference frames:<br/>
+  - The local frame which is the objects own coordinate system<br />
+  - The parent frame which is the coordinate system of the object's parent, normally a TransformGroup<br/>
+  - The world frame which is the coordinate system of the world, the global system.</p>
+  <p>Positions, directions, translations and rotations of an ATransformable object are performed in its parent frame.<br />
+  Tilt, pan and roll, are rotations around the local axes, and moveForward, moveUpwards and moveSideways are translations along local axes.</p>
+      <p></p>
+<br>
+<hr>
+</div>
+<a name="propertySummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Properties</div>
+<div class="showHideLinks">
+<div class="hideInheritedProperty" id="hideInheritedProperty">
+<a onclick="javascript:setInheritedVisible(false,'Property');" href="#propertySummary" class="showHideLink"><img src="../../../images/expanded.gif" class="showHideLinkImage"> Hide Inherited Public Properties</a>
+</div>
+<div class="showInheritedProperty" id="showInheritedProperty">
+<a onclick="javascript:setInheritedVisible(true,'Property');" href="#propertySummary" class="showHideLink"><img src="../../../images/collapsed.gif" class="showHideLinkImage"> Show Inherited Public Properties</a>
+</div>
+</div>
+<table id="summaryTableProperty" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Property</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="Node.html#appearance">appearance</a> : <a href="../../materials/Appearance.html">Appearance</a>
+<div class="summaryTableDescription">
+   Set that appearance to all the children of that node
+   </div>
+</td><td class="summaryTableOwnerCol"><a href="Node.html">Node</a></td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="Node.html#boundingBox">boundingBox</a> : <a href="../../bounds/BBox.html">BBox</a>
+<div class="summaryTableDescription">
+   The bounding box of this node
+   IMPORTANT: Do not modify it unless you perfectly know what you are doing
+   </div>
+</td><td class="summaryTableOwnerCol"><a href="Node.html">Node</a></td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="Node.html#boundingSphere">boundingSphere</a> : <a href="../../bounds/BSphere.html">BSphere</a>
+<div class="summaryTableDescription">
+   The bounding sphere of this node
+   IMPORTANT: Do not modify it unless you perfectly know what you are doing
+   </div>
+</td><td class="summaryTableOwnerCol"><a href="Node.html">Node</a></td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="Node.html#broadcaster">broadcaster</a> : <a href="../../events/BubbleEventBroadcaster.html">BubbleEventBroadcaster</a>
+<div class="summaryTableDescription">
+   The broadcaster
+      <p>The broadcaster is used to send events to listeners.<br />
+   This property is a BubbleEventBroadcaster.</p>
+      </div>
+</td><td class="summaryTableOwnerCol"><a href="Node.html">Node</a></td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="Node.html#changed">changed</a> : Boolean<div class="summaryTableDescription">
+   This property set the cache status of the current node.</div>
+</td><td class="summaryTableOwnerCol"><a href="Node.html">Node</a></td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="Node.html#children">children</a> : Array<div class="summaryTableDescription">
+   The children of this node are stored inside this array.</div>
+</td><td class="summaryTableOwnerCol"><a href="Node.html">Node</a></td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="Node.html#culled">culled</a> : <a href="../../view/CullingState.html">CullingState</a>
+<div class="summaryTableDescription">
+   This property represent the culling state of the current node.</div>
+</td><td class="summaryTableOwnerCol"><a href="Node.html">Node</a></td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#disable">disable</a> : Boolean = false<div class="summaryTableDescription">
+   Disable the local transformations applied to this Node if set to false.</div>
+</td><td class="summaryTableOwnerCol">ATransformable</td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="Node.html#enableBackFaceCulling">enableBackFaceCulling</a> : Boolean<div class="summaryTableDescription">
+   Change the backface culling state to all the shapes objects in the children list
+   </div>
+</td><td class="summaryTableOwnerCol"><a href="Node.html">Node</a></td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="Node.html#enableClipping">enableClipping</a> : Boolean<div class="summaryTableDescription">
+   Apply clipping to all the children of that node
+   </div>
+</td><td class="summaryTableOwnerCol"><a href="Node.html">Node</a></td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="Node.html#enableEvents">enableEvents</a> : Boolean<div class="summaryTableDescription">
+   Enable event handling to all the children objects that can broadcast bubbling events
+   </div>
+</td><td class="summaryTableOwnerCol"><a href="Node.html">Node</a></td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="Node.html#enableInteractivity">enableInteractivity</a> : Boolean<div class="summaryTableDescription">
+   Change the interactivity of all the children
+   </div>
+</td><td class="summaryTableOwnerCol"><a href="Node.html">Node</a></td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#invModelMatrix">invModelMatrix</a> : <a href="../data/Matrix4.html">Matrix4</a>
+<div class="summaryTableDescription">
+   <p>Inverse of the model matrix
+   The matrix is inverted in comparison of the real model matrix.<br/>
+   For example, this allows replacement of the objects in the correct camera frame before projection</p>
+   </div>
+</td><td class="summaryTableOwnerCol">ATransformable</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#matrix">matrix</a> : <a href="../data/Matrix4.html">Matrix4</a>
+<div class="summaryTableDescription"></div>
+</td><td class="summaryTableOwnerCol">ATransformable</td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="Node.html#modelMatrix">modelMatrix</a> : <a href="../data/Matrix4.html">Matrix4</a>
+<div class="summaryTableDescription">
+    Cached matrix corresponding to the transformation to the 0,0,0 frame system
+   </div>
+</td><td class="summaryTableOwnerCol"><a href="Node.html">Node</a></td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="Node.html#name">name</a> : String<div class="summaryTableDescription">
+   Name of this node.</div>
+</td><td class="summaryTableOwnerCol"><a href="Node.html">Node</a></td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#out">out</a> : <a href="../data/Point3D.html">Point3D</a>
+<div class="summaryTableDescription">[read-only]
+   Forward direction ( local z ) in parent coordinates.</div>
+</td><td class="summaryTableOwnerCol">ATransformable</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#pan">pan</a> : Number<div class="summaryTableDescription">
+   Pans this object around the local y axis.</div>
+</td><td class="summaryTableOwnerCol">ATransformable</td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="Node.html#parent">parent</a> : <a href="../scenegraph/Node.html">Node</a>
+<div class="summaryTableDescription">
+   The parent node of this node.</div>
+</td><td class="summaryTableOwnerCol"><a href="Node.html">Node</a></td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#roll">roll</a> : Number<div class="summaryTableDescription">
+   Rolls this object around the local z axis.</div>
+</td><td class="summaryTableOwnerCol">ATransformable</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#rotateX">rotateX</a> : Number<div class="summaryTableDescription">
+   Rotates this object around an axis parallel to the parent's x axis.</div>
+</td><td class="summaryTableOwnerCol">ATransformable</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#rotateY">rotateY</a> : Number<div class="summaryTableDescription">
+   Rotates this object around an axis parallel to the parent's y axis.</div>
+</td><td class="summaryTableOwnerCol">ATransformable</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#rotateZ">rotateZ</a> : Number<div class="summaryTableDescription">
+   Rotates this object around an axis paralell to the parent's z axis.</div>
+</td><td class="summaryTableOwnerCol">ATransformable</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#scaleX">scaleX</a> : Number<div class="summaryTableDescription">
+   x scale of this object.</div>
+</td><td class="summaryTableOwnerCol">ATransformable</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#scaleY">scaleY</a> : Number<div class="summaryTableDescription">
+   y scale of this object.</div>
+</td><td class="summaryTableOwnerCol">ATransformable</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#scaleZ">scaleZ</a> : Number<div class="summaryTableDescription">
+   z scale of this object.</div>
+</td><td class="summaryTableOwnerCol">ATransformable</td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="Node.html#scene">scene</a> : <a href="../../core/Scene3D.html">Scene3D</a>
+<div class="summaryTableDescription"></div>
+</td><td class="summaryTableOwnerCol"><a href="Node.html">Node</a></td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#side">side</a> : <a href="../data/Point3D.html">Point3D</a>
+<div class="summaryTableDescription">[read-only]
+   Side direction ( local x ) in parent coordinates.</div>
+</td><td class="summaryTableOwnerCol">ATransformable</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#tilt">tilt</a> : Number<div class="summaryTableDescription">
+   Getter for the tilt value
+   </div>
+</td><td class="summaryTableOwnerCol">ATransformable</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#up">up</a> : <a href="../data/Point3D.html">Point3D</a>
+<div class="summaryTableDescription">[read-only]
+   Up direction ( local y ) in parent coordinates.</div>
+</td><td class="summaryTableOwnerCol">ATransformable</td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="Node.html#useSingleContainer">useSingleContainer</a> : Boolean<div class="summaryTableDescription">
+   Make all the Shape3D and descendants children react to this value.</div>
+</td><td class="summaryTableOwnerCol"><a href="Node.html">Node</a></td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="Node.html#viewMatrix">viewMatrix</a> : <a href="../data/Matrix4.html">Matrix4</a>
+<div class="summaryTableDescription">
+   Cached matrix corresponding to the transformation to the camera frame system
+   </div>
+</td><td class="summaryTableOwnerCol"><a href="Node.html">Node</a></td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="Node.html#visible">visible</a> : Boolean<div class="summaryTableDescription"></div>
+</td><td class="summaryTableOwnerCol"><a href="Node.html">Node</a></td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#x">x</a> : Number<div class="summaryTableDescription">
+   x position of this object in its parent frame.</div>
+</td><td class="summaryTableOwnerCol">ATransformable</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#y">y</a> : Number<div class="summaryTableDescription">
+   y position of this object in its parent frame.</div>
+</td><td class="summaryTableOwnerCol">ATransformable</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#z">z</a> : Number<div class="summaryTableDescription">
+   z position of the node in its parent frame.</div>
+</td><td class="summaryTableOwnerCol">ATransformable</td>
+</tr>
+</table>
+</div>
+<a name="protectedPropertySummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Protected Properties</div>
+<div class="showHideLinks">
+<div class="hideInheritedProtectedProperty" id="hideInheritedProtectedProperty">
+<a onclick="javascript:setInheritedVisible(false,'ProtectedProperty');" href="#protectedPropertySummary" class="showHideLink"><img src="../../../images/expanded.gif" class="showHideLinkImage"> Hide Inherited Protected Properties</a>
+</div>
+<div class="showInheritedProtectedProperty" id="showInheritedProtectedProperty">
+<a onclick="javascript:setInheritedVisible(true,'ProtectedProperty');" href="#protectedPropertySummary" class="showHideLink"><img src="../../../images/collapsed.gif" class="showHideLinkImage"> Show Inherited Protected Properties</a>
+</div>
+</div>
+<table id="summaryTableProtectedProperty" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Property</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="hideInheritedProtectedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="Node.html#m_bChanged">m_bChanged</a> : Boolean<div class="summaryTableDescription"></div>
+</td><td class="summaryTableOwnerCol"><a href="Node.html">Node</a></td>
+</tr>
+<tr class="hideInheritedProtectedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="Node.html#m_bVisible">m_bVisible</a> : Boolean = true<div class="summaryTableDescription"></div>
+</td><td class="summaryTableOwnerCol"><a href="Node.html">Node</a></td>
+</tr>
+<tr class="hideInheritedProtectedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="Node.html#m_oEB">m_oEB</a> : <a href="../../events/BubbleEventBroadcaster.html">BubbleEventBroadcaster</a>
+<div class="summaryTableDescription"></div>
+</td><td class="summaryTableOwnerCol"><a href="Node.html">Node</a></td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#m_oPreviousOffsetRotation">m_oPreviousOffsetRotation</a> : <a href="../data/Point3D.html">Point3D</a>
+<div class="summaryTableDescription"></div>
+</td><td class="summaryTableOwnerCol">ATransformable</td>
+</tr>
+<tr class="hideInheritedProtectedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="Node.html#m_oScene">m_oScene</a> : <a href="../../core/Scene3D.html">Scene3D</a> = null<div class="summaryTableDescription"></div>
+</td><td class="summaryTableOwnerCol"><a href="Node.html">Node</a></td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#m_tmpMt">m_tmpMt</a> : <a href="../data/Matrix4.html">Matrix4</a>
+<div class="summaryTableDescription"></div>
+</td><td class="summaryTableOwnerCol">ATransformable</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#_oScale">_oScale</a> : <a href="../data/Point3D.html">Point3D</a>
+<div class="summaryTableDescription"></div>
+</td><td class="summaryTableOwnerCol">ATransformable</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#_p">_p</a> : <a href="../data/Point3D.html">Point3D</a>
+<div class="summaryTableDescription"></div>
+</td><td class="summaryTableOwnerCol">ATransformable</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#_vOut">_vOut</a> : <a href="../data/Point3D.html">Point3D</a>
+<div class="summaryTableDescription"></div>
+</td><td class="summaryTableOwnerCol">ATransformable</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#_vSide">_vSide</a> : <a href="../data/Point3D.html">Point3D</a>
+<div class="summaryTableDescription"></div>
+</td><td class="summaryTableOwnerCol">ATransformable</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#_vUp">_vUp</a> : <a href="../data/Point3D.html">Point3D</a>
+<div class="summaryTableDescription"></div>
+</td><td class="summaryTableOwnerCol">ATransformable</td>
+</tr>
+</table>
+</div>
+<a name="methodSummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Methods</div>
+<div class="showHideLinks">
+<div class="hideInheritedMethod" id="hideInheritedMethod">
+<a onclick="javascript:setInheritedVisible(false,'Method');" href="#methodSummary" class="showHideLink"><img src="../../../images/expanded.gif" class="showHideLinkImage"> Hide Inherited Public Methods</a>
+</div>
+<div class="showInheritedMethod" id="showInheritedMethod">
+<a onclick="javascript:setInheritedVisible(true,'Method');" href="#methodSummary" class="showHideLink"><img src="../../../images/collapsed.gif" class="showHideLinkImage"> Show Inherited Public Methods</a>
+</div>
+</div>
+<table id="summaryTableMethod" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Method</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#ATransformable()">ATransformable</a>(p_sName:String = "")</div>
+<div class="summaryTableDescription">
+   Creates a transformable node in the object tree of the world.</div>
+</td><td class="summaryTableOwnerCol">ATransformable</td>
+</tr>
+<tr class="hideInheritedMethod">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="Node.html#addChild()">addChild</a>(p_oChild:<a href="../scenegraph/Node.html">Node</a>):void</div>
+<div class="summaryTableDescription">
+   Adds a new child to this node.</div>
+</td><td class="summaryTableOwnerCol"><a href="Node.html">Node</a></td>
+</tr>
+<tr class="hideInheritedMethod">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="Node.html#addEventListener()">addEventListener</a>(p_sEvt:String, p_oL:*):Boolean</div>
+<div class="summaryTableDescription">
+   Adds a listener for the specified event.</div>
+</td><td class="summaryTableOwnerCol"><a href="Node.html">Node</a></td>
+</tr>
+<tr class="hideInheritedMethod">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="Node.html#cull()">cull</a>(p_oFrustum:<a href="../../view/Frustum.html">Frustum</a>, p_oViewMatrix:<a href="../data/Matrix4.html">Matrix4</a>, p_bChanged:Boolean):void</div>
+<div class="summaryTableDescription">
+   Tests this node against the frustum volume to get its visibility.</div>
+</td><td class="summaryTableOwnerCol"><a href="Node.html">Node</a></td>
+</tr>
+<tr class="hideInheritedMethod">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="Node.html#destroy()">destroy</a>():void</div>
+<div class="summaryTableDescription">
+   Delete this node and all its child nodes.</div>
+</td><td class="summaryTableOwnerCol"><a href="Node.html">Node</a></td>
+</tr>
+<tr class="hideInheritedMethod">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="Node.html#getChildByName()">getChildByName</a>(p_sName:String, p_bRecurs:Boolean = false):<a href="../scenegraph/Node.html">Node</a>
+</div>
+<div class="summaryTableDescription">
+   Returns the child node with the specified name.</div>
+</td><td class="summaryTableOwnerCol"><a href="Node.html">Node</a></td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#getLookAt()">getLookAt</a>():<a href="../data/Point3D.html">Point3D</a>
+</div>
+<div class="summaryTableDescription">
+   getLookAt - obtain last value set via lookAt() method; may not be valid if other camera movement has occurred since then.</div>
+</td><td class="summaryTableOwnerCol">ATransformable</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#getPosition()">getPosition</a>(p_sMode:String = "local"):<a href="../data/Point3D.html">Point3D</a>
+</div>
+<div class="summaryTableDescription">
+   Returns the position of this group or object.</div>
+</td><td class="summaryTableOwnerCol">ATransformable</td>
+</tr>
+<tr class="hideInheritedMethod">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="Node.html#hasParent()">hasParent</a>():Boolean</div>
+<div class="summaryTableDescription">
+   Tests if this node has a parent.</div>
+</td><td class="summaryTableOwnerCol"><a href="Node.html">Node</a></td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#initFrame()">initFrame</a>():void</div>
+<div class="summaryTableDescription">
+   Initiates the local coordinate system for this object.</div>
+</td><td class="summaryTableOwnerCol">ATransformable</td>
+</tr>
+<tr class="hideInheritedMethod">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="Node.html#isParent()">isParent</a>(p_oNode:<a href="../scenegraph/Node.html">Node</a>):Boolean</div>
+<div class="summaryTableDescription">
+   Tests if the node passed in the argument is parent of this node.</div>
+</td><td class="summaryTableOwnerCol"><a href="Node.html">Node</a></td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#lookAt()">lookAt</a>(p_nX:Number, p_nY:Number, p_nZ:Number):void</div>
+<div class="summaryTableDescription">
+   Makes this object "look at" the specified position in the parent frame.</div>
+</td><td class="summaryTableOwnerCol">ATransformable</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#lookAtPoint()">lookAtPoint</a>(p_oTarget:<a href="../data/Point3D.html">Point3D</a>):void</div>
+<div class="summaryTableDescription">
+   The position in the parent frame this object should "look at".</div>
+</td><td class="summaryTableOwnerCol">ATransformable</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#moveForward()">moveForward</a>(p_nD:Number):void</div>
+<div class="summaryTableDescription">
+   Translates this object along its forward Point3D ( local z ) in the parent frame.</div>
+</td><td class="summaryTableOwnerCol">ATransformable</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#moveHorizontally()">moveHorizontally</a>(p_nD:Number):void</div>
+<div class="summaryTableDescription">
+   Translates this object parallel to its parent zx plane and in its forward direction.</div>
+</td><td class="summaryTableOwnerCol">ATransformable</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#moveLateraly()">moveLateraly</a>(p_nD:Number):void</div>
+<div class="summaryTableDescription">
+   Translates this object laterally in its parent frame.</div>
+</td><td class="summaryTableOwnerCol">ATransformable</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#moveSideways()">moveSideways</a>(p_nD:Number):void</div>
+<div class="summaryTableDescription">
+   Translates this object along its side Point3D ( local x ) in the parent frame.</div>
+</td><td class="summaryTableOwnerCol">ATransformable</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#moveUpwards()">moveUpwards</a>(p_nD:Number):void</div>
+<div class="summaryTableDescription">
+   Translates this object along its up Point3D ( local y ) in the parent frame.</div>
+</td><td class="summaryTableOwnerCol">ATransformable</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#moveVertically()">moveVertically</a>(p_nD:Number):void</div>
+<div class="summaryTableDescription">
+   Translates this object vertically in ots parent frame.</div>
+</td><td class="summaryTableOwnerCol">ATransformable</td>
+</tr>
+<tr class="hideInheritedMethod">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="Node.html#perform()">perform</a>(p_iOperation:<a href="../scenegraph/INodeOperation.html">INodeOperation</a>):void</div>
+<div class="summaryTableDescription">
+   Performs an operation on this node and all of its children.</div>
+</td><td class="summaryTableOwnerCol"><a href="Node.html">Node</a></td>
+</tr>
+<tr class="hideInheritedMethod">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="Node.html#remove()">remove</a>():void</div>
+<div class="summaryTableDescription">
+   Removes this node from the node tree, saving its child nodes.</div>
+</td><td class="summaryTableOwnerCol"><a href="Node.html">Node</a></td>
+</tr>
+<tr class="hideInheritedMethod">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="Node.html#removeChildByName()">removeChildByName</a>(p_sName:String):Boolean</div>
+<div class="summaryTableDescription">
+   Removes the child node with the specified name.</div>
+</td><td class="summaryTableOwnerCol"><a href="Node.html">Node</a></td>
+</tr>
+<tr class="hideInheritedMethod">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="Node.html#removeEventListener()">removeEventListener</a>(p_sEvt:String, p_oL:*):void</div>
+<div class="summaryTableDescription">
+   Removes a listener for the specified event.</div>
+</td><td class="summaryTableOwnerCol"><a href="Node.html">Node</a></td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#resetCoords()">resetCoords</a>():void</div>
+<div class="summaryTableDescription">
+   Resets the coordinate system for this object.</div>
+</td><td class="summaryTableOwnerCol">ATransformable</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#rotateAxis()">rotateAxis</a>(p_nX:Number, p_nY:Number, p_nZ:Number, p_nAngle:Number):void</div>
+<div class="summaryTableDescription">
+   Rotate this object around the specified axis in the parent frame by the specified angle.</div>
+</td><td class="summaryTableOwnerCol">ATransformable</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#setPosition()">setPosition</a>(p_nX:Number, p_nY:Number, p_nZ:Number):void</div>
+<div class="summaryTableDescription">
+   Sets the position of this object in coordinates of its parent frame.</div>
+</td><td class="summaryTableOwnerCol">ATransformable</td>
+</tr>
+<tr class="hideInheritedMethod">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="Node.html#swapParent()">swapParent</a>(p_oNewParent:<a href="../scenegraph/Node.html">Node</a>):void</div>
+<div class="summaryTableDescription">
+   Moves this node to another parent node.</div>
+</td><td class="summaryTableOwnerCol"><a href="Node.html">Node</a></td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#toString()">toString</a>():String</div>
+<div class="summaryTableDescription">
+   Returns a string representation of this object
+      </div>
+</td><td class="summaryTableOwnerCol">ATransformable</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#translate()">translate</a>(p_nX:Number, p_nY:Number, p_nZ:Number):void</div>
+<div class="summaryTableDescription">
+   Translate this object from it's current position with the specified offsets.</div>
+</td><td class="summaryTableOwnerCol">ATransformable</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#update()">update</a>(p_oModelMatrix:<a href="../data/Matrix4.html">Matrix4</a>, p_bChanged:Boolean):void</div>
+<div class="summaryTableDescription">
+   Updates this node or object.</div>
+</td><td class="summaryTableOwnerCol">ATransformable</td>
+</tr>
+<tr class="hideInheritedMethod">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="Node.html#updateBoundingVolumes()">updateBoundingVolumes</a>():void</div>
+<div class="summaryTableDescription">
+   Updates the bounding volumes of this object.</div>
+</td><td class="summaryTableOwnerCol"><a href="Node.html">Node</a></td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#updateTransform()">updateTransform</a>():void</div>
+<div class="summaryTableDescription">
+   Updates the transform matrix of the current object/node before it is rendered.</div>
+</td><td class="summaryTableOwnerCol">ATransformable</td>
+</tr>
+</table>
+</div>
+<a name="constantSummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Constants</div>
+<div class="showHideLinks">
+<div class="hideInheritedConstant" id="hideInheritedConstant">
+<a onclick="javascript:setInheritedVisible(false,'Constant');" href="#constantSummary" class="showHideLink"><img src="../../../images/expanded.gif" class="showHideLinkImage"> Hide Inherited Public Constants</a>
+</div>
+<div class="showInheritedConstant" id="showInheritedConstant">
+<a onclick="javascript:setInheritedVisible(true,'Constant');" href="#constantSummary" class="showHideLink"><img src="../../../images/collapsed.gif" class="showHideLinkImage"> Show Inherited Public Constants</a>
+</div>
+</div>
+<table id="summaryTableConstant" class="summaryTable hideInheritedConstant" cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Constant</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="hideInheritedConstant">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="Node.html#id">id</a> : uint<div class="summaryTableDescription">
+   The unique id of this node in the node graph.</div>
+</td><td class="summaryTableOwnerCol"><a href="Node.html">Node</a></td>
+</tr>
+</table>
+</div>
+<script type="text/javascript" language="javascript">
+<!--
+showHideInherited();
+--></script>
+<div class="MainContent">
+<a name="propertyDetail"></a>
+<div class="detailSectionHeader">Property detail</div>
+<a name="disable"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">disable</td><td class="detailHeaderType">property</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var disable:Boolean = false</code><p>
+   Disable the local transformations applied to this Node if set to false.
+   They will be applied back once et back to true.
+   </p></div>
+<a name="invModelMatrix"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">invModelMatrix</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var invModelMatrix:<a href="../data/Matrix4.html">Matrix4</a></code><p>
+   </p><p>Inverse of the model matrix
+   The matrix is inverted in comparison of the real model matrix.<br/>
+   For example, this allows replacement of the objects in the correct camera frame before projection</p>
+   </div>
+<a name="matrix"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">matrix</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>matrix:<a href="../data/Matrix4.html">Matrix4</a></code>&nbsp;&nbsp;[read-write]<span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get matrix():<a href="../data/Matrix4.html">Matrix4</a></code>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set matrix(value:<a href="../data/Matrix4.html">Matrix4</a>):void</code>
+<br>
+</div>
+<a name="m_oPreviousOffsetRotation"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">m_oPreviousOffsetRotation</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>protected var m_oPreviousOffsetRotation:<a href="../data/Point3D.html">Point3D</a></code>
+</div>
+<a name="m_tmpMt"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">m_tmpMt</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>protected var m_tmpMt:<a href="../data/Matrix4.html">Matrix4</a></code>
+</div>
+<a name="_oScale"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">_oScale</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>protected var _oScale:<a href="../data/Point3D.html">Point3D</a></code>
+</div>
+<a name="out"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">out</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>out:<a href="../data/Point3D.html">Point3D</a></code>&nbsp;&nbsp;[read-only]<p>
+   Forward direction ( local z ) in parent coordinates.
+   </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get out():<a href="../data/Point3D.html">Point3D</a></code>
+<br>
+</div>
+<a name="_p"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">_p</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>protected var _p:<a href="../data/Point3D.html">Point3D</a></code>
+</div>
+<a name="pan"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">pan</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>pan:Number</code>&nbsp;&nbsp;[read-write]<p>
+   Pans this object around the local y axis.
+      </p><p>The pan angle interval is 0 to 360 degrees<br/>
+   Directions within the parent frame are: North = 0, East = 90, South = 180 nad West = 270 degrees.</p>
+      <span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get pan():Number</code>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set pan(value:Number):void</code>
+<br>
+</div>
+<a name="roll"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">roll</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>roll:Number</code>&nbsp;&nbsp;[read-write]<p>
+   Rolls this object around the local z axis.
+      </p><p>The roll angle interval is -180 to +180 degrees<br/>
+   At 0 degrees the local x axis is aligned with the horizon of its parent<br/>
+   Full roll right = 180 and full roll left = -180 degrees ( upside down ).</p>
+      <span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get roll():Number</code>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set roll(value:Number):void</code>
+<br>
+</div>
+<a name="rotateX"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">rotateX</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>rotateX:Number</code>&nbsp;&nbsp;[read-write]<p>
+   Rotates this object around an axis parallel to the parent's x axis.
+      </p><p>The object rotates a specified angle ( degrees ) around an axis through the
+   objects reference point, paralell to the x axis of the parent frame.</p>
+   <span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get rotateX():Number</code>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set rotateX(value:Number):void</code>
+<br>
+</div>
+<a name="rotateY"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">rotateY</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>rotateY:Number</code>&nbsp;&nbsp;[read-write]<p>
+   Rotates this object around an axis parallel to the parent's y axis.
+      </p><p>The object rotates a specified angle ( degrees ) around an axis through the
+   objects reference point, parallel to the y axis of the parent frame.</p>
+   <span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get rotateY():Number</code>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set rotateY(value:Number):void</code>
+<br>
+</div>
+<a name="rotateZ"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">rotateZ</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>rotateZ:Number</code>&nbsp;&nbsp;[read-write]<p>
+   Rotates this object around an axis paralell to the parent's z axis.
+      </p><p>The object rotates a specified angle ( degrees ) around an axis through the
+   objects reference point, paralell to the z axis of the parent frame.</p>
+   <span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get rotateZ():Number</code>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set rotateZ(value:Number):void</code>
+<br>
+</div>
+<a name="scaleX"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">scaleX</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>scaleX:Number</code>&nbsp;&nbsp;[read-write]<p>
+   x scale of this object.
+      </p><p>A value of 1 scales to the original x scale, a value of 2 doubles the x scale.<br/>
+   NOTE : This value does not affect the camera object.</p>
+   <span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get scaleX():Number</code>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set scaleX(value:Number):void</code>
+<br>
+</div>
+<a name="scaleY"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">scaleY</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>scaleY:Number</code>&nbsp;&nbsp;[read-write]<p>
+   y scale of this object.
+      </p><p>A value of 1 scales to the original y scale, a value of 2 doubles the y scale.<br/>
+   NOTE : This value does not affect the camera object.</p>
+   <span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get scaleY():Number</code>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set scaleY(value:Number):void</code>
+<br>
+</div>
+<a name="scaleZ"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">scaleZ</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>scaleZ:Number</code>&nbsp;&nbsp;[read-write]<p>
+   z scale of this object.
+      </p><p>A value of 1 scales to the original z scale, a value of 2 doubles the z scale.<br/>
+   NOTE : This value does not affect the camera object.</p>
+   <span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get scaleZ():Number</code>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set scaleZ(value:Number):void</code>
+<br>
+</div>
+<a name="side"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">side</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>side:<a href="../data/Point3D.html">Point3D</a></code>&nbsp;&nbsp;[read-only]<p>
+   Side direction ( local x ) in parent coordinates.
+   </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get side():<a href="../data/Point3D.html">Point3D</a></code>
+<br>
+</div>
+<a name="tilt"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">tilt</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>tilt:Number</code>&nbsp;&nbsp;[read-write]<p>
+   Getter for the tilt value
+   </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get tilt():Number</code>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set tilt(value:Number):void</code>
+<br>
+</div>
+<a name="up"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">up</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>up:<a href="../data/Point3D.html">Point3D</a></code>&nbsp;&nbsp;[read-only]<p>
+   Up direction ( local y ) in parent coordinates.
+   </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get up():<a href="../data/Point3D.html">Point3D</a></code>
+<br>
+</div>
+<a name="_vOut"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">_vOut</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>protected var _vOut:<a href="../data/Point3D.html">Point3D</a></code>
+</div>
+<a name="_vSide"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">_vSide</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>protected var _vSide:<a href="../data/Point3D.html">Point3D</a></code>
+</div>
+<a name="_vUp"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">_vUp</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>protected var _vUp:<a href="../data/Point3D.html">Point3D</a></code>
+</div>
+<a name="x"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">x</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>x:Number</code>&nbsp;&nbsp;[read-write]<p>
+   x position of this object in its parent frame.
+   </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get x():Number</code>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set x(value:Number):void</code>
+<br>
+</div>
+<a name="y"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">y</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>y:Number</code>&nbsp;&nbsp;[read-write]<p>
+   y position of this object in its parent frame.
+   </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get y():Number</code>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set y(value:Number):void</code>
+<br>
+</div>
+<a name="z"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">z</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>z:Number</code>&nbsp;&nbsp;[read-write]<p>
+   z position of the node in its parent frame.
+   </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get z():Number</code>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set z(value:Number):void</code>
+<br>
+</div>
+<a name="constructorDetail"></a>
+<div class="detailSectionHeader">Constructor detail</div>
+<a name="ATransformable()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">ATransformable</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">constructor</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function ATransformable(p_sName:String = "")</code><p>
+   Creates a transformable node in the object tree of the world.
+      </p><p>This constructor should normally not be called directly, but from a sub class.</p>
+      <span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">p_sName</span>:String</code> (default = "<code></code>")<code></code> &mdash; A string identifier for this object
+   </td>
+</tr>
+</table>
+</div>
+<a name="methodDetail"></a>
+<div class="detailSectionHeader">Method detail</div>
+<a name="getLookAt()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">getLookAt</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function getLookAt():<a href="../data/Point3D.html">Point3D</a></code><p>
+   getLookAt - obtain last value set via lookAt() method; may not be valid if other camera movement has occurred since then.
+   </p><p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="../data/Point3D.html">Point3D</a></code></td>
+</tr>
+</table>
+</div>
+<a name="getPosition()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">getPosition</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function getPosition(p_sMode:String = "local"):<a href="../data/Point3D.html">Point3D</a></code><p>
+   Returns the position of this group or object.
+      </p><p>Choose which coordinate system the returned position refers to, by passing a mode string:<br/>
+   The position is returned as a Point3D in one of the following:<br/>
+   If "local", the position is coordinates of the parent frame.
+   If "absolute" the position is in world coordinates
+   If "camera" the position is relative to the camera's coordinate system.
+   Default value is "local"
+      <span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">p_sMode</span>:String</code> (default = "<code>local</code>")<code></code></td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="../data/Point3D.html">Point3D</a></code> &mdash; 
+                         The position of the group or object
+   
+                        
+                     </td>
+</tr>
+</table>
+</div>
+<a name="initFrame()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">initFrame</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function initFrame():void</code><p>
+   Initiates the local coordinate system for this object.
+      </p><p>The local coordinate system for this object is set parallell the parent system.</p>
+   </div>
+<a name="lookAt()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">lookAt</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function lookAt(p_nX:Number, p_nY:Number, p_nZ:Number):void</code><p>
+   Makes this object "look at" the specified position in the parent frame.
+      </p><p>Useful for following a moving object or a static object while this object is moving.<br/>
+   Normally used when this object is a camera</p>
+      <span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">p_nX</span>:Number</code> &mdash; Number The x position to look at
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">p_nY</span>:Number</code> &mdash; Number The y position to look at
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">p_nZ</span>:Number</code> &mdash; Number The z position to look at
+   </td>
+</tr>
+</table>
+</div>
+<a name="lookAtPoint()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">lookAtPoint</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function lookAtPoint(p_oTarget:<a href="../data/Point3D.html">Point3D</a>):void</code><p>
+   The position in the parent frame this object should "look at".
+      </p><p>Useful for following a moving object or a static object while this object is moving.<br/>
+   Normally used when this object is a camera</p>
+   <span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">p_oTarget</span>:<a href="../data/Point3D.html">Point3D</a></code></td>
+</tr>
+</table>
+</div>
+<a name="moveForward()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">moveForward</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function moveForward(p_nD:Number):void</code><p>
+   Translates this object along its forward Point3D ( local z ) in the parent frame.
+      </p><p>If you imagine yourself in the world, it would be a step forward<br/>
+   in the direction you look, not always horizontally!</p>
+      <span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">p_nD</span>:Number</code> &mdash; How far to move
+   </td>
+</tr>
+</table>
+</div>
+<a name="moveHorizontally()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">moveHorizontally</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function moveHorizontally(p_nD:Number):void</code><p>
+   Translates this object parallel to its parent zx plane and in its forward direction.
+      </p><p>If you imagine yourself in the world, it would be a step in the forward direction,
+   but without changing your altitude ( constant global z ).</p>
+      <span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">p_nD</span>:Number</code> &mdash; How far to move
+   </td>
+</tr>
+</table>
+</div>
+<a name="moveLateraly()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">moveLateraly</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function moveLateraly(p_nD:Number):void</code><p>
+   Translates this object laterally in its parent frame.
+      </p><p>This is a translation in the parent's x direction.</p>
+      <span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">p_nD</span>:Number</code> &mdash; How far to move
+   </td>
+</tr>
+</table>
+</div>
+<a name="moveSideways()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">moveSideways</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function moveSideways(p_nD:Number):void</code><p>
+   Translates this object along its side Point3D ( local x ) in the parent frame.
+      </p><p>If you imagine yourself in the world, it would be a step to your right or to your left</p>
+      <span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">p_nD</span>:Number</code> &mdash; How far to move
+   </td>
+</tr>
+</table>
+</div>
+<a name="moveUpwards()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">moveUpwards</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function moveUpwards(p_nD:Number):void</code><p>
+   Translates this object along its up Point3D ( local y ) in the parent frame.
+      </p><p>If you imagine yourself in the world, it would be a step up or down<br/>
+   in the direction of your body, not always vertically!</p>
+      <span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">p_nD</span>:Number</code> &mdash; How far to move
+   </td>
+</tr>
+</table>
+</div>
+<a name="moveVertically()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">moveVertically</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function moveVertically(p_nD:Number):void</code><p>
+   Translates this object vertically in ots parent frame.
+      </p><p>If you imagine yourself in the world, it would be a strictly vertical step,
+   ( in the global y direction )</p>
+      <span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">p_nD</span>:Number</code> &mdash; How far to move
+   </td>
+</tr>
+</table>
+</div>
+<a name="resetCoords()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">resetCoords</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function resetCoords():void</code><p>
+   Resets the coordinate system for this object. Useful for returning to known state.
+   </p></div>
+<a name="rotateAxis()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">rotateAxis</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function rotateAxis(p_nX:Number, p_nY:Number, p_nZ:Number, p_nAngle:Number):void</code><p>
+   Rotate this object around the specified axis in the parent frame by the specified angle.
+      </p><p>NOTE : The axis will be normalized automatically.</p>
+      <span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">p_nX</span>:Number</code> &mdash;  The x coordinate of the axis
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">p_nY</span>:Number</code> &mdash;  The y coordinate of the axis
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">p_nZ</span>:Number</code> &mdash;  The z coordinate of the axis
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">p_nAngle</span>:Number</code> &mdash; The angle of rotation in degrees.
+   </td>
+</tr>
+</table>
+</div>
+<a name="setPosition()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">setPosition</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function setPosition(p_nX:Number, p_nY:Number, p_nZ:Number):void</code><p>
+   Sets the position of this object in coordinates of its parent frame.
+      </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">p_nX</span>:Number</code> &mdash;  The x coordinate
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">p_nY</span>:Number</code> &mdash;  The y coordiante
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">p_nZ</span>:Number</code> &mdash;  The z coordiante
+   </td>
+</tr>
+</table>
+</div>
+<a name="toString()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">toString</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public override function toString():String</code><p>
+   Returns a string representation of this object
+      </p><p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>String</code> &mdash; The fully qualified name of this class
+   </td>
+</tr>
+</table>
+</div>
+<a name="translate()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">translate</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function translate(p_nX:Number, p_nY:Number, p_nZ:Number):void</code><p>
+   Translate this object from it's current position with the specified offsets.
+      </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">p_nX</span>:Number</code> &mdash;  Offset that will be added to the x coordinate of the object
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">p_nY</span>:Number</code> &mdash;  Offset that will be added to the y coordinate of the object
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">p_nZ</span>:Number</code> &mdash;  Offset that will be added to the z coordinate of the object
+   </td>
+</tr>
+</table>
+</div>
+<a name="update()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">update</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public override function update(p_oModelMatrix:<a href="../data/Matrix4.html">Matrix4</a>, p_bChanged:Boolean):void</code><p>
+   Updates this node or object.
+      </p><p>For node's with transformation, this method updates the transformation taking into account the matrix cache system.<br/>
+   <b>FIXME<b>: Transformable nodes shall upate their transform if necessary before calling this method.</p>
+      <span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">p_oModelMatrix</span>:<a href="../data/Matrix4.html">Matrix4</a></code> &mdash; The current scene
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">p_bChanged</span>:Boolean</code> &mdash; The matrix which represents the parent model matrix. Basically it stores the rotation/translation/scale of all the nodes above the current one.
+   </td>
+</tr>
+</table>
+</div>
+<a name="updateTransform()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">updateTransform</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function updateTransform():void</code><p>
+   Updates the transform matrix of the current object/node before it is rendered.
+   </p></div>
+<br>
+<br>
+<hr>
+<br>
+<p></p>
+<center class="copyright">API documentation for Sandy 3D Engine, Ver. 3.1.2</center>
+</div>
+</body>
+</html>
+<!--API documentation for Sandy 3D Engine, Ver. 3.1.2-->

@@ -1,0 +1,348 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="../../style.css" type="text/css" media="screen">
+<link rel="stylesheet" href="../../print.css" type="text/css" media="print">
+<meta content="Parser,sandy.parser.Parser,ASE,COLLADA,MAX_3DS,MD2,create" name="keywords">
+<title>sandy.parser.Parser</title>
+</head>
+<body>
+<script type="text/javascript" language="javascript" src="../../asdoc.js"></script><script type="text/javascript" language="javascript" src="../../cookies.js"></script><script type="text/javascript" language="javascript">
+<!--
+				asdocTitle = 'Parser - Sandy 3.1.2 API Documentation';
+				var baseRef = '../../';
+				window.onload = configPage;
+			--></script>
+<table style="display:none" id="titleTable" cellspacing="0" cellpadding="0" class="titleTable">
+<tr>
+<td align="left" class="titleTableTitle">Sandy 3D Engine, 3.1.2</td><td align="right" class="titleTableTopNav"><a onclick="loadClassListFrame('../../all-classes.html')" href="../../package-summary.html">All&nbsp;Packages</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('../../all-classes.html')" href="../../class-summary.html">All&nbsp;Classes</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('../../index-list.html')" href="../../all-index-A.html">Index</a>&nbsp;|&nbsp;<a href="../../index.html?sandy/parser/Parser.html&amp;sandy/parser/class-list.html" id="framesLink1">Frames</a><a onclick="parent.location=document.location" href="" style="display:none" id="noFramesLink1">No&nbsp;Frames</a></td><td rowspan="3" align="right" class="titleTableLogo"><img alt="Adobe Logo" title="Adobe Logo" class="logoImage" src="../../images/logo.jpg"></td>
+</tr>
+<tr class="titleTableRow2">
+<td align="left" id="subTitle" class="titleTableSubTitle">Class&nbsp;Parser</td><td align="right" id="subNav" class="titleTableSubNav"><a href="#methodSummary">Methods</a>&nbsp;| <a href="#eventSummary">Events</a>&nbsp;| <a href="#constantSummary">Constants</a></td>
+</tr>
+<tr class="titleTableRow3">
+<td colspan="2">&nbsp;</td>
+</tr>
+</table>
+<script type="text/javascript" language="javascript">
+<!--
+if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Class Parser"); titleBar_setSubNav(true,false,false,false,true,false,true,false,false,false,false,false,false,false);}
+--></script>
+<div class="MainContent">
+<table cellspacing="0" cellpadding="0" class="classHeaderTable">
+<tr>
+<td class="classHeaderTableLabel">Package</td><td><a onclick="javascript:loadClassListFrame('class-list.html')" href="package-detail.html">sandy.parser</a></td>
+</tr>
+<tr>
+<td class="classHeaderTableLabel">Class</td><td class="classSignature">public final  class Parser</td>
+</tr>
+</table>
+<p></p>
+  The Parser factory class creates instances of parser classes.
+  The specific parser can be specified in the create method's second parameter.
+  
+  <p></p>
+<br>
+<span class="label">Example</span>
+<br>To parse a 3DS file at runtime:
+    <div class='listing'><pre>
+      var parser:IParser = Parser.create( "/path/to/my/3dsfile.3ds", Parser.MAX_3DS );
+  </pre></div>
+  
+  <p></p>
+<br>
+<hr>
+</div>
+<a name="methodSummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Methods</div>
+<table id="summaryTableMethod" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Method</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#create()">create</a>(p_sFile:*, p_sParserType:String = null, p_nScale:Number = 1, p_sTextureExtension:String = null):<a href="../parser/IParser.html">IParser</a>
+</div>
+<div class="summaryTableDescription">[static]
+   The create method chooses which parser to use.</div>
+</td><td class="summaryTableOwnerCol">Parser</td>
+</tr>
+</table>
+</div>
+<a name="eventSummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Events</div>
+<table id="summaryTableEvent" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Event</th><th>Summary</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#event:onFailEVENT">onFailEVENT</a>
+</div>
+</td><td class="summaryTableDescription summaryTableCol">
+ Dispatched when parsing fails.</td><td class="summaryTableOwnerCol">Parser</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#event:onInitEVENT">onInitEVENT</a>
+</div>
+</td><td class="summaryTableDescription summaryTableCol">
+ Dispatched when parsing is complete.</td><td class="summaryTableOwnerCol">Parser</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#event:onLoadEVENT">onLoadEVENT</a>
+</div>
+</td><td class="summaryTableDescription summaryTableCol">
+ Dispatched when the file starts loading.</td><td class="summaryTableOwnerCol">Parser</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#event:onParsingEVENT">onParsingEVENT</a>
+</div>
+</td><td class="summaryTableDescription summaryTableCol">
+ Dispatched when a parser reads the next line of data in a file.</td><td class="summaryTableOwnerCol">Parser</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#event:onProgressEVENT">onProgressEVENT</a>
+</div>
+</td><td class="summaryTableDescription summaryTableCol">
+ Dispatched when data is received as the parsing progresses.</td><td class="summaryTableOwnerCol">Parser</td>
+</tr>
+</table>
+</div>
+<a name="constantSummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Constants</div>
+<table id="summaryTableConstant" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Constant</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#ASE">ASE</a> : String = "ASE"<div class="summaryTableDescription">[static]
+   Specifies that the ASE (ASCII Scene Export) parser should be used.</div>
+</td><td class="summaryTableOwnerCol">Parser</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#COLLADA">COLLADA</a> : String = "DAE"<div class="summaryTableDescription">[static]
+   Specifies that the COLLADA (COLLAborative Design Activity ) parser should be used.</div>
+</td><td class="summaryTableOwnerCol">Parser</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#MAX_3DS">MAX_3DS</a> : String = "3DS"<div class="summaryTableDescription">[static]
+   Specifies that the 3DS (3D Studio) parser should be used.</div>
+</td><td class="summaryTableOwnerCol">Parser</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#MD2">MD2</a> : String = "MD2"<div class="summaryTableDescription">[static]
+   Specifies that the MD2 (Quake II model) parser should be used.</div>
+</td><td class="summaryTableOwnerCol">Parser</td>
+</tr>
+</table>
+</div>
+<script type="text/javascript" language="javascript">
+<!--
+showHideInherited();
+--></script>
+<div class="MainContent">
+<a name="methodDetail"></a>
+<div class="detailSectionHeader">Method detail</div>
+<a name="create()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">create</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static function create(p_sFile:*, p_sParserType:String = null, p_nScale:Number = 1, p_sTextureExtension:String = null):<a href="../parser/IParser.html">IParser</a></code><p>
+   The create method chooses which parser to use. This can be done automatically
+   by looking at the file extension or by passing the parser type String as the
+   second parameter.
+   
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">p_sFile</span>:*</code> &mdash;   Can be either a string pointing to the location of the
+          file or an instance of an embedded file
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">p_sParserType</span>:String</code> (default = <code>null</code>)<code></code> &mdash;  The parser type string
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">p_nScale</span>:Number</code> (default = <code>1</code>)<code></code> &mdash;   The scale factor
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">p_sTextureExtension</span>:String</code> (default = <code>null</code>)<code></code> &mdash; Overrides texture extension.
+   </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="../parser/IParser.html">IParser</a></code> &mdash; 
+                            The parser to be used
+   
+                        
+                     </td>
+</tr>
+</table>
+<br>
+<span class="label">Example</span>
+<br>To parse a 3DS file at runtime:
+      <div class='listing'><pre>
+       var parser:IParser = Parser.create( "/path/to/my/3dsfile.3ds", Parser.3DS );
+   </pre></div>
+   
+   <p></p>
+</div>
+<div class="detailSectionHeader">Event detail</div>
+<a name="event:onFailEVENT"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">onFailEVENT</td><td class="detailHeaderType">event&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<span class="label">Event object type: </span><a href="../parser/ParserEvent.html"><code>sandy.parser.ParserEvent</code></a>
+<br>
+<span class="label">ParserEvent.type property = </span><a href="../parser/ParserEvent.html#FAIL"><code>sandy.parser.ParserEvent.FAIL</code></a>
+<br><p>
+ Dispatched when parsing fails.
+  </p><p>
+   Defines the value of the <code>type</code> property of a <code>onFailEVENT</code> event object.
+            </p></div>
+<a name="event:onInitEVENT"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">onInitEVENT</td><td class="detailHeaderType">event&nbsp;</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<span class="label">Event object type: </span><a href="../parser/ParserEvent.html"><code>sandy.parser.ParserEvent</code></a>
+<br>
+<span class="label">ParserEvent.type property = </span><a href="../parser/ParserEvent.html#INIT"><code>sandy.parser.ParserEvent.INIT</code></a>
+<br><p>
+ Dispatched when parsing is complete.
+  </p><p>
+   Defines the value of the <code>type</code> property of a <code>onInitEVENT</code> event object.
+            </p></div>
+<a name="event:onLoadEVENT"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">onLoadEVENT</td><td class="detailHeaderType">event&nbsp;</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<span class="label">Event object type: </span><a href="../parser/ParserEvent.html"><code>sandy.parser.ParserEvent</code></a>
+<br>
+<span class="label">ParserEvent.type property = </span><a href="../parser/ParserEvent.html#LOAD"><code>sandy.parser.ParserEvent.LOAD</code></a>
+<br><p>
+ Dispatched when the file starts loading.
+  </p><p>
+   Defines the value of the <code>type</code> property of a <code>onLoadEVENT</code> event object.
+            </p></div>
+<a name="event:onParsingEVENT"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">onParsingEVENT</td><td class="detailHeaderType">event&nbsp;</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<span class="label">Event object type: </span><a href="../parser/ParserEvent.html"><code>sandy.parser.ParserEvent</code></a>
+<br>
+<span class="label">ParserEvent.type property = </span><a href="../parser/ParserEvent.html#PARSING"><code>sandy.parser.ParserEvent.PARSING</code></a>
+<br><p>
+ Dispatched when a parser reads the next line of data in a file.
+  </p><p>
+   Defines the value of the <code>type</code> property of a <code>onParsingEVENT</code> event object.
+            </p></div>
+<a name="event:onProgressEVENT"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">onProgressEVENT</td><td class="detailHeaderType">event&nbsp;</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<span class="label">Event object type: </span><a href="../parser/ParserEvent.html"><code>sandy.parser.ParserEvent</code></a>
+<br>
+<span class="label">ParserEvent.type property = </span><a href="../parser/ParserEvent.html#PROGRESS"><code>sandy.parser.ParserEvent.PROGRESS</code></a>
+<br><p>
+ Dispatched when data is received as the parsing progresses.
+  </p><p>
+   Defines the value of the <code>type</code> property of a <code>onProgressEVENT</code> event object.
+            </p></div>
+<a name="constantDetail"></a>
+<div class="detailSectionHeader">Constant detail</div>
+<a name="ASE"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">ASE</td><td class="detailHeaderType">constant</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const ASE:String = "ASE"</code><p>
+   Specifies that the ASE (ASCII Scene Export) parser should be used.
+   </p></div>
+<a name="COLLADA"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">COLLADA</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const COLLADA:String = "DAE"</code><p>
+   Specifies that the COLLADA (COLLAborative Design Activity ) parser should be used.
+   </p></div>
+<a name="MAX_3DS"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">MAX_3DS</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const MAX_3DS:String = "3DS"</code><p>
+   Specifies that the 3DS (3D Studio) parser should be used.
+   </p></div>
+<a name="MD2"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">MD2</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const MD2:String = "MD2"</code><p>
+   Specifies that the MD2 (Quake II model) parser should be used.
+   </p></div>
+<br>
+<br>
+<hr>
+<br>
+<p></p>
+<center class="copyright">API documentation for Sandy 3D Engine, Ver. 3.1.2</center>
+</div>
+</body>
+</html>
+<!--API documentation for Sandy 3D Engine, Ver. 3.1.2-->

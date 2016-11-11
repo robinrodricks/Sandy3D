@@ -1,0 +1,353 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="../../style.css" type="text/css" media="screen">
+<link rel="stylesheet" href="../../print.css" type="text/css" media="print">
+<meta content="BitmapUtil,sandy.util.BitmapUtil,burnShapeTexture,concatBitmapMatrix,getScaledBitmap,movieToBitmap,ripShapeTexture" name="keywords">
+<title>sandy.util.BitmapUtil</title>
+</head>
+<body>
+<script type="text/javascript" language="javascript" src="../../asdoc.js"></script><script type="text/javascript" language="javascript" src="../../cookies.js"></script><script type="text/javascript" language="javascript">
+<!--
+				asdocTitle = 'BitmapUtil - Sandy 3.1.2 API Documentation';
+				var baseRef = '../../';
+				window.onload = configPage;
+			--></script>
+<table style="display:none" id="titleTable" cellspacing="0" cellpadding="0" class="titleTable">
+<tr>
+<td align="left" class="titleTableTitle">Sandy 3D Engine, 3.1.2</td><td align="right" class="titleTableTopNav"><a onclick="loadClassListFrame('../../all-classes.html')" href="../../package-summary.html">All&nbsp;Packages</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('../../all-classes.html')" href="../../class-summary.html">All&nbsp;Classes</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('../../index-list.html')" href="../../all-index-A.html">Index</a>&nbsp;|&nbsp;<a href="../../index.html?sandy/util/BitmapUtil.html&amp;sandy/util/class-list.html" id="framesLink1">Frames</a><a onclick="parent.location=document.location" href="" style="display:none" id="noFramesLink1">No&nbsp;Frames</a></td><td rowspan="3" align="right" class="titleTableLogo"><img alt="Adobe Logo" title="Adobe Logo" class="logoImage" src="../../images/logo.jpg"></td>
+</tr>
+<tr class="titleTableRow2">
+<td align="left" id="subTitle" class="titleTableSubTitle">Class&nbsp;BitmapUtil</td><td align="right" id="subNav" class="titleTableSubNav"><a href="#methodSummary">Methods</a></td>
+</tr>
+<tr class="titleTableRow3">
+<td colspan="2">&nbsp;</td>
+</tr>
+</table>
+<script type="text/javascript" language="javascript">
+<!--
+if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Class BitmapUtil"); titleBar_setSubNav(false,false,false,false,false,false,true,false,false,false,false,false,false,false);}
+--></script>
+<div class="MainContent">
+<table cellspacing="0" cellpadding="0" class="classHeaderTable">
+<tr>
+<td class="classHeaderTableLabel">Package</td><td><a onclick="javascript:loadClassListFrame('class-list.html')" href="package-detail.html">sandy.util</a></td>
+</tr>
+<tr>
+<td class="classHeaderTableLabel">Class</td><td class="classSignature">public class BitmapUtil</td>
+</tr>
+</table>
+<p></p>
+  Utility class for Bitmap calculations.
+    <p></p>
+<br>
+<hr>
+</div>
+<a name="methodSummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Methods</div>
+<table id="summaryTableMethod" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Method</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#burnShapeTexture()">burnShapeTexture</a>(obj:<a href="../core/scenegraph/Shape3D.html">Shape3D</a>, scene:<a href="../core/Scene3D.html">Scene3D</a>, srcTexture:BitmapData, dstTexture:BitmapData, ambient:Number = 0.3, diffuse:Number = 1.0, specular:Number = 0.0, gloss:Number = 5.0):void</div>
+<div class="summaryTableDescription">[static]
+   Computes shape texture map pre-lit with Phong directional light source.</div>
+</td><td class="summaryTableOwnerCol">BitmapUtil</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#concatBitmapMatrix()">concatBitmapMatrix</a>(p_oM1:Object, p_oM2:Object):Object</div>
+<div class="summaryTableDescription">[static]
+   Returns a concatenation of two bitmap matrices.</div>
+</td><td class="summaryTableOwnerCol">BitmapUtil</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#getScaledBitmap()">getScaledBitmap</a>(p_oBitmap:BitmapData, p_nScalex:Number, p_nScaley:Number = 0):BitmapData</div>
+<div class="summaryTableDescription">[static]
+   Returns a scaled version of a bitmap.</div>
+</td><td class="summaryTableOwnerCol">BitmapUtil</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#movieToBitmap()">movieToBitmap</a>(p_oSprite:DisplayObject, p_bTransparent:Boolean = true, p_nColor:Number = 0x00FF00CC):BitmapData</div>
+<div class="summaryTableDescription">[static]
+   Converts a sprite to a bitmap respecting the sprite position.</div>
+</td><td class="summaryTableOwnerCol">BitmapUtil</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#ripShapeTexture()">ripShapeTexture</a>(obj:<a href="../core/scenegraph/Shape3D.html">Shape3D</a>, size:Number = 256):Sprite</div>
+<div class="summaryTableDescription">[static]
+   Creates shape texture map template.</div>
+</td><td class="summaryTableOwnerCol">BitmapUtil</td>
+</tr>
+</table>
+</div>
+<script type="text/javascript" language="javascript">
+<!--
+showHideInherited();
+--></script>
+<div class="MainContent">
+<a name="methodDetail"></a>
+<div class="detailSectionHeader">Method detail</div>
+<a name="burnShapeTexture()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">burnShapeTexture</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static function burnShapeTexture(obj:<a href="../core/scenegraph/Shape3D.html">Shape3D</a>, scene:<a href="../core/Scene3D.html">Scene3D</a>, srcTexture:BitmapData, dstTexture:BitmapData, ambient:Number = 0.3, diffuse:Number = 1.0, specular:Number = 0.0, gloss:Number = 5.0):void</code><p>
+   Computes shape texture map pre-lit with Phong directional light source. Shape must be made of triangles.
+      </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">obj</span>:<a href="../core/scenegraph/Shape3D.html">Shape3D</a></code> &mdash; Shape for texture to be applied to.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">scene</span>:<a href="../core/Scene3D.html">Scene3D</a></code> &mdash; Scene you are going to render shape in.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">srcTexture</span>:BitmapData</code> &mdash; Source texture.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">dstTexture</span>:BitmapData</code> &mdash; Destination texture.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">ambient</span>:Number</code> (default = <code>0.3</code>)<code></code> &mdash; Ambient reflection factor.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">diffuse</span>:Number</code> (default = <code>1.0</code>)<code></code> &mdash; Diffuse reflection factor.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">specular</span>:Number</code> (default = <code>0.0</code>)<code></code> &mdash; Specular reflection factor.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">gloss</span>:Number</code> (default = <code>5.0</code>)<code></code> &mdash; Specular exponent.
+      </td>
+</tr>
+</table>
+<br>
+<span class="label">Example</span>
+<br>The following CS3 code does sphere per-pixel lighting: <div class='listing'><pre>
+import sandy.core.Scene3D;
+import sandy.core.scenegraph.
+import sandy.primitive.
+import sandy.materials.
+import sandy.util.
+
+var tex:BitmapData = new Texture (0, 0); // tex.fillRect (tex.rect, 0xFFFFFF00);
+
+// code from "simplest sandy tutorial"
+var scene:Scene3D = new Scene3D( "myScene", this, new Camera3D( 550, 400 ), new Group("root") );
+var sphere:Sphere = new Sphere("mySphere");
+var mat:BitmapMaterial = new BitmapMaterial( tex.clone () ); mat.smooth = true;
+sphere.appearance = new Appearance( mat );
+scene.root.addChild( sphere );
+scene.render();
+
+// apply lighting
+function click (e: {
+ scene.light.setDirection(stage.stageWidth / 2 - stage.mouseX, stage.mouseY - stage.stageHeight / 2, 100);
+ BitmapUtil.burnShapeTexture (sphere, scene, tex, mat.texture, 0.3, 1.0, 2, 15.0);
+}
+
+stage.addEventListener ("click", click);
+</pre></div>
+   <p></p>
+</div>
+<a name="concatBitmapMatrix()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">concatBitmapMatrix</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static function concatBitmapMatrix(p_oM1:Object, p_oM2:Object):Object</code><p>
+   Returns a concatenation of two bitmap matrices.
+      </p><p>[<strong>ToDo</strong>: Explain what matrices are handled here ]</p>
+      <span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">p_oM1</span>:Object</code> &mdash; The matrix of the first bitmap.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">p_oM2</span>:Object</code> &mdash; The matrix of the second bitmap.
+      </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>Object</code> &mdash;  The resulting matrix.
+   </td>
+</tr>
+</table>
+</div>
+<a name="getScaledBitmap()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">getScaledBitmap</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static function getScaledBitmap(p_oBitmap:BitmapData, p_nScalex:Number, p_nScaley:Number = 0):BitmapData</code><p>
+   Returns a scaled version of a bitmap.
+      </p><p>The method takes a bitmap as input, and returns a scaled copy.<br/>
+   The original is not changed.</p>
+      <span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">p_oBitmap</span>:BitmapData</code> &mdash; The bitmap to scale.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">p_nScalex</span>:Number</code> &mdash; The x-scale.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">p_nScaley</span>:Number</code> (default = <code>0</code>)<code></code> &mdash; The y-scale.
+      </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>BitmapData</code> &mdash;   The scaled bitmap data.
+   </td>
+</tr>
+</table>
+</div>
+<a name="movieToBitmap()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">movieToBitmap</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static function movieToBitmap(p_oSprite:DisplayObject, p_bTransparent:Boolean = true, p_nColor:Number = 0x00FF00CC):BitmapData</code><p>
+   Converts a sprite to a bitmap respecting the sprite position.
+      </p><p>The simple BitmapData.draw method doesn't take care of the negative part of the sprite during the draw.<br />
+   This method does.</p>
+      <span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">p_oSprite</span>:DisplayObject</code> &mdash;   The sprite or other DisplayObject to convert to BitmapData. (DisplayObject allows support for AVM1Movie)
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">p_bTransparent</span>:Boolean</code> (default = <code>true</code>)<code></code> &mdash; Whether to allow transparency.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">p_nColor</span>:Number</code> (default = <code>0x00FF00CC</code>)<code></code> &mdash;   Background color (32 bit).
+      </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>BitmapData</code> &mdash;    The converted bitmap.
+   </td>
+</tr>
+</table>
+</div>
+<a name="ripShapeTexture()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">ripShapeTexture</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static function ripShapeTexture(obj:<a href="../core/scenegraph/Shape3D.html">Shape3D</a>, size:Number = 256):Sprite</code><p>
+   Creates shape texture map template. This is useful for 3rd party models texturing :)
+      </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">obj</span>:<a href="../core/scenegraph/Shape3D.html">Shape3D</a></code> &mdash; Shape to rip texture template from.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">size</span>:Number</code> (default = <code>256</code>)<code></code> &mdash; Template size (will be size x size pixels).
+      </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>Sprite</code> &mdash;   Sprite with texture map template drawn in.
+   </td>
+</tr>
+</table>
+</div>
+<br>
+<br>
+<hr>
+<br>
+<p></p>
+<center class="copyright">API documentation for Sandy 3D Engine, Ver. 3.1.2</center>
+</div>
+</body>
+</html>
+<!--API documentation for Sandy 3D Engine, Ver. 3.1.2-->

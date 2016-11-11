@@ -1,0 +1,1031 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="../../../style.css" type="text/css" media="screen">
+<link rel="stylesheet" href="../../../print.css" type="text/css" media="print">
+<meta content="Node,sandy.core.scenegraph.Node,boundingBox,boundingSphere,children,culled,id,m_bChanged,m_bVisible,m_oEB,m_oScene,modelMatrix,name,viewMatrix,broadcaster,changed,parent,scene,visible,appearance,enableBackFaceCulling,enableClipping,enableEvents,enableInteractivity,useSingleContainer,addChild,addEventListener,cull,destroy,getChildByName,hasParent,isParent,perform,remove,removeChildByName,removeEventListener,swapParent,toString,update,updateBoundingVolumes" name="keywords">
+<title>sandy.core.scenegraph.Node</title>
+</head>
+<body>
+<script type="text/javascript" language="javascript" src="../../../asdoc.js"></script><script type="text/javascript" language="javascript" src="../../../cookies.js"></script><script type="text/javascript" language="javascript">
+<!--
+				asdocTitle = 'Node - Sandy 3.1.2 API Documentation';
+				var baseRef = '../../../';
+				window.onload = configPage;
+			--></script>
+<table style="display:none" id="titleTable" cellspacing="0" cellpadding="0" class="titleTable">
+<tr>
+<td align="left" class="titleTableTitle">Sandy 3D Engine, 3.1.2</td><td align="right" class="titleTableTopNav"><a onclick="loadClassListFrame('../../../all-classes.html')" href="../../../package-summary.html">All&nbsp;Packages</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('../../../all-classes.html')" href="../../../class-summary.html">All&nbsp;Classes</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('../../../index-list.html')" href="../../../all-index-A.html">Index</a>&nbsp;|&nbsp;<a href="../../../index.html?sandy/core/scenegraph/Node.html&amp;sandy/core/scenegraph/class-list.html" id="framesLink1">Frames</a><a onclick="parent.location=document.location" href="" style="display:none" id="noFramesLink1">No&nbsp;Frames</a></td><td rowspan="3" align="right" class="titleTableLogo"><img alt="Adobe Logo" title="Adobe Logo" class="logoImage" src="../../../images/logo.jpg"></td>
+</tr>
+<tr class="titleTableRow2">
+<td align="left" id="subTitle" class="titleTableSubTitle">Class&nbsp;Node</td><td align="right" id="subNav" class="titleTableSubNav"><a href="#propertySummary">Properties</a>&nbsp;| <a href="#methodSummary">Methods</a>&nbsp;| <a href="#constantSummary">Constants</a></td>
+</tr>
+<tr class="titleTableRow3">
+<td colspan="2">&nbsp;</td>
+</tr>
+</table>
+<script type="text/javascript" language="javascript">
+<!--
+if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Class Node"); titleBar_setSubNav(true,true,false,false,false,false,true,false,false,false,false,false,false,false);}
+--></script>
+<div class="MainContent">
+<table cellspacing="0" cellpadding="0" class="classHeaderTable">
+<tr>
+<td class="classHeaderTableLabel">Package</td><td><a onclick="javascript:loadClassListFrame('class-list.html')" href="package-detail.html">sandy.core.scenegraph</a></td>
+</tr>
+<tr>
+<td class="classHeaderTableLabel">Class</td><td class="classSignature">public class Node</td>
+</tr>
+<tr>
+<td class="classHeaderTableLabel">Subclasses</td><td><a href="../scenegraph/ATransformable.html">ATransformable</a>, <a href="../scenegraph/Group.html">Group</a>, <a href="mode7/Mode7.html">Mode7</a></td>
+</tr>
+</table>
+<p></p>
+  ABSTRACT CLASS - Base class for all nodes in the object tree.
+    <p>The base class for all Group and object nodes,
+  that handles all basic operations on a tree node.</p>
+    <p></p>
+<br>
+<hr>
+</div>
+<a name="propertySummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Properties</div>
+<table id="summaryTableProperty" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Property</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#appearance">appearance</a> : <a href="../../materials/Appearance.html">Appearance</a>
+<div class="summaryTableDescription">[write-only]
+   Set that appearance to all the children of that node
+   </div>
+</td><td class="summaryTableOwnerCol">Node</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#boundingBox">boundingBox</a> : <a href="../../bounds/BBox.html">BBox</a>
+<div class="summaryTableDescription">
+   The bounding box of this node
+   IMPORTANT: Do not modify it unless you perfectly know what you are doing
+   </div>
+</td><td class="summaryTableOwnerCol">Node</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#boundingSphere">boundingSphere</a> : <a href="../../bounds/BSphere.html">BSphere</a>
+<div class="summaryTableDescription">
+   The bounding sphere of this node
+   IMPORTANT: Do not modify it unless you perfectly know what you are doing
+   </div>
+</td><td class="summaryTableOwnerCol">Node</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#broadcaster">broadcaster</a> : <a href="../../events/BubbleEventBroadcaster.html">BubbleEventBroadcaster</a>
+<div class="summaryTableDescription">[read-only]
+   The broadcaster
+      <p>The broadcaster is used to send events to listeners.<br />
+   This property is a BubbleEventBroadcaster.</p>
+      </div>
+</td><td class="summaryTableOwnerCol">Node</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#changed">changed</a> : Boolean<div class="summaryTableDescription">
+   This property set the cache status of the current node.</div>
+</td><td class="summaryTableOwnerCol">Node</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#children">children</a> : Array<div class="summaryTableDescription">
+   The children of this node are stored inside this array.</div>
+</td><td class="summaryTableOwnerCol">Node</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#culled">culled</a> : <a href="../../view/CullingState.html">CullingState</a>
+<div class="summaryTableDescription">
+   This property represent the culling state of the current node.</div>
+</td><td class="summaryTableOwnerCol">Node</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#enableBackFaceCulling">enableBackFaceCulling</a> : Boolean<div class="summaryTableDescription">[write-only]
+   Change the backface culling state to all the shapes objects in the children list
+   </div>
+</td><td class="summaryTableOwnerCol">Node</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#enableClipping">enableClipping</a> : Boolean<div class="summaryTableDescription">[write-only]
+   Apply clipping to all the children of that node
+   </div>
+</td><td class="summaryTableOwnerCol">Node</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#enableEvents">enableEvents</a> : Boolean<div class="summaryTableDescription">[write-only]
+   Enable event handling to all the children objects that can broadcast bubbling events
+   </div>
+</td><td class="summaryTableOwnerCol">Node</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#enableInteractivity">enableInteractivity</a> : Boolean<div class="summaryTableDescription">[write-only]
+   Change the interactivity of all the children
+   </div>
+</td><td class="summaryTableOwnerCol">Node</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#modelMatrix">modelMatrix</a> : <a href="../data/Matrix4.html">Matrix4</a>
+<div class="summaryTableDescription">
+    Cached matrix corresponding to the transformation to the 0,0,0 frame system
+   </div>
+</td><td class="summaryTableOwnerCol">Node</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#name">name</a> : String<div class="summaryTableDescription">
+   Name of this node.</div>
+</td><td class="summaryTableOwnerCol">Node</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#parent">parent</a> : <a href="../scenegraph/Node.html">Node</a>
+<div class="summaryTableDescription">
+   The parent node of this node.</div>
+</td><td class="summaryTableOwnerCol">Node</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#scene">scene</a> : <a href="../../core/Scene3D.html">Scene3D</a>
+<div class="summaryTableDescription"></div>
+</td><td class="summaryTableOwnerCol">Node</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#useSingleContainer">useSingleContainer</a> : Boolean<div class="summaryTableDescription">[write-only]
+   Make all the Shape3D and descendants children react to this value.</div>
+</td><td class="summaryTableOwnerCol">Node</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#viewMatrix">viewMatrix</a> : <a href="../data/Matrix4.html">Matrix4</a>
+<div class="summaryTableDescription">
+   Cached matrix corresponding to the transformation to the camera frame system
+   </div>
+</td><td class="summaryTableOwnerCol">Node</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#visible">visible</a> : Boolean<div class="summaryTableDescription"></div>
+</td><td class="summaryTableOwnerCol">Node</td>
+</tr>
+</table>
+</div>
+<a name="protectedPropertySummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Protected Properties</div>
+<table id="summaryTableProtectedProperty" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Property</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#m_bChanged">m_bChanged</a> : Boolean<div class="summaryTableDescription"></div>
+</td><td class="summaryTableOwnerCol">Node</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#m_bVisible">m_bVisible</a> : Boolean = true<div class="summaryTableDescription"></div>
+</td><td class="summaryTableOwnerCol">Node</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#m_oEB">m_oEB</a> : <a href="../../events/BubbleEventBroadcaster.html">BubbleEventBroadcaster</a>
+<div class="summaryTableDescription"></div>
+</td><td class="summaryTableOwnerCol">Node</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#m_oScene">m_oScene</a> : <a href="../../core/Scene3D.html">Scene3D</a> = null<div class="summaryTableDescription"></div>
+</td><td class="summaryTableOwnerCol">Node</td>
+</tr>
+</table>
+</div>
+<a name="methodSummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Methods</div>
+<table id="summaryTableMethod" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Method</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#Node()">Node</a>(p_sName:String = "")</div>
+<div class="summaryTableDescription">
+   Creates a node in the object tree of the world.</div>
+</td><td class="summaryTableOwnerCol">Node</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#addChild()">addChild</a>(p_oChild:<a href="Node.html">Node</a>):void</div>
+<div class="summaryTableDescription">
+   Adds a new child to this node.</div>
+</td><td class="summaryTableOwnerCol">Node</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#addEventListener()">addEventListener</a>(p_sEvt:String, p_oL:*):Boolean</div>
+<div class="summaryTableDescription">
+   Adds a listener for the specified event.</div>
+</td><td class="summaryTableOwnerCol">Node</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#cull()">cull</a>(p_oFrustum:<a href="../../view/Frustum.html">Frustum</a>, p_oViewMatrix:<a href="../data/Matrix4.html">Matrix4</a>, p_bChanged:Boolean):void</div>
+<div class="summaryTableDescription">
+   Tests this node against the frustum volume to get its visibility.</div>
+</td><td class="summaryTableOwnerCol">Node</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#destroy()">destroy</a>():void</div>
+<div class="summaryTableDescription">
+   Delete this node and all its child nodes.</div>
+</td><td class="summaryTableOwnerCol">Node</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#getChildByName()">getChildByName</a>(p_sName:String, p_bRecurs:Boolean = false):<a href="../scenegraph/Node.html">Node</a>
+</div>
+<div class="summaryTableDescription">
+   Returns the child node with the specified name.</div>
+</td><td class="summaryTableOwnerCol">Node</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#hasParent()">hasParent</a>():Boolean</div>
+<div class="summaryTableDescription">
+   Tests if this node has a parent.</div>
+</td><td class="summaryTableOwnerCol">Node</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#isParent()">isParent</a>(p_oNode:<a href="Node.html">Node</a>):Boolean</div>
+<div class="summaryTableDescription">
+   Tests if the node passed in the argument is parent of this node.</div>
+</td><td class="summaryTableOwnerCol">Node</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#perform()">perform</a>(p_iOperation:<a href="INodeOperation.html">INodeOperation</a>):void</div>
+<div class="summaryTableDescription">
+   Performs an operation on this node and all of its children.</div>
+</td><td class="summaryTableOwnerCol">Node</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#remove()">remove</a>():void</div>
+<div class="summaryTableDescription">
+   Removes this node from the node tree, saving its child nodes.</div>
+</td><td class="summaryTableOwnerCol">Node</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#removeChildByName()">removeChildByName</a>(p_sName:String):Boolean</div>
+<div class="summaryTableDescription">
+   Removes the child node with the specified name.</div>
+</td><td class="summaryTableOwnerCol">Node</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#removeEventListener()">removeEventListener</a>(p_sEvt:String, p_oL:*):void</div>
+<div class="summaryTableDescription">
+   Removes a listener for the specified event.</div>
+</td><td class="summaryTableOwnerCol">Node</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#swapParent()">swapParent</a>(p_oNewParent:<a href="Node.html">Node</a>):void</div>
+<div class="summaryTableDescription">
+   Moves this node to another parent node.</div>
+</td><td class="summaryTableOwnerCol">Node</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#toString()">toString</a>():String</div>
+<div class="summaryTableDescription">
+   Returns a string representation of this object
+      </div>
+</td><td class="summaryTableOwnerCol">Node</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#update()">update</a>(p_oModelMatrix:<a href="../data/Matrix4.html">Matrix4</a>, p_bChanged:Boolean):void</div>
+<div class="summaryTableDescription">
+   Updates this node.</div>
+</td><td class="summaryTableOwnerCol">Node</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#updateBoundingVolumes()">updateBoundingVolumes</a>():void</div>
+<div class="summaryTableDescription">
+   Updates the bounding volumes of this object.</div>
+</td><td class="summaryTableOwnerCol">Node</td>
+</tr>
+</table>
+</div>
+<a name="constantSummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Constants</div>
+<table id="summaryTableConstant" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Constant</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#id">id</a> : uint<div class="summaryTableDescription">
+   The unique id of this node in the node graph.</div>
+</td><td class="summaryTableOwnerCol">Node</td>
+</tr>
+</table>
+</div>
+<script type="text/javascript" language="javascript">
+<!--
+showHideInherited();
+--></script>
+<div class="MainContent">
+<a name="propertyDetail"></a>
+<div class="detailSectionHeader">Property detail</div>
+<a name="appearance"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">appearance</td><td class="detailHeaderType">property</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>appearance:<a href="../../materials/Appearance.html">Appearance</a></code>&nbsp;&nbsp;[write-only]<p>
+   Set that appearance to all the children of that node
+   </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set appearance(value:<a href="../../materials/Appearance.html">Appearance</a>):void</code>
+<br>
+</div>
+<a name="boundingBox"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">boundingBox</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var boundingBox:<a href="../../bounds/BBox.html">BBox</a></code><p>
+   The bounding box of this node
+   IMPORTANT: Do not modify it unless you perfectly know what you are doing
+   </p></div>
+<a name="boundingSphere"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">boundingSphere</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var boundingSphere:<a href="../../bounds/BSphere.html">BSphere</a></code><p>
+   The bounding sphere of this node
+   IMPORTANT: Do not modify it unless you perfectly know what you are doing
+   </p></div>
+<a name="broadcaster"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">broadcaster</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>broadcaster:<a href="../../events/BubbleEventBroadcaster.html">BubbleEventBroadcaster</a></code>&nbsp;&nbsp;[read-only]<p>
+   The broadcaster
+      </p><p>The broadcaster is used to send events to listeners.<br />
+   This property is a BubbleEventBroadcaster.</p>
+      <span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get broadcaster():<a href="../../events/BubbleEventBroadcaster.html">BubbleEventBroadcaster</a></code>
+<br>
+</div>
+<a name="changed"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">changed</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>changed:Boolean</code>&nbsp;&nbsp;[read-write]<p>
+   This property set the cache status of the current node.
+   IMPORTANT Currently this property IS IN USE FOR CACHE SYSTEM
+   </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get changed():Boolean</code>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set changed(value:Boolean):void</code>
+<br>
+</div>
+<a name="children"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">children</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var children:Array</code><p>
+   The children of this node are stored inside this array.
+   IMPORTANT: Use this property mainly as READ ONLY. To add, delete or search a specific child, you can use the specific method to do that
+   </p></div>
+<a name="culled"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">culled</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var culled:<a href="../../view/CullingState.html">CullingState</a></code><p>
+   This property represent the culling state of the current node.
+   This state is defined during the culling phasis as it refers to the position of the object against the viewing frustum.
+   </p></div>
+<a name="enableBackFaceCulling"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">enableBackFaceCulling</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>enableBackFaceCulling:Boolean</code>&nbsp;&nbsp;[write-only]<p>
+   Change the backface culling state to all the shapes objects in the children list
+   </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set enableBackFaceCulling(value:Boolean):void</code>
+<br>
+</div>
+<a name="enableClipping"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">enableClipping</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>enableClipping:Boolean</code>&nbsp;&nbsp;[write-only]<p>
+   Apply clipping to all the children of that node
+   </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set enableClipping(value:Boolean):void</code>
+<br>
+</div>
+<a name="enableEvents"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">enableEvents</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>enableEvents:Boolean</code>&nbsp;&nbsp;[write-only]<p>
+   Enable event handling to all the children objects that can broadcast bubbling events
+   </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set enableEvents(value:Boolean):void</code>
+<br>
+</div>
+<a name="enableInteractivity"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">enableInteractivity</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>enableInteractivity:Boolean</code>&nbsp;&nbsp;[write-only]<p>
+   Change the interactivity of all the children
+   </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set enableInteractivity(value:Boolean):void</code>
+<br>
+</div>
+<a name="m_bChanged"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">m_bChanged</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>protected var m_bChanged:Boolean</code>
+</div>
+<a name="m_bVisible"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">m_bVisible</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>protected var m_bVisible:Boolean = true</code>
+</div>
+<a name="modelMatrix"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">modelMatrix</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var modelMatrix:<a href="../data/Matrix4.html">Matrix4</a></code><p>
+    Cached matrix corresponding to the transformation to the 0,0,0 frame system
+   </p></div>
+<a name="m_oEB"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">m_oEB</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>protected var m_oEB:<a href="../../events/BubbleEventBroadcaster.html">BubbleEventBroadcaster</a></code>
+</div>
+<a name="m_oScene"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">m_oScene</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>protected var m_oScene:<a href="../../core/Scene3D.html">Scene3D</a> = null</code>
+</div>
+<a name="name"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">name</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var name:String</code><p>
+   Name of this node.
+   If no name is specified, the unique ID of the node will be used
+   </p></div>
+<a name="parent"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">parent</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>parent:<a href="../scenegraph/Node.html">Node</a></code>&nbsp;&nbsp;[read-write]<p>
+   The parent node of this node.
+      </p><p>The reference is null if this nod has no parent (for exemple for a root node).</p>
+   <span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get parent():<a href="../scenegraph/Node.html">Node</a></code>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set parent(value:<a href="../scenegraph/Node.html">Node</a>):void</code>
+<br>
+</div>
+<a name="scene"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">scene</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>scene:<a href="../../core/Scene3D.html">Scene3D</a></code>&nbsp;&nbsp;[read-write]<span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get scene():<a href="../../core/Scene3D.html">Scene3D</a></code>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set scene(value:<a href="../../core/Scene3D.html">Scene3D</a>):void</code>
+<br>
+</div>
+<a name="useSingleContainer"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">useSingleContainer</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>useSingleContainer:Boolean</code>&nbsp;&nbsp;[write-only]<p>
+   Make all the Shape3D and descendants children react to this value.
+   </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set useSingleContainer(value:Boolean):void</code>
+<br>
+</div>
+<a name="viewMatrix"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">viewMatrix</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var viewMatrix:<a href="../data/Matrix4.html">Matrix4</a></code><p>
+   Cached matrix corresponding to the transformation to the camera frame system
+   </p></div>
+<a name="visible"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">visible</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>visible:Boolean</code>&nbsp;&nbsp;[read-write]<span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get visible():Boolean</code>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set visible(value:Boolean):void</code>
+<br>
+</div>
+<a name="constructorDetail"></a>
+<div class="detailSectionHeader">Constructor detail</div>
+<a name="Node()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">Node</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">constructor</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function Node(p_sName:String = "")</code><p>
+   Creates a node in the object tree of the world.
+      </p><p>This constructor should normally not be called directly, only from a sub class.</p>
+      <span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">p_sName</span>:String</code> (default = "<code></code>")<code></code> &mdash; A string identifier for this object.
+   </td>
+</tr>
+</table>
+</div>
+<a name="methodDetail"></a>
+<div class="detailSectionHeader">Method detail</div>
+<a name="addChild()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">addChild</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function addChild(p_oChild:<a href="Node.html">Node</a>):void</code><p>
+   Adds a new child to this node.
+      </p><p>A node can have several children, and when you add a child to a node,
+   it is automatically connected to the parent node through its parent property.</p>
+      <span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">p_oChild</span>:<a href="Node.html">Node</a></code> &mdash; The child node to add
+   </td>
+</tr>
+</table>
+</div>
+<a name="addEventListener()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">addEventListener</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function addEventListener(p_sEvt:String, p_oL:*):Boolean</code><p>
+   Adds a listener for the specified event.
+      </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">p_sEvt</span>:String</code> &mdash; Name of the Event.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">p_oL</span>:*</code> &mdash; Listener object.
+   </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>Boolean</code></td>
+</tr>
+</table>
+</div>
+<a name="cull()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">cull</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function cull(p_oFrustum:<a href="../../view/Frustum.html">Frustum</a>, p_oViewMatrix:<a href="../data/Matrix4.html">Matrix4</a>, p_bChanged:Boolean):void</code><p>
+   Tests this node against the frustum volume to get its visibility.
+      </p><p>If the node and its children aren't in the frustum, the node is set to cull
+   and will not be displayed.<br/>
+   <p>The method also updates the bounding volumes, to make a more accurate culling system possible.<br/>
+   First the bounding sphere is updated, and if intersecting, the bounding box is updated to perform a more
+   precise culling.</p>
+   <p><b>[MANDATORY] The update method must be called first!</b></p>
+      <span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">p_oFrustum</span>:<a href="../../view/Frustum.html">Frustum</a></code> &mdash; The current scene which is rendered
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">p_oViewMatrix</span>:<a href="../data/Matrix4.html">Matrix4</a></code> &mdash; The frustum of the current camera.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">p_bChanged</span>:Boolean</code> &mdash; The matrix which maps object local coordinates into camera coordinates.
+   </td>
+</tr>
+</table>
+</div>
+<a name="destroy()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">destroy</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function destroy():void</code><p>
+   Delete this node and all its child nodes.
+      </p><p>This node nad all its child nodes are deleted, including all data they are storing.<br/>
+   The method makes recursive calls to the destroy method of the child nodes.
+   </div>
+<a name="getChildByName()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">getChildByName</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function getChildByName(p_sName:String, p_bRecurs:Boolean = false):<a href="../scenegraph/Node.html">Node</a></code><p>
+   Returns the child node with the specified name.
+      </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">p_sName</span>:String</code> &mdash; The name of the child you want to retrieve
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">p_bRecurs</span>:Boolean</code> (default = <code>false</code>)<code></code> &mdash;  Set to true if you want to search the the children for the requested node
+      </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="../scenegraph/Node.html">Node</a></code> &mdash; 
+                         The requested node or null if no child with this name was found
+   
+                        
+                     </td>
+</tr>
+</table>
+</div>
+<a name="hasParent()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">hasParent</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function hasParent():Boolean</code><p>
+   Tests if this node has a parent.
+      </p><p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>Boolean</code> &mdash;  true if this node has a parent, false otherwise.
+   </td>
+</tr>
+</table>
+</div>
+<a name="isParent()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">isParent</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function isParent(p_oNode:<a href="Node.html">Node</a>):Boolean</code><p>
+   Tests if the node passed in the argument is parent of this node.
+      </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">p_oNode</span>:<a href="Node.html">Node</a></code> &mdash;  The node you are testing
+   </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>Boolean</code> &mdash;  true if the node in the argument is the parent of this node, false otherwise.
+   </td>
+</tr>
+</table>
+</div>
+<a name="perform()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">perform</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function perform(p_iOperation:<a href="INodeOperation.html">INodeOperation</a>):void</code><p>
+   Performs an operation on this node and all of its children.
+   
+   </p><p>Traverses the subtree made up of this node and all of its children.
+   While traversing the subtree, individual operations are performed 
+   on entry and exit of each node of the subtree.</p>
+   <p>Implements the visitor design pattern: 
+   Using the visitor design pattern, you can define a new operation on Node
+   and its subclasses without having to change the classes and without having
+   to take care of traversing the node tree.</p>
+   
+   <span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">p_iOperation</span>:<a href="INodeOperation.html">INodeOperation</a></code> &mdash; p_iOperation   The operation to be performed on the node subtree
+   </td>
+</tr>
+</table>
+<br>
+<span class="label">Example</span>
+<br>   <div class='listing'><pre>
+       var mySpecialOperation:SpecialOperation = new SpecialOperation;
+   
+       mySpecialOperation.someParameter = 0.8;
+       someTreeNode.perform(mySpecialOperation);
+       trace(mySpecialOperation.someResult);
+   
+       mySpecialOperation.someParameter = 0.2;
+       someOtherTreeNode.perform(mySpecialOperation);
+       trace(mySpecialOperation.someResult);
+   </pre></div>
+   
+   <p></p>
+</div>
+<a name="remove()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">remove</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function remove():void</code><p>
+   Removes this node from the node tree, saving its child nodes.
+      </p><p>NOTE that remove method only remove the current node and NOT its children!<br />
+   To remove the current node and all its children please refer to the destroy method.</p>
+   <p>The child nodes of this node becomes child nodes of this node's parent.</p>
+   </div>
+<a name="removeChildByName()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">removeChildByName</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function removeChildByName(p_sName:String):Boolean</code><p>
+   Removes the child node with the specified name.
+      </p><p>All children of the node you want to remove are lost.<br/>
+   The link between them and the rest of the tree is broken, and they will not be rendered anymore!</p>
+   <p>The object itself and its children are still in memory!<br/>
+   If you want to free them completely, call child.destroy()</p>
+      <span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">p_sName</span>:String</code> &mdash; The name of the node you want to remove.
+   </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>Boolean</code> &mdash;   true if the node was removed from node tree, false otherwise.
+   </td>
+</tr>
+</table>
+</div>
+<a name="removeEventListener()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">removeEventListener</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function removeEventListener(p_sEvt:String, p_oL:*):void</code><p>
+   Removes a listener for the specified event.
+      </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">p_sEvt</span>:String</code> &mdash; Name of the Event.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">p_oL</span>:*</code> &mdash; Listener object.
+   </td>
+</tr>
+</table>
+</div>
+<a name="swapParent()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">swapParent</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function swapParent(p_oNewParent:<a href="Node.html">Node</a>):void</code><p>
+   Moves this node to another parent node.
+      </p><p>This node is removed from its current parent node, and added as a child of the specified node</p>
+      <span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">p_oNewParent</span>:<a href="Node.html">Node</a></code> &mdash; The node to become parent of this node
+   </td>
+</tr>
+</table>
+</div>
+<a name="toString()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">toString</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function toString():String</code><p>
+   Returns a string representation of this object
+      </p><p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>String</code> &mdash; The fully qualified name of this class
+   </td>
+</tr>
+</table>
+</div>
+<a name="update()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">update</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function update(p_oModelMatrix:<a href="../data/Matrix4.html">Matrix4</a>, p_bChanged:Boolean):void</code><p>
+   Updates this node.
+      </p><p>For a node with transformation, this method update the transformation taking into account the matrix cache system.</p>
+      <span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">p_oModelMatrix</span>:<a href="../data/Matrix4.html">Matrix4</a></code> &mdash; The current scene
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">p_bChanged</span>:Boolean</code></td>
+</tr>
+</table>
+</div>
+<a name="updateBoundingVolumes()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">updateBoundingVolumes</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function updateBoundingVolumes():void</code><p>
+   Updates the bounding volumes of this object.
+   NO IMPLEMENTATION RIGHT NOW.
+   MIGHT BE USED IN THE FUTURE
+   </p></div>
+<a name="constantDetail"></a>
+<div class="detailSectionHeader">Constant detail</div>
+<a name="id"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">id</td><td class="detailHeaderType">constant</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public const id:uint</code><p>
+   The unique id of this node in the node graph.
+   </p><p>This value is very useful to retrieve a specific node.</p>
+   </div>
+<br>
+<br>
+<hr>
+<br>
+<p></p>
+<center class="copyright">API documentation for Sandy 3D Engine, Ver. 3.1.2</center>
+</div>
+</body>
+</html>
+<!--API documentation for Sandy 3D Engine, Ver. 3.1.2-->

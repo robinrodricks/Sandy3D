@@ -1,0 +1,277 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="../../style.css" type="text/css" media="screen">
+<link rel="stylesheet" href="../../print.css" type="text/css" media="print">
+<meta content="IntersectionMath,sandy.math.IntersectionMath,intersectionBSphere,intersectionLine2D,intersectionLine3D,isPointInTriangle2D" name="keywords">
+<title>sandy.math.IntersectionMath</title>
+</head>
+<body>
+<script type="text/javascript" language="javascript" src="../../asdoc.js"></script><script type="text/javascript" language="javascript" src="../../cookies.js"></script><script type="text/javascript" language="javascript">
+<!--
+				asdocTitle = 'IntersectionMath - Sandy 3.1.2 API Documentation';
+				var baseRef = '../../';
+				window.onload = configPage;
+			--></script>
+<table style="display:none" id="titleTable" cellspacing="0" cellpadding="0" class="titleTable">
+<tr>
+<td align="left" class="titleTableTitle">Sandy 3D Engine, 3.1.2</td><td align="right" class="titleTableTopNav"><a onclick="loadClassListFrame('../../all-classes.html')" href="../../package-summary.html">All&nbsp;Packages</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('../../all-classes.html')" href="../../class-summary.html">All&nbsp;Classes</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('../../index-list.html')" href="../../all-index-A.html">Index</a>&nbsp;|&nbsp;<a href="../../index.html?sandy/math/IntersectionMath.html&amp;sandy/math/class-list.html" id="framesLink1">Frames</a><a onclick="parent.location=document.location" href="" style="display:none" id="noFramesLink1">No&nbsp;Frames</a></td><td rowspan="3" align="right" class="titleTableLogo"><img alt="Adobe Logo" title="Adobe Logo" class="logoImage" src="../../images/logo.jpg"></td>
+</tr>
+<tr class="titleTableRow2">
+<td align="left" id="subTitle" class="titleTableSubTitle">Class&nbsp;IntersectionMath</td><td align="right" id="subNav" class="titleTableSubNav"><a href="#methodSummary">Methods</a></td>
+</tr>
+<tr class="titleTableRow3">
+<td colspan="2">&nbsp;</td>
+</tr>
+</table>
+<script type="text/javascript" language="javascript">
+<!--
+if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Class IntersectionMath"); titleBar_setSubNav(false,false,false,false,false,false,true,false,false,false,false,false,false,false);}
+--></script>
+<div class="MainContent">
+<table cellspacing="0" cellpadding="0" class="classHeaderTable">
+<tr>
+<td class="classHeaderTableLabel">Package</td><td><a onclick="javascript:loadClassListFrame('class-list.html')" href="package-detail.html">sandy.math</a></td>
+</tr>
+<tr>
+<td class="classHeaderTableLabel">Class</td><td class="classSignature">public final  class IntersectionMath</td>
+</tr>
+</table>
+<p></p>
+  An util class with static method which provides useful functions related to intersection.
+  
+  <p></p>
+<br>
+<hr>
+</div>
+<a name="methodSummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Methods</div>
+<table id="summaryTableMethod" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Method</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#intersectionBSphere()">intersectionBSphere</a>(p_oBSphereA:<a href="../bounds/BSphere.html">BSphere</a>, p_oBSphereB:<a href="../bounds/BSphere.html">BSphere</a>):Boolean</div>
+<div class="summaryTableDescription">[static]
+   Determines whether two bounding spheres intersect.</div>
+</td><td class="summaryTableOwnerCol">IntersectionMath</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#intersectionLine2D()">intersectionLine2D</a>(p_oPointA:Point, p_oPointB:Point, p_oPointC:Point, p_oPointD:Point):Point</div>
+<div class="summaryTableDescription">[static]
+   Finds the intersection point of two 2D lines.</div>
+</td><td class="summaryTableOwnerCol">IntersectionMath</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#intersectionLine3D()">intersectionLine3D</a>(p_oPointA:<a href="../core/data/Point3D.html">Point3D</a>, p_oPointB:<a href="../core/data/Point3D.html">Point3D</a>, p_oPointC:<a href="../core/data/Point3D.html">Point3D</a>, p_oPointD:<a href="../core/data/Point3D.html">Point3D</a>):Array</div>
+<div class="summaryTableDescription">[static]
+   Computes the smallest distance between two 3D lines.</div>
+</td><td class="summaryTableOwnerCol">IntersectionMath</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#isPointInTriangle2D()">isPointInTriangle2D</a>(p_oPoint:Point, p_oA:Point, p_oB:Point, p_oC:Point):Boolean</div>
+<div class="summaryTableDescription">[static]
+   Determines if a point is within a triangle.</div>
+</td><td class="summaryTableOwnerCol">IntersectionMath</td>
+</tr>
+</table>
+</div>
+<script type="text/javascript" language="javascript">
+<!--
+showHideInherited();
+--></script>
+<div class="MainContent">
+<a name="methodDetail"></a>
+<div class="detailSectionHeader">Method detail</div>
+<a name="intersectionBSphere()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">intersectionBSphere</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static function intersectionBSphere(p_oBSphereA:<a href="../bounds/BSphere.html">BSphere</a>, p_oBSphereB:<a href="../bounds/BSphere.html">BSphere</a>):Boolean</code><p>
+   Determines whether two bounding spheres intersect.
+      </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">p_oBSphereA</span>:<a href="../bounds/BSphere.html">BSphere</a></code> &mdash; The first bounding sphere.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">p_oBSphereB</span>:<a href="../bounds/BSphere.html">BSphere</a></code> &mdash; The second bounding sphere.
+      </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>Boolean</code> &mdash; Whether the two spheres intersect.
+   </td>
+</tr>
+</table>
+</div>
+<a name="intersectionLine2D()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">intersectionLine2D</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static function intersectionLine2D(p_oPointA:Point, p_oPointB:Point, p_oPointC:Point, p_oPointD:Point):Point</code><p>
+   Finds the intersection point of two 2D lines.
+      </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">p_oPointA</span>:Point</code> &mdash; A point of the first line.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">p_oPointB</span>:Point</code> &mdash; Another point of the first line.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">p_oPointC</span>:Point</code> &mdash; A point of the second line.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">p_oPointD</span>:Point</code> &mdash; Another point of the second line.
+      </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>Point</code> &mdash; The point where the two lines intersect. Returns null if lines are coincident or parallel.
+   </td>
+</tr>
+</table>
+</div>
+<a name="intersectionLine3D()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">intersectionLine3D</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static function intersectionLine3D(p_oPointA:<a href="../core/data/Point3D.html">Point3D</a>, p_oPointB:<a href="../core/data/Point3D.html">Point3D</a>, p_oPointC:<a href="../core/data/Point3D.html">Point3D</a>, p_oPointD:<a href="../core/data/Point3D.html">Point3D</a>):Array</code><p>
+   Computes the smallest distance between two 3D lines.
+   </p><p>As 3D lines cannot intersect, we compute two points, first owning to the first 3D line, and the second point owning to the second 3D line.</p>
+   <p>The two points define a segment which length represents the shortest distance between these two lines.</p>
+      <span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">p_oPointA</span>:<a href="../core/data/Point3D.html">Point3D</a></code> &mdash; A Point3D of the first 3D line.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">p_oPointB</span>:<a href="../core/data/Point3D.html">Point3D</a></code> &mdash; Another Point3D of the first 3D line.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">p_oPointC</span>:<a href="../core/data/Point3D.html">Point3D</a></code> &mdash; A Point3D of the second 3D line.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">p_oPointD</span>:<a href="../core/data/Point3D.html">Point3D</a></code> &mdash; Another Point3D of the second 3D line.
+      </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>Array</code> &mdash; An array containing the Point3Ds of the segment connecting the two 3D lines.
+   </td>
+</tr>
+</table>
+</div>
+<a name="isPointInTriangle2D()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">isPointInTriangle2D</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static function isPointInTriangle2D(p_oPoint:Point, p_oA:Point, p_oB:Point, p_oC:Point):Boolean</code><p>
+   Determines if a point is within a triangle.
+      </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">p_oPoint</span>:Point</code> &mdash; The point to find in the triangle.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">p_oA</span>:Point</code> &mdash;  The first point of the triangle.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">p_oB</span>:Point</code> &mdash;  The second point of the triangle.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">p_oC</span>:Point</code> &mdash;  The third point of the triangle.
+      </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>Boolean</code> &mdash; Whether the point is inside the triangle.
+   </td>
+</tr>
+</table>
+</div>
+<br>
+<br>
+<hr>
+<br>
+<p></p>
+<center class="copyright">API documentation for Sandy 3D Engine, Ver. 3.1.2</center>
+</div>
+</body>
+</html>
+<!--API documentation for Sandy 3D Engine, Ver. 3.1.2-->

@@ -1,0 +1,1507 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="../../../style.css" type="text/css" media="screen">
+<link rel="stylesheet" href="../../../print.css" type="text/css" media="print">
+<meta content="Shape3D,sandy.core.scenegraph.Shape3D,SORT_AVGZ,SORT_CUSTOM_BSP,SORT_LAZY_BSP,SORT_NONE,aPolygons,aVisiblePolygons,animated,bsp,enableForcedDepth,enableNearClipping,forcedDepth,m_bUseSingleContainer,m_bWasOver,m_nDepth,m_oContainer,m_oGeomCenter,m_oLastContainer,m_oLastEvent,container,depth,enableClipping,enableInteractivity,geometryCenter,material,sortingMode,appearance,enableBackFaceCulling,enableEvents,geometry,scene,useSingleContainer,_onInteraction,clear,clone,cull,destroy,display,setConvexFlag,swapCulling,toString,updateBoundingVolumes" name="keywords">
+<title>sandy.core.scenegraph.Shape3D</title>
+</head>
+<body>
+<script type="text/javascript" language="javascript" src="../../../asdoc.js"></script><script type="text/javascript" language="javascript" src="../../../cookies.js"></script><script type="text/javascript" language="javascript">
+<!--
+				asdocTitle = 'Shape3D - Sandy 3.1.2 API Documentation';
+				var baseRef = '../../../';
+				window.onload = configPage;
+			--></script>
+<table style="display:none" id="titleTable" cellspacing="0" cellpadding="0" class="titleTable">
+<tr>
+<td align="left" class="titleTableTitle">Sandy 3D Engine, 3.1.2</td><td align="right" class="titleTableTopNav"><a onclick="loadClassListFrame('../../../all-classes.html')" href="../../../package-summary.html">All&nbsp;Packages</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('../../../all-classes.html')" href="../../../class-summary.html">All&nbsp;Classes</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('../../../index-list.html')" href="../../../all-index-A.html">Index</a>&nbsp;|&nbsp;<a href="../../../index.html?sandy/core/scenegraph/Shape3D.html&amp;sandy/core/scenegraph/class-list.html" id="framesLink1">Frames</a><a onclick="parent.location=document.location" href="" style="display:none" id="noFramesLink1">No&nbsp;Frames</a></td><td rowspan="3" align="right" class="titleTableLogo"><img alt="Adobe Logo" title="Adobe Logo" class="logoImage" src="../../../images/logo.jpg"></td>
+</tr>
+<tr class="titleTableRow2">
+<td align="left" id="subTitle" class="titleTableSubTitle">Class&nbsp;Shape3D</td><td align="right" id="subNav" class="titleTableSubNav"><a href="#propertySummary">Properties</a>&nbsp;| <a href="#methodSummary">Methods</a>&nbsp;| <a href="#constantSummary">Constants</a></td>
+</tr>
+<tr class="titleTableRow3">
+<td colspan="2">&nbsp;</td>
+</tr>
+</table>
+<script type="text/javascript" language="javascript">
+<!--
+if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Class Shape3D"); titleBar_setSubNav(true,true,false,false,false,false,true,false,false,false,false,false,false,false);}
+--></script>
+<div class="MainContent">
+<table cellspacing="0" cellpadding="0" class="classHeaderTable">
+<tr>
+<td class="classHeaderTableLabel">Package</td><td><a onclick="javascript:loadClassListFrame('class-list.html')" href="package-detail.html">sandy.core.scenegraph</a></td>
+</tr>
+<tr>
+<td class="classHeaderTableLabel">Class</td><td class="classSignature">public class Shape3D</td>
+</tr>
+<tr>
+<td class="classHeaderTableLabel">Inheritance</td><td class="inheritanceList">Shape3D <img class="inheritArrow" alt="Inheritance" title="Inheritance" src="../../../images/inherit-arrow.gif"> <a href="ATransformable.html">ATransformable</a> <img class="inheritArrow" alt="Inheritance" title="Inheritance" src="../../../images/inherit-arrow.gif"> <a href="Node.html">Node</a></td>
+</tr>
+<tr>
+<td class="classHeaderTableLabel">Implements</td><td><a href="IDisplayable.html">IDisplayable</a></td>
+</tr>
+<tr>
+<td class="classHeaderTableLabel">Subclasses</td><td><a href="../../primitive/Box.html">Box</a>, <a href="../../primitive/Cylinder.html">Cylinder</a>, <a href="../../extrusion/Extrusion.html">Extrusion</a>, <a href="../../primitive/GeodesicSphere.html">GeodesicSphere</a>, <a href="../../primitive/Hedra.html">Hedra</a>, <a href="../../primitive/Line3D.html">Line3D</a>, <a href="../../primitive/MD2.html">MD2</a>, <a href="../../primitive/Plane3D.html">Plane3D</a>, <a href="../../primitive/Sphere.html">Sphere</a>, <a href="../../primitive/Torus.html">Torus</a></td>
+</tr>
+</table>
+<p></p>
+  The Shape3D class is the base class of all true 3D shapes.
+    <p>It represents a node in the object tree of the world.<br/>
+  A Shape3D is a leaf node and can not have any child nodes.</p>
+  <p>It must be the child of a branch group or a transform group, 
+  but transformations can be applied to the Shape directly.</p>
+  
+  <p></p>
+<br>
+<hr>
+</div>
+<a name="propertySummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Properties</div>
+<div class="showHideLinks">
+<div class="hideInheritedProperty" id="hideInheritedProperty">
+<a onclick="javascript:setInheritedVisible(false,'Property');" href="#propertySummary" class="showHideLink"><img src="../../../images/expanded.gif" class="showHideLinkImage"> Hide Inherited Public Properties</a>
+</div>
+<div class="showInheritedProperty" id="showInheritedProperty">
+<a onclick="javascript:setInheritedVisible(true,'Property');" href="#propertySummary" class="showHideLink"><img src="../../../images/collapsed.gif" class="showHideLinkImage"> Show Inherited Public Properties</a>
+</div>
+</div>
+<table id="summaryTableProperty" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Property</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#animated">animated</a> : Boolean = false<div class="summaryTableDescription">
+   Animated flag.</div>
+</td><td class="summaryTableOwnerCol">Shape3D</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#aPolygons">aPolygons</a> : Array<div class="summaryTableDescription">
+   The array of polygons building this object.</div>
+</td><td class="summaryTableOwnerCol">Shape3D</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#appearance">appearance</a> : <a href="../../materials/Appearance.html">Appearance</a>
+<div class="summaryTableDescription">
+   Set the appearance of this object.</div>
+</td><td class="summaryTableOwnerCol">Shape3D</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#aVisiblePolygons">aVisiblePolygons</a> : Array<div class="summaryTableDescription">
+   Array containing the visible polygons of that shape.</div>
+</td><td class="summaryTableOwnerCol">Shape3D</td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="Node.html#boundingBox">boundingBox</a> : <a href="../../bounds/BBox.html">BBox</a>
+<div class="summaryTableDescription">
+   The bounding box of this node
+   IMPORTANT: Do not modify it unless you perfectly know what you are doing
+   </div>
+</td><td class="summaryTableOwnerCol"><a href="Node.html">Node</a></td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="Node.html#boundingSphere">boundingSphere</a> : <a href="../../bounds/BSphere.html">BSphere</a>
+<div class="summaryTableDescription">
+   The bounding sphere of this node
+   IMPORTANT: Do not modify it unless you perfectly know what you are doing
+   </div>
+</td><td class="summaryTableOwnerCol"><a href="Node.html">Node</a></td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="Node.html#broadcaster">broadcaster</a> : <a href="../../events/BubbleEventBroadcaster.html">BubbleEventBroadcaster</a>
+<div class="summaryTableDescription">
+   The broadcaster
+      <p>The broadcaster is used to send events to listeners.<br />
+   This property is a BubbleEventBroadcaster.</p>
+      </div>
+</td><td class="summaryTableOwnerCol"><a href="Node.html">Node</a></td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#bsp">bsp</a> : <a href="../data/BSPNode.html">BSPNode</a>
+<div class="summaryTableDescription">
+   Root node of BSP tree.</div>
+</td><td class="summaryTableOwnerCol">Shape3D</td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="Node.html#changed">changed</a> : Boolean<div class="summaryTableDescription">
+   This property set the cache status of the current node.</div>
+</td><td class="summaryTableOwnerCol"><a href="Node.html">Node</a></td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="Node.html#children">children</a> : Array<div class="summaryTableDescription">
+   The children of this node are stored inside this array.</div>
+</td><td class="summaryTableOwnerCol"><a href="Node.html">Node</a></td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#container">container</a> : Sprite<div class="summaryTableDescription">[read-only]
+   The contianer for this object.</div>
+</td><td class="summaryTableOwnerCol">Shape3D</td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="Node.html#culled">culled</a> : <a href="../../view/CullingState.html">CullingState</a>
+<div class="summaryTableDescription">
+   This property represent the culling state of the current node.</div>
+</td><td class="summaryTableOwnerCol"><a href="Node.html">Node</a></td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#depth">depth</a> : Number<div class="summaryTableDescription">
+   The depth of this object.</div>
+</td><td class="summaryTableOwnerCol">Shape3D</td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="ATransformable.html#disable">disable</a> : Boolean = false<div class="summaryTableDescription">
+   Disable the local transformations applied to this Node if set to false.</div>
+</td><td class="summaryTableOwnerCol"><a href="ATransformable.html">ATransformable</a></td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#enableBackFaceCulling">enableBackFaceCulling</a> : Boolean<div class="summaryTableDescription">
+   Should back face culling be enabled for this object?.</div>
+</td><td class="summaryTableOwnerCol">Shape3D</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#enableClipping">enableClipping</a> : Boolean<div class="summaryTableDescription"></div>
+</td><td class="summaryTableOwnerCol">Shape3D</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#enableEvents">enableEvents</a> : Boolean<div class="summaryTableDescription">[write-only]
+   Enables the event system for mouse events.</div>
+</td><td class="summaryTableOwnerCol">Shape3D</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#enableForcedDepth">enableForcedDepth</a> : Boolean = false<div class="summaryTableDescription">
+   Should forced depth be enable for this object?.</div>
+</td><td class="summaryTableOwnerCol">Shape3D</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#enableInteractivity">enableInteractivity</a> : Boolean<div class="summaryTableDescription"></div>
+</td><td class="summaryTableOwnerCol">Shape3D</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#enableNearClipping">enableNearClipping</a> : Boolean = false<div class="summaryTableDescription">
+   <p>
+   Enable the Frustum near plane clipping on the visible polygons.</div>
+</td><td class="summaryTableOwnerCol">Shape3D</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#forcedDepth">forcedDepth</a> : Number = 0<div class="summaryTableDescription">
+   The forced depth for this object.</div>
+</td><td class="summaryTableOwnerCol">Shape3D</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#geometry">geometry</a> : <a href="../scenegraph/Geometry3D.html">Geometry3D</a>
+<div class="summaryTableDescription">
+   The geometry of this object.</div>
+</td><td class="summaryTableOwnerCol">Shape3D</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#geometryCenter">geometryCenter</a> : <a href="../data/Point3D.html">Point3D</a>
+<div class="summaryTableDescription">
+   This property call allows you to get the geometryCenter offset Point3D of the Shape.</div>
+</td><td class="summaryTableOwnerCol">Shape3D</td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="ATransformable.html#invModelMatrix">invModelMatrix</a> : <a href="../data/Matrix4.html">Matrix4</a>
+<div class="summaryTableDescription">
+   <p>Inverse of the model matrix
+   The matrix is inverted in comparison of the real model matrix.<br/>
+   For example, this allows replacement of the objects in the correct camera frame before projection</p>
+   </div>
+</td><td class="summaryTableOwnerCol"><a href="ATransformable.html">ATransformable</a></td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#material">material</a> : <a href="../../materials/Material.html">Material</a>
+<div class="summaryTableDescription">[read-only]
+   Returns the material currently used by the renderer
+   </div>
+</td><td class="summaryTableOwnerCol">Shape3D</td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="ATransformable.html#matrix">matrix</a> : <a href="../data/Matrix4.html">Matrix4</a>
+<div class="summaryTableDescription"></div>
+</td><td class="summaryTableOwnerCol"><a href="ATransformable.html">ATransformable</a></td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#m_bWasOver">m_bWasOver</a> : Boolean = false<div class="summaryTableDescription"></div>
+</td><td class="summaryTableOwnerCol">Shape3D</td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="Node.html#modelMatrix">modelMatrix</a> : <a href="../data/Matrix4.html">Matrix4</a>
+<div class="summaryTableDescription">
+    Cached matrix corresponding to the transformation to the 0,0,0 frame system
+   </div>
+</td><td class="summaryTableOwnerCol"><a href="Node.html">Node</a></td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#m_oLastContainer">m_oLastContainer</a> : Sprite<div class="summaryTableDescription"></div>
+</td><td class="summaryTableOwnerCol">Shape3D</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#m_oLastEvent">m_oLastEvent</a> : <a href="../../events/Shape3DEvent.html">Shape3DEvent</a>
+<div class="summaryTableDescription"></div>
+</td><td class="summaryTableOwnerCol">Shape3D</td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="Node.html#name">name</a> : String<div class="summaryTableDescription">
+   Name of this node.</div>
+</td><td class="summaryTableOwnerCol"><a href="Node.html">Node</a></td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="ATransformable.html#out">out</a> : <a href="../data/Point3D.html">Point3D</a>
+<div class="summaryTableDescription">
+   Forward direction ( local z ) in parent coordinates.</div>
+</td><td class="summaryTableOwnerCol"><a href="ATransformable.html">ATransformable</a></td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="ATransformable.html#pan">pan</a> : Number<div class="summaryTableDescription">
+   Pans this object around the local y axis.</div>
+</td><td class="summaryTableOwnerCol"><a href="ATransformable.html">ATransformable</a></td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="Node.html#parent">parent</a> : <a href="../scenegraph/Node.html">Node</a>
+<div class="summaryTableDescription">
+   The parent node of this node.</div>
+</td><td class="summaryTableOwnerCol"><a href="Node.html">Node</a></td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="ATransformable.html#roll">roll</a> : Number<div class="summaryTableDescription">
+   Rolls this object around the local z axis.</div>
+</td><td class="summaryTableOwnerCol"><a href="ATransformable.html">ATransformable</a></td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="ATransformable.html#rotateX">rotateX</a> : Number<div class="summaryTableDescription">
+   Rotates this object around an axis parallel to the parent's x axis.</div>
+</td><td class="summaryTableOwnerCol"><a href="ATransformable.html">ATransformable</a></td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="ATransformable.html#rotateY">rotateY</a> : Number<div class="summaryTableDescription">
+   Rotates this object around an axis parallel to the parent's y axis.</div>
+</td><td class="summaryTableOwnerCol"><a href="ATransformable.html">ATransformable</a></td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="ATransformable.html#rotateZ">rotateZ</a> : Number<div class="summaryTableDescription">
+   Rotates this object around an axis paralell to the parent's z axis.</div>
+</td><td class="summaryTableOwnerCol"><a href="ATransformable.html">ATransformable</a></td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="ATransformable.html#scaleX">scaleX</a> : Number<div class="summaryTableDescription">
+   x scale of this object.</div>
+</td><td class="summaryTableOwnerCol"><a href="ATransformable.html">ATransformable</a></td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="ATransformable.html#scaleY">scaleY</a> : Number<div class="summaryTableDescription">
+   y scale of this object.</div>
+</td><td class="summaryTableOwnerCol"><a href="ATransformable.html">ATransformable</a></td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="ATransformable.html#scaleZ">scaleZ</a> : Number<div class="summaryTableDescription">
+   z scale of this object.</div>
+</td><td class="summaryTableOwnerCol"><a href="ATransformable.html">ATransformable</a></td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#scene">scene</a> : <a href="../../core/Scene3D.html">Scene3D</a>
+<div class="summaryTableDescription">[write-only]
+   Reference to the scene is it linked to.</div>
+</td><td class="summaryTableOwnerCol">Shape3D</td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="ATransformable.html#side">side</a> : <a href="../data/Point3D.html">Point3D</a>
+<div class="summaryTableDescription">
+   Side direction ( local x ) in parent coordinates.</div>
+</td><td class="summaryTableOwnerCol"><a href="ATransformable.html">ATransformable</a></td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#sortingMode">sortingMode</a> : int<div class="summaryTableDescription">
+   Faces sorting method.</div>
+</td><td class="summaryTableOwnerCol">Shape3D</td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="ATransformable.html#tilt">tilt</a> : Number<div class="summaryTableDescription">
+   Getter for the tilt value
+   </div>
+</td><td class="summaryTableOwnerCol"><a href="ATransformable.html">ATransformable</a></td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="ATransformable.html#up">up</a> : <a href="../data/Point3D.html">Point3D</a>
+<div class="summaryTableDescription">
+   Up direction ( local y ) in parent coordinates.</div>
+</td><td class="summaryTableOwnerCol"><a href="ATransformable.html">ATransformable</a></td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#useSingleContainer">useSingleContainer</a> : Boolean<div class="summaryTableDescription">
+      setter that allow user to change the way to render this object.</div>
+</td><td class="summaryTableOwnerCol">Shape3D</td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="Node.html#viewMatrix">viewMatrix</a> : <a href="../data/Matrix4.html">Matrix4</a>
+<div class="summaryTableDescription">
+   Cached matrix corresponding to the transformation to the camera frame system
+   </div>
+</td><td class="summaryTableOwnerCol"><a href="Node.html">Node</a></td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="Node.html#visible">visible</a> : Boolean<div class="summaryTableDescription"></div>
+</td><td class="summaryTableOwnerCol"><a href="Node.html">Node</a></td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="ATransformable.html#x">x</a> : Number<div class="summaryTableDescription">
+   x position of this object in its parent frame.</div>
+</td><td class="summaryTableOwnerCol"><a href="ATransformable.html">ATransformable</a></td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="ATransformable.html#y">y</a> : Number<div class="summaryTableDescription">
+   y position of this object in its parent frame.</div>
+</td><td class="summaryTableOwnerCol"><a href="ATransformable.html">ATransformable</a></td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="ATransformable.html#z">z</a> : Number<div class="summaryTableDescription">
+   z position of the node in its parent frame.</div>
+</td><td class="summaryTableOwnerCol"><a href="ATransformable.html">ATransformable</a></td>
+</tr>
+</table>
+</div>
+<a name="protectedPropertySummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Protected Properties</div>
+<div class="showHideLinks">
+<div class="hideInheritedProtectedProperty" id="hideInheritedProtectedProperty">
+<a onclick="javascript:setInheritedVisible(false,'ProtectedProperty');" href="#protectedPropertySummary" class="showHideLink"><img src="../../../images/expanded.gif" class="showHideLinkImage"> Hide Inherited Protected Properties</a>
+</div>
+<div class="showInheritedProtectedProperty" id="showInheritedProtectedProperty">
+<a onclick="javascript:setInheritedVisible(true,'ProtectedProperty');" href="#protectedPropertySummary" class="showHideLink"><img src="../../../images/collapsed.gif" class="showHideLinkImage"> Show Inherited Protected Properties</a>
+</div>
+</div>
+<table id="summaryTableProtectedProperty" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Property</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="hideInheritedProtectedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="Node.html#m_bChanged">m_bChanged</a> : Boolean<div class="summaryTableDescription"></div>
+</td><td class="summaryTableOwnerCol"><a href="Node.html">Node</a></td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#m_bUseSingleContainer">m_bUseSingleContainer</a> : Boolean = true<div class="summaryTableDescription"></div>
+</td><td class="summaryTableOwnerCol">Shape3D</td>
+</tr>
+<tr class="hideInheritedProtectedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="Node.html#m_bVisible">m_bVisible</a> : Boolean = true<div class="summaryTableDescription"></div>
+</td><td class="summaryTableOwnerCol"><a href="Node.html">Node</a></td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#m_nDepth">m_nDepth</a> : Number = 0<div class="summaryTableDescription"></div>
+</td><td class="summaryTableOwnerCol">Shape3D</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#m_oContainer">m_oContainer</a> : Sprite<div class="summaryTableDescription"></div>
+</td><td class="summaryTableOwnerCol">Shape3D</td>
+</tr>
+<tr class="hideInheritedProtectedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="Node.html#m_oEB">m_oEB</a> : <a href="../../events/BubbleEventBroadcaster.html">BubbleEventBroadcaster</a>
+<div class="summaryTableDescription"></div>
+</td><td class="summaryTableOwnerCol"><a href="Node.html">Node</a></td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#m_oGeomCenter">m_oGeomCenter</a> : <a href="../data/Point3D.html">Point3D</a>
+<div class="summaryTableDescription"></div>
+</td><td class="summaryTableOwnerCol">Shape3D</td>
+</tr>
+<tr class="hideInheritedProtectedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="ATransformable.html#m_oPreviousOffsetRotation">m_oPreviousOffsetRotation</a> : <a href="../data/Point3D.html">Point3D</a>
+<div class="summaryTableDescription"></div>
+</td><td class="summaryTableOwnerCol"><a href="ATransformable.html">ATransformable</a></td>
+</tr>
+<tr class="hideInheritedProtectedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="Node.html#m_oScene">m_oScene</a> : <a href="../../core/Scene3D.html">Scene3D</a> = null<div class="summaryTableDescription"></div>
+</td><td class="summaryTableOwnerCol"><a href="Node.html">Node</a></td>
+</tr>
+<tr class="hideInheritedProtectedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="ATransformable.html#m_tmpMt">m_tmpMt</a> : <a href="../data/Matrix4.html">Matrix4</a>
+<div class="summaryTableDescription"></div>
+</td><td class="summaryTableOwnerCol"><a href="ATransformable.html">ATransformable</a></td>
+</tr>
+<tr class="hideInheritedProtectedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="ATransformable.html#_oScale">_oScale</a> : <a href="../data/Point3D.html">Point3D</a>
+<div class="summaryTableDescription"></div>
+</td><td class="summaryTableOwnerCol"><a href="ATransformable.html">ATransformable</a></td>
+</tr>
+<tr class="hideInheritedProtectedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="ATransformable.html#_p">_p</a> : <a href="../data/Point3D.html">Point3D</a>
+<div class="summaryTableDescription"></div>
+</td><td class="summaryTableOwnerCol"><a href="ATransformable.html">ATransformable</a></td>
+</tr>
+<tr class="hideInheritedProtectedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="ATransformable.html#_vOut">_vOut</a> : <a href="../data/Point3D.html">Point3D</a>
+<div class="summaryTableDescription"></div>
+</td><td class="summaryTableOwnerCol"><a href="ATransformable.html">ATransformable</a></td>
+</tr>
+<tr class="hideInheritedProtectedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="ATransformable.html#_vSide">_vSide</a> : <a href="../data/Point3D.html">Point3D</a>
+<div class="summaryTableDescription"></div>
+</td><td class="summaryTableOwnerCol"><a href="ATransformable.html">ATransformable</a></td>
+</tr>
+<tr class="hideInheritedProtectedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="ATransformable.html#_vUp">_vUp</a> : <a href="../data/Point3D.html">Point3D</a>
+<div class="summaryTableDescription"></div>
+</td><td class="summaryTableOwnerCol"><a href="ATransformable.html">ATransformable</a></td>
+</tr>
+</table>
+</div>
+<a name="methodSummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Methods</div>
+<div class="showHideLinks">
+<div class="hideInheritedMethod" id="hideInheritedMethod">
+<a onclick="javascript:setInheritedVisible(false,'Method');" href="#methodSummary" class="showHideLink"><img src="../../../images/expanded.gif" class="showHideLinkImage"> Hide Inherited Public Methods</a>
+</div>
+<div class="showInheritedMethod" id="showInheritedMethod">
+<a onclick="javascript:setInheritedVisible(true,'Method');" href="#methodSummary" class="showHideLink"><img src="../../../images/collapsed.gif" class="showHideLinkImage"> Show Inherited Public Methods</a>
+</div>
+</div>
+<table id="summaryTableMethod" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Method</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#Shape3D()">Shape3D</a>(p_sName:String = "", p_oGeometry:<a href="Geometry3D.html">Geometry3D</a> = null, p_oAppearance:<a href="../../materials/Appearance.html">Appearance</a> = null, p_bUseSingleContainer:Boolean = true)</div>
+<div class="summaryTableDescription">
+   Creates a 3D object
+      <p>This creates a new 3D geometry object.</div>
+</td><td class="summaryTableOwnerCol">Shape3D</td>
+</tr>
+<tr class="hideInheritedMethod">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="Node.html#addChild()">addChild</a>(p_oChild:<a href="../scenegraph/Node.html">Node</a>):void</div>
+<div class="summaryTableDescription">
+   Adds a new child to this node.</div>
+</td><td class="summaryTableOwnerCol"><a href="Node.html">Node</a></td>
+</tr>
+<tr class="hideInheritedMethod">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="Node.html#addEventListener()">addEventListener</a>(p_sEvt:String, p_oL:*):Boolean</div>
+<div class="summaryTableDescription">
+   Adds a listener for the specified event.</div>
+</td><td class="summaryTableOwnerCol"><a href="Node.html">Node</a></td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#clear()">clear</a>():void</div>
+<div class="summaryTableDescription">
+  Clears the graphics object of this object's container.</div>
+</td><td class="summaryTableOwnerCol">Shape3D</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#clone()">clone</a>(p_sName:String = "", p_bKeepTransform:Boolean = false):<a href="../scenegraph/Shape3D.html">Shape3D</a>
+</div>
+<div class="summaryTableDescription">
+   This method returns a clone of this Shape3D.</div>
+</td><td class="summaryTableOwnerCol">Shape3D</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#cull()">cull</a>(p_oFrustum:<a href="../../view/Frustum.html">Frustum</a>, p_oViewMatrix:<a href="../data/Matrix4.html">Matrix4</a>, p_bChanged:Boolean):void</div>
+<div class="summaryTableDescription">
+   Tests this node against the camera frustum to get its visibility.</div>
+</td><td class="summaryTableOwnerCol">Shape3D</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#destroy()">destroy</a>():void</div>
+<div class="summaryTableDescription">
+   Destroy this object and all its faces
+   container object is removed, and graphics cleared.</div>
+</td><td class="summaryTableOwnerCol">Shape3D</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#display()">display</a>(p_oContainer:Sprite = null):void</div>
+<div class="summaryTableDescription">
+   Performs a z-sorting and renders the objects visible polygons.</div>
+</td><td class="summaryTableOwnerCol">Shape3D</td>
+</tr>
+<tr class="hideInheritedMethod">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="Node.html#getChildByName()">getChildByName</a>(p_sName:String, p_bRecurs:Boolean = false):<a href="../scenegraph/Node.html">Node</a>
+</div>
+<div class="summaryTableDescription">
+   Returns the child node with the specified name.</div>
+</td><td class="summaryTableOwnerCol"><a href="Node.html">Node</a></td>
+</tr>
+<tr class="hideInheritedMethod">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="ATransformable.html#getLookAt()">getLookAt</a>():<a href="../data/Point3D.html">Point3D</a>
+</div>
+<div class="summaryTableDescription">
+   getLookAt - obtain last value set via lookAt() method; may not be valid if other camera movement has occurred since then.</div>
+</td><td class="summaryTableOwnerCol"><a href="ATransformable.html">ATransformable</a></td>
+</tr>
+<tr class="hideInheritedMethod">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="ATransformable.html#getPosition()">getPosition</a>(p_sMode:String = "local"):<a href="../data/Point3D.html">Point3D</a>
+</div>
+<div class="summaryTableDescription">
+   Returns the position of this group or object.</div>
+</td><td class="summaryTableOwnerCol"><a href="ATransformable.html">ATransformable</a></td>
+</tr>
+<tr class="hideInheritedMethod">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="Node.html#hasParent()">hasParent</a>():Boolean</div>
+<div class="summaryTableDescription">
+   Tests if this node has a parent.</div>
+</td><td class="summaryTableOwnerCol"><a href="Node.html">Node</a></td>
+</tr>
+<tr class="hideInheritedMethod">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="ATransformable.html#initFrame()">initFrame</a>():void</div>
+<div class="summaryTableDescription">
+   Initiates the local coordinate system for this object.</div>
+</td><td class="summaryTableOwnerCol"><a href="ATransformable.html">ATransformable</a></td>
+</tr>
+<tr class="hideInheritedMethod">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="Node.html#isParent()">isParent</a>(p_oNode:<a href="../scenegraph/Node.html">Node</a>):Boolean</div>
+<div class="summaryTableDescription">
+   Tests if the node passed in the argument is parent of this node.</div>
+</td><td class="summaryTableOwnerCol"><a href="Node.html">Node</a></td>
+</tr>
+<tr class="hideInheritedMethod">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="ATransformable.html#lookAt()">lookAt</a>(p_nX:Number, p_nY:Number, p_nZ:Number):void</div>
+<div class="summaryTableDescription">
+   Makes this object "look at" the specified position in the parent frame.</div>
+</td><td class="summaryTableOwnerCol"><a href="ATransformable.html">ATransformable</a></td>
+</tr>
+<tr class="hideInheritedMethod">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="ATransformable.html#lookAtPoint()">lookAtPoint</a>(p_oTarget:<a href="../data/Point3D.html">Point3D</a>):void</div>
+<div class="summaryTableDescription">
+   The position in the parent frame this object should "look at".</div>
+</td><td class="summaryTableOwnerCol"><a href="ATransformable.html">ATransformable</a></td>
+</tr>
+<tr class="hideInheritedMethod">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="ATransformable.html#moveForward()">moveForward</a>(p_nD:Number):void</div>
+<div class="summaryTableDescription">
+   Translates this object along its forward Point3D ( local z ) in the parent frame.</div>
+</td><td class="summaryTableOwnerCol"><a href="ATransformable.html">ATransformable</a></td>
+</tr>
+<tr class="hideInheritedMethod">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="ATransformable.html#moveHorizontally()">moveHorizontally</a>(p_nD:Number):void</div>
+<div class="summaryTableDescription">
+   Translates this object parallel to its parent zx plane and in its forward direction.</div>
+</td><td class="summaryTableOwnerCol"><a href="ATransformable.html">ATransformable</a></td>
+</tr>
+<tr class="hideInheritedMethod">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="ATransformable.html#moveLateraly()">moveLateraly</a>(p_nD:Number):void</div>
+<div class="summaryTableDescription">
+   Translates this object laterally in its parent frame.</div>
+</td><td class="summaryTableOwnerCol"><a href="ATransformable.html">ATransformable</a></td>
+</tr>
+<tr class="hideInheritedMethod">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="ATransformable.html#moveSideways()">moveSideways</a>(p_nD:Number):void</div>
+<div class="summaryTableDescription">
+   Translates this object along its side Point3D ( local x ) in the parent frame.</div>
+</td><td class="summaryTableOwnerCol"><a href="ATransformable.html">ATransformable</a></td>
+</tr>
+<tr class="hideInheritedMethod">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="ATransformable.html#moveUpwards()">moveUpwards</a>(p_nD:Number):void</div>
+<div class="summaryTableDescription">
+   Translates this object along its up Point3D ( local y ) in the parent frame.</div>
+</td><td class="summaryTableOwnerCol"><a href="ATransformable.html">ATransformable</a></td>
+</tr>
+<tr class="hideInheritedMethod">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="ATransformable.html#moveVertically()">moveVertically</a>(p_nD:Number):void</div>
+<div class="summaryTableDescription">
+   Translates this object vertically in ots parent frame.</div>
+</td><td class="summaryTableOwnerCol"><a href="ATransformable.html">ATransformable</a></td>
+</tr>
+<tr class="hideInheritedMethod">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="Node.html#perform()">perform</a>(p_iOperation:<a href="../scenegraph/INodeOperation.html">INodeOperation</a>):void</div>
+<div class="summaryTableDescription">
+   Performs an operation on this node and all of its children.</div>
+</td><td class="summaryTableOwnerCol"><a href="Node.html">Node</a></td>
+</tr>
+<tr class="hideInheritedMethod">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="Node.html#remove()">remove</a>():void</div>
+<div class="summaryTableDescription">
+   Removes this node from the node tree, saving its child nodes.</div>
+</td><td class="summaryTableOwnerCol"><a href="Node.html">Node</a></td>
+</tr>
+<tr class="hideInheritedMethod">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="Node.html#removeChildByName()">removeChildByName</a>(p_sName:String):Boolean</div>
+<div class="summaryTableDescription">
+   Removes the child node with the specified name.</div>
+</td><td class="summaryTableOwnerCol"><a href="Node.html">Node</a></td>
+</tr>
+<tr class="hideInheritedMethod">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="Node.html#removeEventListener()">removeEventListener</a>(p_sEvt:String, p_oL:*):void</div>
+<div class="summaryTableDescription">
+   Removes a listener for the specified event.</div>
+</td><td class="summaryTableOwnerCol"><a href="Node.html">Node</a></td>
+</tr>
+<tr class="hideInheritedMethod">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="ATransformable.html#resetCoords()">resetCoords</a>():void</div>
+<div class="summaryTableDescription">
+   Resets the coordinate system for this object.</div>
+</td><td class="summaryTableOwnerCol"><a href="ATransformable.html">ATransformable</a></td>
+</tr>
+<tr class="hideInheritedMethod">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="ATransformable.html#rotateAxis()">rotateAxis</a>(p_nX:Number, p_nY:Number, p_nZ:Number, p_nAngle:Number):void</div>
+<div class="summaryTableDescription">
+   Rotate this object around the specified axis in the parent frame by the specified angle.</div>
+</td><td class="summaryTableOwnerCol"><a href="ATransformable.html">ATransformable</a></td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#setConvexFlag()">setConvexFlag</a>(convex:Boolean):void</div>
+<div class="summaryTableDescription">
+   Sets SORT_NONE or SORT_AVGZ sorting mode.</div>
+</td><td class="summaryTableOwnerCol">Shape3D</td>
+</tr>
+<tr class="hideInheritedMethod">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="ATransformable.html#setPosition()">setPosition</a>(p_nX:Number, p_nY:Number, p_nZ:Number):void</div>
+<div class="summaryTableDescription">
+   Sets the position of this object in coordinates of its parent frame.</div>
+</td><td class="summaryTableOwnerCol"><a href="ATransformable.html">ATransformable</a></td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#swapCulling()">swapCulling</a>():void</div>
+<div class="summaryTableDescription">
+   Changes the backface culling side.</div>
+</td><td class="summaryTableOwnerCol">Shape3D</td>
+</tr>
+<tr class="hideInheritedMethod">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="Node.html#swapParent()">swapParent</a>(p_oNewParent:<a href="../scenegraph/Node.html">Node</a>):void</div>
+<div class="summaryTableDescription">
+   Moves this node to another parent node.</div>
+</td><td class="summaryTableOwnerCol"><a href="Node.html">Node</a></td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#toString()">toString</a>():String</div>
+<div class="summaryTableDescription">
+   Returns a string representation of this object.</div>
+</td><td class="summaryTableOwnerCol">Shape3D</td>
+</tr>
+<tr class="hideInheritedMethod">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="ATransformable.html#translate()">translate</a>(p_nX:Number, p_nY:Number, p_nZ:Number):void</div>
+<div class="summaryTableDescription">
+   Translate this object from it's current position with the specified offsets.</div>
+</td><td class="summaryTableOwnerCol"><a href="ATransformable.html">ATransformable</a></td>
+</tr>
+<tr class="hideInheritedMethod">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="ATransformable.html#update()">update</a>(p_oModelMatrix:<a href="../data/Matrix4.html">Matrix4</a>, p_bChanged:Boolean):void</div>
+<div class="summaryTableDescription">
+   Updates this node or object.</div>
+</td><td class="summaryTableOwnerCol"><a href="ATransformable.html">ATransformable</a></td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#updateBoundingVolumes()">updateBoundingVolumes</a>():void</div>
+<div class="summaryTableDescription">
+   Updates the bounding volumes of this object.</div>
+</td><td class="summaryTableOwnerCol">Shape3D</td>
+</tr>
+<tr class="hideInheritedMethod">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="ATransformable.html#updateTransform()">updateTransform</a>():void</div>
+<div class="summaryTableDescription">
+   Updates the transform matrix of the current object/node before it is rendered.</div>
+</td><td class="summaryTableOwnerCol"><a href="ATransformable.html">ATransformable</a></td>
+</tr>
+</table>
+</div>
+<a name="protectedMethodSummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Protected Methods</div>
+<table id="summaryTableProtectedMethod" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Method</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#_onInteraction()">_onInteraction</a>(p_oEvt:Event):void</div>
+<div class="summaryTableDescription"></div>
+</td><td class="summaryTableOwnerCol">Shape3D</td>
+</tr>
+</table>
+</div>
+<a name="constantSummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Constants</div>
+<div class="showHideLinks">
+<div class="hideInheritedConstant" id="hideInheritedConstant">
+<a onclick="javascript:setInheritedVisible(false,'Constant');" href="#constantSummary" class="showHideLink"><img src="../../../images/expanded.gif" class="showHideLinkImage"> Hide Inherited Public Constants</a>
+</div>
+<div class="showInheritedConstant" id="showInheritedConstant">
+<a onclick="javascript:setInheritedVisible(true,'Constant');" href="#constantSummary" class="showHideLink"><img src="../../../images/collapsed.gif" class="showHideLinkImage"> Show Inherited Public Constants</a>
+</div>
+</div>
+<table id="summaryTableConstant" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Constant</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="hideInheritedConstant">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="Node.html#id">id</a> : uint<div class="summaryTableDescription">
+   The unique id of this node in the node graph.</div>
+</td><td class="summaryTableOwnerCol"><a href="Node.html">Node</a></td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#SORT_AVGZ">SORT_AVGZ</a> : int = 1<div class="summaryTableDescription">[static]
+   Average distance sorting.</div>
+</td><td class="summaryTableOwnerCol">Shape3D</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#SORT_CUSTOM_BSP">SORT_CUSTOM_BSP</a> : int = 3<div class="summaryTableDescription">[static]
+   In this mode mesh is sorted using BSP tree, but no tree is built for you (you need to set <code>bsp</code> property yourself).</div>
+</td><td class="summaryTableOwnerCol">Shape3D</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#SORT_LAZY_BSP">SORT_LAZY_BSP</a> : int = 2<div class="summaryTableDescription">[static]
+   In this mode mesh is sorted using BSP tree, but no faces are split for you (means sorting problems are still possible).</div>
+</td><td class="summaryTableOwnerCol">Shape3D</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#SORT_NONE">SORT_NONE</a> : int = 0<div class="summaryTableDescription">[static]
+   No sorting.</div>
+</td><td class="summaryTableOwnerCol">Shape3D</td>
+</tr>
+</table>
+</div>
+<script type="text/javascript" language="javascript">
+<!--
+showHideInherited();
+--></script>
+<div class="MainContent">
+<a name="propertyDetail"></a>
+<div class="detailSectionHeader">Property detail</div>
+<a name="animated"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">animated</td><td class="detailHeaderType">property</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var animated:Boolean = false</code><p>
+   Animated flag. 
+   </p><p>If the geometry vertices are dynamically modified by some animation engine or mathematic function, some polygon may disapear with no reason.
+   The normal Point3D is used to compute the polygon visibility, and if you don't update the normal Point3D after the vertices modifications, there's an error.
+   To fix that problem, Sandy3D offers that new property appeared in 3.0.3 release, which once set to true, automatically update the normal Point3Ds for you.
+   As a performance warning, don't set this value to true if your model geometry isn't animated.</p>
+   </div>
+<a name="aPolygons"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">aPolygons</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var aPolygons:Array</code><p>
+   The array of polygons building this object.
+   </p></div>
+<a name="appearance"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">appearance</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>appearance:<a href="../../materials/Appearance.html">Appearance</a></code>&nbsp;&nbsp;[read-write]<p>
+   Set the appearance of this object.
+   NOTE: Please mind that Sandy3D allows to set an appearance at a polygon level.
+   </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get appearance():<a href="../../materials/Appearance.html">Appearance</a></code>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set appearance(value:<a href="../../materials/Appearance.html">Appearance</a>):void</code>
+<br>
+</div>
+<a name="aVisiblePolygons"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">aVisiblePolygons</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var aVisiblePolygons:Array</code><p>
+   Array containing the visible polygons of that shape.
+   Contente is available after the SCENE_RENDER_DISPLAYLIST event of the current scene has been dispatched
+   </p></div>
+<a name="bsp"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">bsp</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var bsp:<a href="../data/BSPNode.html">BSPNode</a></code><p>
+   Root node of BSP tree.
+   </p></div>
+<a name="container"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">container</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>container:Sprite</code>&nbsp;&nbsp;[read-only]<p>
+   The contianer for this object.
+   This container property exist if the useSingleContainer is set to true.
+   It is a direct access to the Shape3D container to, for example, apply nice effects such as filters etc.
+   </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get container():Sprite</code>
+<br>
+</div>
+<a name="depth"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">depth</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>depth:Number</code>&nbsp;&nbsp;[read-write]<p>
+   The depth of this object.
+   In case the useSingleContainer mode is enabled (default mode), this value returns the means depth of the Shape in the camera frame.
+   This value is mainly used as a z-sorting value.
+   </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get depth():Number</code>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set depth(value:Number):void</code>
+<br>
+</div>
+<a name="enableBackFaceCulling"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">enableBackFaceCulling</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>enableBackFaceCulling:Boolean</code>&nbsp;&nbsp;[read-write]<p>
+   Should back face culling be enabled for this object?.
+      </p><p>If set to false all faces of this object are drawn.<br/>
+   A true value enables the back face culling algorithm - Default true</p>
+   <span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get enableBackFaceCulling():Boolean</code>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set enableBackFaceCulling(value:Boolean):void</code>
+<br>
+</div>
+<a name="enableClipping"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">enableClipping</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>enableClipping:Boolean</code>&nbsp;&nbsp;[read-write]<span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get enableClipping():Boolean</code>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set enableClipping(value:Boolean):void</code>
+<br>
+</div>
+<a name="enableEvents"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">enableEvents</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>enableEvents:Boolean</code>&nbsp;&nbsp;[write-only]<p>
+   Enables the event system for mouse events.
+      </p><p>When set to true, the onPress, onRollOver and onRollOut events are broadcast.<br/>
+   The event system is enabled or disabled for all faces of this object.<br/>
+   As an alternative, you have the possibility to enable events only for specific faces.</p>
+      <p>Once this feature is enabled, the animation is more CPU intensive.</p>
+   
+   <p>Example
+   <code>
+    var l_oShape:Shape3D = new Sphere("sphere");
+    l_oShape.enableEvents = true;
+    l_oShape.addEventListener( MouseEvent.CLICK, onClick );
+   
+    function onClick( p_eEvent:Shape3DEvent ):void
+          {
+            var l_oPoly:Polygon = ( p_eEvent.polygon );  
+            var l_oPointAtClick:Point3D =  p_eEvent.point;
+            // -- get the normalized uv of the point under mouse position
+           var l_oIntersectionUV:UVCoord = p_eEvent.uv;
+            // -- get the correct material
+            var l_oMaterial:BitmapMaterial = (l_oPoly.visible ? l_oPoly.appearance.frontMaterial : l_oPoly.appearance.backMaterial) as BitmapMaterial;
+          }
+         </code>
+   <span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set enableEvents(value:Boolean):void</code>
+<br>
+</div>
+<a name="enableForcedDepth"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">enableForcedDepth</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var enableForcedDepth:Boolean = false</code><p>
+   Should forced depth be enable for this object?.
+      </p><p>If true it is possible to force this object to be drawn at a specific depth,<br/>
+   if false the normal Z-sorting algorithm is applied.</p>
+   <p>When correctly used, this feature allows you to avoid some Z-sorting problems.</p>
+   </div>
+<a name="enableInteractivity"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">enableInteractivity</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>enableInteractivity:Boolean</code>&nbsp;&nbsp;[read-write]<span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get enableInteractivity():Boolean</code>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set enableInteractivity(value:Boolean):void</code>
+<br>
+</div>
+<a name="enableNearClipping"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">enableNearClipping</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var enableNearClipping:Boolean = false</code><p>
+   </p><p>
+   Enable the Frustum near plane clipping on the visible polygons.
+   Enable this when you need a perfect intersection between the front camera plane.
+   This is mainly used when you need the camera to move on a long plane.</p>
+   
+   <p>Important: Enable the clipping makes process a bit slower, especially with big scenes.</p>
+   </div>
+<a name="forcedDepth"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">forcedDepth</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var forcedDepth:Number = 0</code><p>
+   The forced depth for this object.
+      </p><p>To make this feature work, you must enable the ForcedDepth system too.<br/>
+   The higher the depth is, the sooner the more far the object will be represented.</p>
+   </div>
+<a name="geometry"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">geometry</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>geometry:<a href="../scenegraph/Geometry3D.html">Geometry3D</a></code>&nbsp;&nbsp;[read-write]<p>
+   The geometry of this object.
+   </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get geometry():<a href="../scenegraph/Geometry3D.html">Geometry3D</a></code>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set geometry(value:<a href="../scenegraph/Geometry3D.html">Geometry3D</a>):void</code>
+<br>
+</div>
+<a name="geometryCenter"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">geometryCenter</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>geometryCenter:<a href="../data/Point3D.html">Point3D</a></code>&nbsp;&nbsp;[read-write]<p>
+   This property call allows you to get the geometryCenter offset Point3D of the Shape.
+   Modifying this Point3D will impact the way the shape is rendered, mainly its rotation center.
+   
+   </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get geometryCenter():<a href="../data/Point3D.html">Point3D</a></code>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set geometryCenter(value:<a href="../data/Point3D.html">Point3D</a>):void</code>
+<br>
+</div>
+<a name="material"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">material</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>material:<a href="../../materials/Material.html">Material</a></code>&nbsp;&nbsp;[read-only]<p>
+   Returns the material currently used by the renderer
+   </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get material():<a href="../../materials/Material.html">Material</a></code>
+<br>
+</div>
+<a name="m_bUseSingleContainer"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">m_bUseSingleContainer</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>protected var m_bUseSingleContainer:Boolean = true</code>
+</div>
+<a name="m_bWasOver"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">m_bWasOver</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var m_bWasOver:Boolean = false</code>
+</div>
+<a name="m_nDepth"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">m_nDepth</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>protected var m_nDepth:Number = 0</code>
+</div>
+<a name="m_oContainer"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">m_oContainer</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>protected var m_oContainer:Sprite</code>
+</div>
+<a name="m_oGeomCenter"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">m_oGeomCenter</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>protected var m_oGeomCenter:<a href="../data/Point3D.html">Point3D</a></code>
+</div>
+<a name="m_oLastContainer"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">m_oLastContainer</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var m_oLastContainer:Sprite</code>
+</div>
+<a name="m_oLastEvent"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">m_oLastEvent</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var m_oLastEvent:<a href="../../events/Shape3DEvent.html">Shape3DEvent</a></code>
+</div>
+<a name="scene"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">scene</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>scene:<a href="../../core/Scene3D.html">Scene3D</a></code>&nbsp;&nbsp;[write-only]<p>
+   Reference to the scene is it linked to.
+   Initialized at null.
+   </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set scene(value:<a href="../../core/Scene3D.html">Scene3D</a>):void</code>
+<br>
+</div>
+<a name="sortingMode"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">sortingMode</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>sortingMode:int</code>&nbsp;&nbsp;[read-write]<p>
+   Faces sorting method.
+   With <code>useSingleContainer</code> set to <code>false</code> only <code>SORT_AVGZ</code> is possible.
+   </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get sortingMode():int</code>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set sortingMode(value:int):void</code>
+<br>
+</div>
+<a name="useSingleContainer"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">useSingleContainer</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>useSingleContainer:Boolean</code>&nbsp;&nbsp;[read-write]<p>
+      setter that allow user to change the way to render this object.
+      set to true, the shape will be rendered into a single Sprite object, which is accessible through the container property.
+      set to false, the container property does not target anything, but all the polygons will be rendered into their own dedidated container.
+            </p><p>If true, this object renders itself on a single container ( Sprite ),<br/>
+      if false, each polygon is rendered on its own container.</p>
+      <span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get useSingleContainer():Boolean</code>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set useSingleContainer(value:Boolean):void</code>
+<br>
+</div>
+<a name="constructorDetail"></a>
+<div class="detailSectionHeader">Constructor detail</div>
+<a name="Shape3D()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">Shape3D</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">constructor</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function Shape3D(p_sName:String = "", p_oGeometry:<a href="Geometry3D.html">Geometry3D</a> = null, p_oAppearance:<a href="../../materials/Appearance.html">Appearance</a> = null, p_bUseSingleContainer:Boolean = true)</code><p>
+   Creates a 3D object
+      </p><p>This creates a new 3D geometry object. That object will handle the rendering of a static Geometry3D object into a real 3D object and finally to the 2D camera representation.</p>
+      <span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">p_sName</span>:String</code> (default = "<code></code>")<code></code> &mdash;  A string identifier for this object
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">p_oGeometry</span>:<a href="Geometry3D.html">Geometry3D</a></code> (default = <code>null</code>)<code></code> &mdash;  The geometry of this object
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">p_oAppearance</span>:<a href="../../materials/Appearance.html">Appearance</a></code> (default = <code>null</code>)<code></code> &mdash;  The appearance of this object. If no apperance is given, the DEFAULT_APPEARANCE will be applied.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">p_bUseSingleContainer</span>:Boolean</code> (default = <code>true</code>)<code></code> &mdash; Whether tis object should use a single container to draw on
+   </td>
+</tr>
+</table>
+</div>
+<a name="methodDetail"></a>
+<div class="detailSectionHeader">Method detail</div>
+<a name="_onInteraction()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">_onInteraction</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>protected function _onInteraction(p_oEvt:Event):void</code><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">p_oEvt</span>:Event</code></td>
+</tr>
+</table>
+</div>
+<a name="clear()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">clear</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function clear():void</code><p>
+  Clears the graphics object of this object's container.
+    </p><p>The the graphics that were drawn on the Graphics object is erased, 
+  and the fill and line style settings are reset.</p>
+  </div>
+<a name="clone()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">clone</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function clone(p_sName:String = "", p_bKeepTransform:Boolean = false):<a href="../scenegraph/Shape3D.html">Shape3D</a></code><p>
+   This method returns a clone of this Shape3D.
+   The current appearance will be applied, and the geometry is cloned (not referenced to curent one).
+   
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">p_sName</span>:String</code> (default = "<code></code>")<code></code> &mdash; The name of the new shape you are going to create
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">p_bKeepTransform</span>:Boolean</code> (default = <code>false</code>)<code></code> &mdash; Boolean value which, if set to true, applies the current local transformations to the cloned shape. Default value is false.
+      </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="../scenegraph/Shape3D.html">Shape3D</a></code> &mdash; 
+                         The clone
+   
+                        
+                     </td>
+</tr>
+</table>
+</div>
+<a name="cull()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">cull</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public override function cull(p_oFrustum:<a href="../../view/Frustum.html">Frustum</a>, p_oViewMatrix:<a href="../data/Matrix4.html">Matrix4</a>, p_bChanged:Boolean):void</code><p>
+   Tests this node against the camera frustum to get its visibility.
+      </p><p>If this node and its children are not within the frustum, 
+   the node is set to cull and it would not be displayed.<p/>
+   <p>The method also updates the bounding volumes to make the more accurate culling system possible.<br/>
+   First the bounding sphere is updated, and if intersecting, 
+   the bounding box is updated to perform the more precise culling.</p>
+   <p><b>[MANDATORY] The update method must be called first!</b></p>
+      <span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">p_oFrustum</span>:<a href="../../view/Frustum.html">Frustum</a></code> &mdash; The current scene
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">p_oViewMatrix</span>:<a href="../data/Matrix4.html">Matrix4</a></code> &mdash; The frustum of the current camera
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">p_bChanged</span>:Boolean</code> &mdash; The view martix of the curren camera
+   </td>
+</tr>
+</table>
+</div>
+<a name="destroy()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">destroy</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public override function destroy():void</code><p>
+   Destroy this object and all its faces
+   container object is removed, and graphics cleared.  All polygons have their
+   </p></div>
+<a name="display()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">display</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function display(p_oContainer:Sprite = null):void</code><p>
+   Performs a z-sorting and renders the objects visible polygons.
+      </p><p>The method is called only if the object renders on a single container<br/> 
+   - ( useSingleContainer = true ).</p>
+      <span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">p_oContainer</span>:Sprite</code> (default = <code>null</code>)<code></code> &mdash; The current scene
+   </td>
+</tr>
+</table>
+</div>
+<a name="setConvexFlag()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">setConvexFlag</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function setConvexFlag(convex:Boolean):void</code><p>
+   Sets SORT_NONE or SORT_AVGZ sorting mode. Deprecated.
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">convex</span>:Boolean</code></td>
+</tr>
+</table>
+</div>
+<a name="swapCulling()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">swapCulling</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function swapCulling():void</code><p>
+   Changes the backface culling side.
+      </p><p>When you want to display a cube and you are the cube, you see its external faces.<br/>
+   The internal faces are not drawn due to back face culling</p>
+      <p>In case you are inside the cube, by default Sandy's engine still doesn't draw the internal faces
+   (because you should not be in there).</p> 
+      <p>If you need to be only inside the cube, you can call this method to change which side is culled.<br/>
+   The faces will be visible only from the interior of the cube.</p>
+      <p>If you want to be both on the inside and the outside, you want to make the faces visible from on both sides.<br/>
+   In that case you just have to set enableBackFaceCulling to false.</p>
+   </div>
+<a name="toString()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">toString</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public override function toString():String</code><p>
+   Returns a string representation of this object.
+      </p><p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>String</code> &mdash; The fully qualified name of this object and its geometry.
+   </td>
+</tr>
+</table>
+</div>
+<a name="updateBoundingVolumes()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">updateBoundingVolumes</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public override function updateBoundingVolumes():void</code><p>
+   Updates the bounding volumes of this object.
+   </p></div>
+<a name="constantDetail"></a>
+<div class="detailSectionHeader">Constant detail</div>
+<a name="SORT_AVGZ"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">SORT_AVGZ</td><td class="detailHeaderType">constant</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const SORT_AVGZ:int = 1</code><p>
+   Average distance sorting.
+   Default sorting mode.
+   Carefully designed models will display just fine, but ordering problems are common.
+   This is also the only possible sorting mode with <code>useSingleContainer</code> set to <code>false</code>.
+   </p></div>
+<a name="SORT_CUSTOM_BSP"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">SORT_CUSTOM_BSP</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const SORT_CUSTOM_BSP:int = 3</code><p>
+   In this mode mesh is sorted using BSP tree, but no tree is built for you (you need to set <code>bsp</code> property yourself).
+   Experimental.
+   </p></div>
+<a name="SORT_LAZY_BSP"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">SORT_LAZY_BSP</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const SORT_LAZY_BSP:int = 2</code><p>
+   In this mode mesh is sorted using BSP tree, but no faces are split for you (means sorting problems are still possible).
+   Experimental.
+   </p></div>
+<a name="SORT_NONE"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">SORT_NONE</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const SORT_NONE:int = 0</code><p>
+   No sorting.
+   Only convex shapes are guaranteed to display correctly in this mode.
+   </p></div>
+<br>
+<br>
+<hr>
+<br>
+<p></p>
+<center class="copyright">API documentation for Sandy 3D Engine, Ver. 3.1.2</center>
+</div>
+</body>
+</html>
+<!--API documentation for Sandy 3D Engine, Ver. 3.1.2-->

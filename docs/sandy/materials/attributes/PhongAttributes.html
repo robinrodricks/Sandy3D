@@ -1,0 +1,304 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="../../../style.css" type="text/css" media="screen">
+<link rel="stylesheet" href="../../../print.css" type="text/css" media="print">
+<meta content="PhongAttributes,sandy.materials.attributes.PhongAttributes,onlySpecular,spherize,useBright,computeLightMap" name="keywords">
+<title>sandy.materials.attributes.PhongAttributes</title>
+</head>
+<body>
+<script type="text/javascript" language="javascript" src="../../../asdoc.js"></script><script type="text/javascript" language="javascript" src="../../../cookies.js"></script><script type="text/javascript" language="javascript">
+<!--
+				asdocTitle = 'PhongAttributes - Sandy 3.1.2 API Documentation';
+				var baseRef = '../../../';
+				window.onload = configPage;
+			--></script>
+<table style="display:none" id="titleTable" cellspacing="0" cellpadding="0" class="titleTable">
+<tr>
+<td align="left" class="titleTableTitle">Sandy 3D Engine, 3.1.2</td><td align="right" class="titleTableTopNav"><a onclick="loadClassListFrame('../../../all-classes.html')" href="../../../package-summary.html">All&nbsp;Packages</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('../../../all-classes.html')" href="../../../class-summary.html">All&nbsp;Classes</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('../../../index-list.html')" href="../../../all-index-A.html">Index</a>&nbsp;|&nbsp;<a href="../../../index.html?sandy/materials/attributes/PhongAttributes.html&amp;sandy/materials/attributes/class-list.html" id="framesLink1">Frames</a><a onclick="parent.location=document.location" href="" style="display:none" id="noFramesLink1">No&nbsp;Frames</a></td><td rowspan="3" align="right" class="titleTableLogo"><img alt="Adobe Logo" title="Adobe Logo" class="logoImage" src="../../../images/logo.jpg"></td>
+</tr>
+<tr class="titleTableRow2">
+<td align="left" id="subTitle" class="titleTableSubTitle">Class&nbsp;PhongAttributes</td><td align="right" id="subNav" class="titleTableSubNav"><a href="#propertySummary">Properties</a>&nbsp;| <a href="#methodSummary">Methods</a></td>
+</tr>
+<tr class="titleTableRow3">
+<td colspan="2">&nbsp;</td>
+</tr>
+</table>
+<script type="text/javascript" language="javascript">
+<!--
+if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Class PhongAttributes"); titleBar_setSubNav(false,true,false,false,false,false,true,false,false,false,false,false,false,false);}
+--></script>
+<div class="MainContent">
+<table cellspacing="0" cellpadding="0" class="classHeaderTable">
+<tr>
+<td class="classHeaderTableLabel">Package</td><td><a onclick="javascript:loadClassListFrame('class-list.html')" href="package-detail.html">sandy.materials.attributes</a></td>
+</tr>
+<tr>
+<td class="classHeaderTableLabel">Class</td><td class="classSignature">public final  class PhongAttributes</td>
+</tr>
+<tr>
+<td class="classHeaderTableLabel">Inheritance</td><td class="inheritanceList">PhongAttributes <img class="inheritArrow" alt="Inheritance" title="Inheritance" src="../../../images/inherit-arrow.gif"> <a href="ALightAttributes.html">ALightAttributes</a></td>
+</tr>
+</table>
+<p></p>
+  Realize a Phong shading on a material.
+  <p>In true Phong shading, normals are supposed to be interpolated across the surface;
+  here scaled normal projections are interpolated in the light map space. The downside of
+  this method is that in case of low poly models interpolation results are inaccurate -
+  in this case you can improve the result using GouraudAttributes for ambient and diffuse,
+  and then this attribute for specular reflection.</p>
+    <p></p>
+<br>
+<hr>
+</div>
+<a name="propertySummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Properties</div>
+<div class="showHideLinks">
+<div class="hideInheritedProperty" id="hideInheritedProperty">
+<a onclick="javascript:setInheritedVisible(false,'Property');" href="#propertySummary" class="showHideLink"><img src="../../../images/expanded.gif" class="showHideLinkImage"> Hide Inherited Public Properties</a>
+</div>
+<div class="showInheritedProperty" id="showInheritedProperty">
+<a onclick="javascript:setInheritedVisible(true,'Property');" href="#propertySummary" class="showHideLink"><img src="../../../images/collapsed.gif" class="showHideLinkImage"> Show Inherited Public Properties</a>
+</div>
+</div>
+<table id="summaryTableProperty" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Property</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="ALightAttributes.html#ambient">ambient</a> : Number<div class="summaryTableDescription">
+   Ambient reflection factor.</div>
+</td><td class="summaryTableOwnerCol"><a href="ALightAttributes.html">ALightAttributes</a></td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="ALightAttributes.html#diffuse">diffuse</a> : Number<div class="summaryTableDescription">
+   Diffuse reflection factor.</div>
+</td><td class="summaryTableOwnerCol"><a href="ALightAttributes.html">ALightAttributes</a></td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="ALightAttributes.html#flags">flags</a> : uint<div class="summaryTableDescription">
+  Flags for the attribute.</div>
+</td><td class="summaryTableOwnerCol"><a href="ALightAttributes.html">ALightAttributes</a></td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="ALightAttributes.html#gloss">gloss</a> : Number<div class="summaryTableDescription">
+   Specular exponent.</div>
+</td><td class="summaryTableOwnerCol"><a href="ALightAttributes.html">ALightAttributes</a></td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#onlySpecular">onlySpecular</a> : Boolean = false<div class="summaryTableDescription">
+   Flag for rendering mode.</div>
+</td><td class="summaryTableOwnerCol">PhongAttributes</td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="ALightAttributes.html#specular">specular</a> : Number<div class="summaryTableDescription">
+   Specular reflection factor.</div>
+</td><td class="summaryTableOwnerCol"><a href="ALightAttributes.html">ALightAttributes</a></td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#spherize">spherize</a> : Number = 0<div class="summaryTableDescription">
+   Non-zero value adds sphere normals to actual normals for light rendering.</div>
+</td><td class="summaryTableOwnerCol">PhongAttributes</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#useBright">useBright</a> : Boolean<div class="summaryTableDescription">
+   Flag for lightening mode.</div>
+</td><td class="summaryTableOwnerCol">PhongAttributes</td>
+</tr>
+</table>
+</div>
+<a name="methodSummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Methods</div>
+<div class="showHideLinks">
+<div class="hideInheritedMethod" id="hideInheritedMethod">
+<a onclick="javascript:setInheritedVisible(false,'Method');" href="#methodSummary" class="showHideLink"><img src="../../../images/expanded.gif" class="showHideLinkImage"> Hide Inherited Public Methods</a>
+</div>
+<div class="showInheritedMethod" id="showInheritedMethod">
+<a onclick="javascript:setInheritedVisible(true,'Method');" href="#methodSummary" class="showHideLink"><img src="../../../images/collapsed.gif" class="showHideLinkImage"> Show Inherited Public Methods</a>
+</div>
+</div>
+<table id="summaryTableMethod" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Method</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#PhongAttributes()">PhongAttributes</a>(p_bBright:Boolean = false, p_nAmbient:Number = 0.0, p_nQuality:int = 15, p_nSamples:int = 4)</div>
+<div class="summaryTableDescription">
+   Create the PhongAttributes object.</div>
+</td><td class="summaryTableOwnerCol">PhongAttributes</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#computeLightMap()">computeLightMap</a>(p_oLight:<a href="../../core/light/Light3D.html">Light3D</a>, p_nQuality:int = 4, p_nSamples:int = 4):void</div>
+<div class="summaryTableDescription">
+   Compute the light map.</div>
+</td><td class="summaryTableOwnerCol">PhongAttributes</td>
+</tr>
+<tr class="hideInheritedMethod">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="ALightAttributes.html#draw()">draw</a>(p_oGraphics:Graphics, p_oPolygon:<a href="../../core/data/Polygon.html">Polygon</a>, p_oMaterial:<a href="../../materials/Material.html">Material</a>, p_oScene:<a href="../../core/Scene3D.html">Scene3D</a>):void</div>
+<div class="summaryTableDescription">
+  Draws light on shape.</div>
+</td><td class="summaryTableOwnerCol"><a href="ALightAttributes.html">ALightAttributes</a></td>
+</tr>
+<tr class="hideInheritedMethod">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="ALightAttributes.html#drawOnSprite()">drawOnSprite</a>(p_oSprite:<a href="../../core/scenegraph/Sprite2D.html">Sprite2D</a>, p_oMaterial:<a href="../../materials/Material.html">Material</a>, p_oScene:<a href="../../core/Scene3D.html">Scene3D</a>):void</div>
+<div class="summaryTableDescription">
+  Draws light on sprite.</div>
+</td><td class="summaryTableOwnerCol"><a href="ALightAttributes.html">ALightAttributes</a></td>
+</tr>
+</table>
+</div>
+<script type="text/javascript" language="javascript">
+<!--
+showHideInherited();
+--></script>
+<div class="MainContent">
+<a name="propertyDetail"></a>
+<div class="detailSectionHeader">Property detail</div>
+<a name="onlySpecular"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">onlySpecular</td><td class="detailHeaderType">property</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var onlySpecular:Boolean = false</code><p>
+   Flag for rendering mode.
+   </p><p>If true, only specular highlight is rendered, when useBright is also true.<br />
+   If false (the default) ambient and diffuse reflections will also be rendered.</p>
+   </div>
+<a name="spherize"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">spherize</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var spherize:Number = 0</code><p>
+   Non-zero value adds sphere normals to actual normals for light rendering.
+   Use this with flat surfaces or cylinders.
+   </p></div>
+<a name="useBright"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">useBright</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>useBright:Boolean</code>&nbsp;&nbsp;[read-write]<p>
+   Flag for lightening mode.
+   </p><p>If true (the default), the lit objects use full light range from black to white.<br />
+   If false they just range from black to their normal appearance; additionally, current
+   implementation does not render specular reflection in this case.</p>
+   <span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get useBright():Boolean</code>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set useBright(value:Boolean):void</code>
+<br>
+</div>
+<a name="constructorDetail"></a>
+<div class="detailSectionHeader">Constructor detail</div>
+<a name="PhongAttributes()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">PhongAttributes</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">constructor</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function PhongAttributes(p_bBright:Boolean = false, p_nAmbient:Number = 0.0, p_nQuality:int = 15, p_nSamples:int = 4)</code><p>
+   Create the PhongAttributes object.
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">p_bBright</span>:Boolean</code> (default = <code>false</code>)<code></code> &mdash; The brightness (value for useBright).
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">p_nAmbient</span>:Number</code> (default = <code>0.0</code>)<code></code> &mdash; The ambient light value. A value between 0 and 1 is expected.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">p_nQuality</span>:int</code> (default = <code>15</code>)<code></code> &mdash; Quality of light response approximation. A value between 2 and 15 is expected.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">p_nSamples</span>:int</code> (default = <code>4</code>)<code></code> &mdash; A number of calculated samples per anchor. Positive value is expected.
+   </td>
+</tr>
+</table>
+</div>
+<a name="methodDetail"></a>
+<div class="detailSectionHeader">Method detail</div>
+<a name="computeLightMap()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">computeLightMap</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function computeLightMap(p_oLight:<a href="../../core/light/Light3D.html">Light3D</a>, p_nQuality:int = 4, p_nSamples:int = 4):void</code><p>
+   Compute the light map.
+   </p><p>Normally you should not need to call this function, as it is done for you automatically
+   when it is needed. You might call it to compute light map in advance, though.</p>
+   
+   <span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">p_oLight</span>:<a href="../../core/light/Light3D.html">Light3D</a></code> &mdash; Light3D object to make the light map for.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">p_nQuality</span>:int</code> (default = <code>4</code>)<code></code> &mdash; Quality of light response approximation. A value between 2 and 15 is expected
+   (Flash radial gradient is used internally light map, thus we can only roughly approximate exact
+   lighting).
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">p_nSamples</span>:int</code> (default = <code>4</code>)<code></code> &mdash; A number of calculated samples per anchor. Positive value is expected (greater
+   values will produce a little bit more accurate interpolation with non-equally spaced anchors).
+      </td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="../../core/light/Light3D.html" target="">sandy.core.light.Light3D</a>
+</div>
+</div>
+<br>
+<br>
+<hr>
+<br>
+<p></p>
+<center class="copyright">API documentation for Sandy 3D Engine, Ver. 3.1.2</center>
+</div>
+</body>
+</html>
+<!--API documentation for Sandy 3D Engine, Ver. 3.1.2-->

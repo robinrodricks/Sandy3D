@@ -1,0 +1,687 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="../../style.css" type="text/css" media="screen">
+<link rel="stylesheet" href="../../print.css" type="text/css" media="print">
+<meta content="Frustum,sandy.view.Frustum,BOTTOM,EPSILON,FAR,INSIDE,INTERSECT,LEFT,NEAR,OUTSIDE,RIGHT,TOP,aConstants,aNormals,aPlanes,aPoints,boxInFrustum,clipFrontPlane,clipFrustum,clipLineFrontPlane,clipPolygon,computePlanes,pointInFrustum,polygonInFrustum,sphereInFrustum" name="keywords">
+<title>sandy.view.Frustum</title>
+</head>
+<body>
+<script type="text/javascript" language="javascript" src="../../asdoc.js"></script><script type="text/javascript" language="javascript" src="../../cookies.js"></script><script type="text/javascript" language="javascript">
+<!--
+				asdocTitle = 'Frustum - Sandy 3.1.2 API Documentation';
+				var baseRef = '../../';
+				window.onload = configPage;
+			--></script>
+<table style="display:none" id="titleTable" cellspacing="0" cellpadding="0" class="titleTable">
+<tr>
+<td align="left" class="titleTableTitle">Sandy 3D Engine, 3.1.2</td><td align="right" class="titleTableTopNav"><a onclick="loadClassListFrame('../../all-classes.html')" href="../../package-summary.html">All&nbsp;Packages</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('../../all-classes.html')" href="../../class-summary.html">All&nbsp;Classes</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('../../index-list.html')" href="../../all-index-A.html">Index</a>&nbsp;|&nbsp;<a href="../../index.html?sandy/view/Frustum.html&amp;sandy/view/class-list.html" id="framesLink1">Frames</a><a onclick="parent.location=document.location" href="" style="display:none" id="noFramesLink1">No&nbsp;Frames</a></td><td rowspan="3" align="right" class="titleTableLogo"><img alt="Adobe Logo" title="Adobe Logo" class="logoImage" src="../../images/logo.jpg"></td>
+</tr>
+<tr class="titleTableRow2">
+<td align="left" id="subTitle" class="titleTableSubTitle">Class&nbsp;Frustum</td><td align="right" id="subNav" class="titleTableSubNav"><a href="#propertySummary">Properties</a>&nbsp;| <a href="#methodSummary">Methods</a>&nbsp;| <a href="#constantSummary">Constants</a></td>
+</tr>
+<tr class="titleTableRow3">
+<td colspan="2">&nbsp;</td>
+</tr>
+</table>
+<script type="text/javascript" language="javascript">
+<!--
+if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Class Frustum"); titleBar_setSubNav(true,true,false,false,false,false,true,false,false,false,false,false,false,false);}
+--></script>
+<div class="MainContent">
+<table cellspacing="0" cellpadding="0" class="classHeaderTable">
+<tr>
+<td class="classHeaderTableLabel">Package</td><td><a onclick="javascript:loadClassListFrame('class-list.html')" href="package-detail.html">sandy.view</a></td>
+</tr>
+<tr>
+<td class="classHeaderTableLabel">Class</td><td class="classSignature">public class Frustum</td>
+</tr>
+</table>
+<p></p>
+  Used to create the frustum of the camera.
+  
+  <p>The frustum is volume used to control a geometrical object, such as a box, a sphere, or a point
+  can be seen by the camera, and thus should be rendered.</p> 
+  <p>Clipping of objects and polygons is performed against the frustum surfaces, as well as the near and far planes.</p>
+  
+  <p></p>
+<br>
+<hr>
+</div>
+<a name="propertySummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Properties</div>
+<table id="summaryTableProperty" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Property</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#aConstants">aConstants</a> : Array<div class="summaryTableDescription"></div>
+</td><td class="summaryTableOwnerCol">Frustum</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#aNormals">aNormals</a> : Array<div class="summaryTableDescription"></div>
+</td><td class="summaryTableOwnerCol">Frustum</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#aPlanes">aPlanes</a> : Array<div class="summaryTableDescription">
+  An array of planes representing the frustum.</div>
+</td><td class="summaryTableOwnerCol">Frustum</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#aPoints">aPoints</a> : Array<div class="summaryTableDescription">
+  An array of points representing the frustum.</div>
+</td><td class="summaryTableOwnerCol">Frustum</td>
+</tr>
+</table>
+</div>
+<a name="methodSummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Methods</div>
+<table id="summaryTableMethod" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Method</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#Frustum()">Frustum</a>()</div>
+<div class="summaryTableDescription">
+   Creates a frustum for the camera.</div>
+</td><td class="summaryTableOwnerCol">Frustum</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#boxInFrustum()">boxInFrustum</a>(p_oBox:<a href="../bounds/BBox.html">BBox</a>):<a href="../view/CullingState.html">CullingState</a>
+</div>
+<div class="summaryTableDescription">
+   Returns the culling state for the passed bounding box.</div>
+</td><td class="summaryTableOwnerCol">Frustum</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#clipFrontPlane()">clipFrontPlane</a>(p_aCvert:Array, p_aUVCoords:Array):Boolean</div>
+<div class="summaryTableDescription">
+   Clips a polygon against the front frustum plane.</div>
+</td><td class="summaryTableOwnerCol">Frustum</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#clipFrustum()">clipFrustum</a>(p_aCvert:Array, p_aUVCoords:Array):Boolean</div>
+<div class="summaryTableDescription">
+   Clips a polygon against the frustum planes.</div>
+</td><td class="summaryTableOwnerCol">Frustum</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#clipLineFrontPlane()">clipLineFrontPlane</a>(p_aCvert:Array):Boolean</div>
+<div class="summaryTableDescription">
+   Clip the given vertex and UVCoords arrays against the frustum front plane.</div>
+</td><td class="summaryTableOwnerCol">Frustum</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#clipPolygon()">clipPolygon</a>(p_oPlane:<a href="../core/data/Plane.html">Plane</a>, p_aCvert:Array, p_aUVCoords:Array):Boolean</div>
+<div class="summaryTableDescription"></div>
+</td><td class="summaryTableOwnerCol">Frustum</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#computePlanes()">computePlanes</a>(p_nAspect:Number, p_nNear:Number, p_nFar:Number, p_nFov:Number):void</div>
+<div class="summaryTableDescription">
+   Computes the frustum planes.</div>
+</td><td class="summaryTableOwnerCol">Frustum</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#pointInFrustum()">pointInFrustum</a>(p_oPoint:<a href="../core/data/Point3D.html">Point3D</a>):<a href="../view/CullingState.html">CullingState</a>
+</div>
+<div class="summaryTableDescription">
+   Returns the culling state for the passed point.</div>
+</td><td class="summaryTableOwnerCol">Frustum</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#polygonInFrustum()">polygonInFrustum</a>(p_oPoly:<a href="../core/data/Polygon.html">Polygon</a>):<a href="../view/CullingState.html">CullingState</a>
+</div>
+<div class="summaryTableDescription">
+   Helping function to test a polygon against the frustum
+   <p>The method tests if the passed polygon is inside the frustum, outside or intersecting the frustum</p>
+   
+   </div>
+</td><td class="summaryTableOwnerCol">Frustum</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#sphereInFrustum()">sphereInFrustum</a>(p_oSphere:<a href="../bounds/BSphere.html">BSphere</a>):<a href="../view/CullingState.html">CullingState</a>
+</div>
+<div class="summaryTableDescription">
+   Returns the culling state for the passed bounding sphere.</div>
+</td><td class="summaryTableOwnerCol">Frustum</td>
+</tr>
+</table>
+</div>
+<a name="constantSummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Constants</div>
+<table id="summaryTableConstant" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Constant</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#BOTTOM">BOTTOM</a> : uint = 5<div class="summaryTableDescription">[static]
+  Specifies the index of the bottom plane of the frustum in the aPlanes array.</div>
+</td><td class="summaryTableOwnerCol">Frustum</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#EPSILON">EPSILON</a> : Number = 0.005<div class="summaryTableDescription">[static]</div>
+</td><td class="summaryTableOwnerCol">Frustum</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#FAR">FAR</a> : uint = 0<div class="summaryTableDescription">[static]
+  Specifies the index of the far plane of the frustum in the aPlanes array.</div>
+</td><td class="summaryTableOwnerCol">Frustum</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#INSIDE">INSIDE</a> : <a href="../view/CullingState.html">CullingState</a>
+<div class="summaryTableDescription">[static]
+  Alias of CullingState.INSIDE.</div>
+</td><td class="summaryTableOwnerCol">Frustum</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#INTERSECT">INTERSECT</a> : <a href="../view/CullingState.html">CullingState</a>
+<div class="summaryTableDescription">[static]
+  Alias of CullingState.INTERSECT.</div>
+</td><td class="summaryTableOwnerCol">Frustum</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#LEFT">LEFT</a> : uint = 3<div class="summaryTableDescription">[static]
+  Specifies the index of the left plane of the frustum in the aPlanes array.</div>
+</td><td class="summaryTableOwnerCol">Frustum</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#NEAR">NEAR</a> : uint = 1<div class="summaryTableDescription">[static]
+  Specifies the index of the near plane of the frustum in the aPlanes array.</div>
+</td><td class="summaryTableOwnerCol">Frustum</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#OUTSIDE">OUTSIDE</a> : <a href="../view/CullingState.html">CullingState</a>
+<div class="summaryTableDescription">[static]
+  Alias of CullingState.OUTSIDE.</div>
+</td><td class="summaryTableOwnerCol">Frustum</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#RIGHT">RIGHT</a> : uint = 2<div class="summaryTableDescription">[static]
+  Specifies the index of the right plane of the frustum in the aPlanes array.</div>
+</td><td class="summaryTableOwnerCol">Frustum</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#TOP">TOP</a> : uint = 4<div class="summaryTableDescription">[static]
+  Specifies the index of the top plane of the frustum in the aPlanes array.</div>
+</td><td class="summaryTableOwnerCol">Frustum</td>
+</tr>
+</table>
+</div>
+<script type="text/javascript" language="javascript">
+<!--
+showHideInherited();
+--></script>
+<div class="MainContent">
+<a name="propertyDetail"></a>
+<div class="detailSectionHeader">Property detail</div>
+<a name="aConstants"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">aConstants</td><td class="detailHeaderType">property</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var aConstants:Array</code>
+</div>
+<a name="aNormals"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">aNormals</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var aNormals:Array</code>
+</div>
+<a name="aPlanes"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">aPlanes</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var aPlanes:Array</code><p>
+  An array of planes representing the frustum.
+  </p></div>
+<a name="aPoints"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">aPoints</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var aPoints:Array</code><p>
+  An array of points representing the frustum.
+  </p></div>
+<a name="constructorDetail"></a>
+<div class="detailSectionHeader">Constructor detail</div>
+<a name="Frustum()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">Frustum</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">constructor</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function Frustum()</code><p>
+   Creates a frustum for the camera.
+      </p><p>This constructor only creates the necessay data structures</p>
+   </div>
+<a name="methodDetail"></a>
+<div class="detailSectionHeader">Method detail</div>
+<a name="boxInFrustum()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">boxInFrustum</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function boxInFrustum(p_oBox:<a href="../bounds/BBox.html">BBox</a>):<a href="../view/CullingState.html">CullingState</a></code><p>
+   Returns the culling state for the passed bounding box.
+   
+   </p><p>The method tests if the bounding box is within the frustum volume or not.
+   The returned culling state is either Frustum.INSIDE, Frustum.OUTSIDE or Frustum.INTERSECT</p>
+      <span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">p_oBox</span>:<a href="../bounds/BBox.html">BBox</a></code> &mdash; The box to test.
+      </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="../view/CullingState.html">CullingState</a></code> &mdash; 
+                        The culling state of the box.
+   
+                        
+                     </td>
+</tr>
+</table>
+</div>
+<a name="clipFrontPlane()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">clipFrontPlane</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function clipFrontPlane(p_aCvert:Array, p_aUVCoords:Array):Boolean</code><p>
+   Clips a polygon against the front frustum plane.
+      </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">p_aCvert</span>:Array</code> &mdash;  Vertices of the polygon.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">p_aUVCoords</span>:Array</code> &mdash; UV coordiantes of the polygon.
+   </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>Boolean</code></td>
+</tr>
+</table>
+</div>
+<a name="clipFrustum()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">clipFrustum</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function clipFrustum(p_aCvert:Array, p_aUVCoords:Array):Boolean</code><p>
+   Clips a polygon against the frustum planes.
+      </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">p_aCvert</span>:Array</code> &mdash;  Vertices of the polygon.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">p_aUVCoords</span>:Array</code> &mdash; UV coordiantes of the polygon.
+   </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>Boolean</code></td>
+</tr>
+</table>
+</div>
+<a name="clipLineFrontPlane()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">clipLineFrontPlane</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function clipLineFrontPlane(p_aCvert:Array):Boolean</code><p>
+   Clip the given vertex and UVCoords arrays against the frustum front plane.
+      </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">p_aCvert</span>:Array</code> &mdash; Vertices of the line.
+   </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>Boolean</code></td>
+</tr>
+</table>
+</div>
+<a name="clipPolygon()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">clipPolygon</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function clipPolygon(p_oPlane:<a href="../core/data/Plane.html">Plane</a>, p_aCvert:Array, p_aUVCoords:Array):Boolean</code><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">p_oPlane</span>:<a href="../core/data/Plane.html">Plane</a></code></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">p_aCvert</span>:Array</code></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">p_aUVCoords</span>:Array</code></td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>Boolean</code></td>
+</tr>
+</table>
+</div>
+<a name="computePlanes()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">computePlanes</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function computePlanes(p_nAspect:Number, p_nNear:Number, p_nFar:Number, p_nFov:Number):void</code><p>
+   Computes the frustum planes.
+   
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">p_nAspect</span>:Number</code> &mdash; Aspect ration of the camera.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">p_nNear</span>:Number</code> &mdash; The distance from the camera to the near clipping plane.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">p_nFar</span>:Number</code> &mdash; The distance from the camera to the far clipping plane.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">p_nFov</span>:Number</code> &mdash; Vertical field of view of the camera.
+   </td>
+</tr>
+</table>
+</div>
+<a name="pointInFrustum()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">pointInFrustum</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function pointInFrustum(p_oPoint:<a href="../core/data/Point3D.html">Point3D</a>):<a href="../view/CullingState.html">CullingState</a></code><p>
+   Returns the culling state for the passed point.
+   
+   </p><p>The method tests if the passed point is within the frustum volume or not.
+   The returned culling state is either Frustum.INSIDE or Frustum.OUTSIDE.</p>
+      <span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">p_oPoint</span>:<a href="../core/data/Point3D.html">Point3D</a></code> &mdash; The point to test.
+      </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="../view/CullingState.html">CullingState</a></code> &mdash; 
+                        The culling state of the point.
+   
+                        
+                     </td>
+</tr>
+</table>
+</div>
+<a name="polygonInFrustum()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">polygonInFrustum</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function polygonInFrustum(p_oPoly:<a href="../core/data/Polygon.html">Polygon</a>):<a href="../view/CullingState.html">CullingState</a></code><p>
+   Helping function to test a polygon against the frustum
+   </p><p>The method tests if the passed polygon is inside the frustum, outside or intersecting the frustum</p>
+   
+   <span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">p_oPoly</span>:<a href="../core/data/Polygon.html">Polygon</a></code> &mdash; The polygon to test
+   
+   </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="../view/CullingState.html">CullingState</a></code> &mdash; 
+                        The culling state of the polygon
+   
+                        
+                     </td>
+</tr>
+</table>
+</div>
+<a name="sphereInFrustum()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">sphereInFrustum</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function sphereInFrustum(p_oSphere:<a href="../bounds/BSphere.html">BSphere</a>):<a href="../view/CullingState.html">CullingState</a></code><p>
+   Returns the culling state for the passed bounding sphere.
+   
+   </p><p>The method tests if the bounding sphere is within the frustum volume or not.
+   The returned culling state is either Frustum.INSIDE, Frustum.OUTSIDE or Frustum.INTERSECT</p>
+      <span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">p_oSphere</span>:<a href="../bounds/BSphere.html">BSphere</a></code> &mdash; The sphere to test.
+      </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="../view/CullingState.html">CullingState</a></code> &mdash; 
+                        The culling state of the sphere.
+   
+                        
+                     </td>
+</tr>
+</table>
+</div>
+<a name="constantDetail"></a>
+<div class="detailSectionHeader">Constant detail</div>
+<a name="BOTTOM"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">BOTTOM</td><td class="detailHeaderType">constant</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const BOTTOM:uint = 5</code><p>
+  Specifies the index of the bottom plane of the frustum in the aPlanes array.
+  </p></div>
+<a name="EPSILON"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">EPSILON</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const EPSILON:Number = 0.005</code>
+</div>
+<a name="FAR"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">FAR</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const FAR:uint = 0</code><p>
+  Specifies the index of the far plane of the frustum in the aPlanes array.
+  </p></div>
+<a name="INSIDE"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">INSIDE</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const INSIDE:<a href="../view/CullingState.html">CullingState</a></code><p>
+  Alias of CullingState.INSIDE.
+  </p></div>
+<a name="INTERSECT"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">INTERSECT</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const INTERSECT:<a href="../view/CullingState.html">CullingState</a></code><p>
+  Alias of CullingState.INTERSECT.
+  </p></div>
+<a name="LEFT"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">LEFT</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const LEFT:uint = 3</code><p>
+  Specifies the index of the left plane of the frustum in the aPlanes array.
+  </p></div>
+<a name="NEAR"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">NEAR</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const NEAR:uint = 1</code><p>
+  Specifies the index of the near plane of the frustum in the aPlanes array.
+  </p></div>
+<a name="OUTSIDE"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">OUTSIDE</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const OUTSIDE:<a href="../view/CullingState.html">CullingState</a></code><p>
+  Alias of CullingState.OUTSIDE.
+  </p></div>
+<a name="RIGHT"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">RIGHT</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const RIGHT:uint = 2</code><p>
+  Specifies the index of the right plane of the frustum in the aPlanes array.
+  </p></div>
+<a name="TOP"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">TOP</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const TOP:uint = 4</code><p>
+  Specifies the index of the top plane of the frustum in the aPlanes array.
+  </p></div>
+<br>
+<br>
+<hr>
+<br>
+<p></p>
+<center class="copyright">API documentation for Sandy 3D Engine, Ver. 3.1.2</center>
+</div>
+</body>
+</html>
+<!--API documentation for Sandy 3D Engine, Ver. 3.1.2-->

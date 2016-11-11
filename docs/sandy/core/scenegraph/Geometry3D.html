@@ -1,0 +1,849 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="../../../style.css" type="text/css" media="screen">
+<link rel="stylesheet" href="../../../print.css" type="text/css" media="print">
+<meta content="Geometry3D,sandy.core.scenegraph.Geometry3D,aEdges,aFaceEdges,aFacesNormals,aFacesUVCoordsID,aFacesVertexID,aUVCoords,aVertex,aVertexNormals,clone,dispose,generateFaceNormals,generateVertexNormals,getNextFaceID,getNextFaceNormalID,getNextFaceUVCoordID,getNextUVCoordID,getNextVertexID,getNextVertexNormalID,getVertexId,init,setFaceNormal,setFaceUVCoordsIds,setFaceVertexIds,setUVCoords,setVertex,setVertexNormal,toString" name="keywords">
+<title>sandy.core.scenegraph.Geometry3D</title>
+</head>
+<body>
+<script type="text/javascript" language="javascript" src="../../../asdoc.js"></script><script type="text/javascript" language="javascript" src="../../../cookies.js"></script><script type="text/javascript" language="javascript">
+<!--
+				asdocTitle = 'Geometry3D - Sandy 3.1.2 API Documentation';
+				var baseRef = '../../../';
+				window.onload = configPage;
+			--></script>
+<table style="display:none" id="titleTable" cellspacing="0" cellpadding="0" class="titleTable">
+<tr>
+<td align="left" class="titleTableTitle">Sandy 3D Engine, 3.1.2</td><td align="right" class="titleTableTopNav"><a onclick="loadClassListFrame('../../../all-classes.html')" href="../../../package-summary.html">All&nbsp;Packages</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('../../../all-classes.html')" href="../../../class-summary.html">All&nbsp;Classes</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('../../../index-list.html')" href="../../../all-index-A.html">Index</a>&nbsp;|&nbsp;<a href="../../../index.html?sandy/core/scenegraph/Geometry3D.html&amp;sandy/core/scenegraph/class-list.html" id="framesLink1">Frames</a><a onclick="parent.location=document.location" href="" style="display:none" id="noFramesLink1">No&nbsp;Frames</a></td><td rowspan="3" align="right" class="titleTableLogo"><img alt="Adobe Logo" title="Adobe Logo" class="logoImage" src="../../../images/logo.jpg"></td>
+</tr>
+<tr class="titleTableRow2">
+<td align="left" id="subTitle" class="titleTableSubTitle">Class&nbsp;Geometry3D</td><td align="right" id="subNav" class="titleTableSubNav"><a href="#propertySummary">Properties</a>&nbsp;| <a href="#methodSummary">Methods</a></td>
+</tr>
+<tr class="titleTableRow3">
+<td colspan="2">&nbsp;</td>
+</tr>
+</table>
+<script type="text/javascript" language="javascript">
+<!--
+if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Class Geometry3D"); titleBar_setSubNav(false,true,false,false,false,false,true,false,false,false,false,false,false,false);}
+--></script>
+<div class="MainContent">
+<table cellspacing="0" cellpadding="0" class="classHeaderTable">
+<tr>
+<td class="classHeaderTableLabel">Package</td><td><a onclick="javascript:loadClassListFrame('class-list.html')" href="package-detail.html">sandy.core.scenegraph</a></td>
+</tr>
+<tr>
+<td class="classHeaderTableLabel">Class</td><td class="classSignature">public final  class Geometry3D</td>
+</tr>
+</table>
+<p></p>
+   The Geometry3D class holds a complete description of the geometry of a Shape3D.
+     It contains points, faces, normals and uv coordinates.
+   
+   NOTE:  For best performance, Geometry should be created in offline mode,
+    especially all faces, as createFace() validates all points 
+    if these points exist in points array.
+  
+   NOTE:  This object is going to work well _ONLY_ if arrays 
+    wont be changed directlly [ie. push()] but _ONLY_ via accessor methods:
+    createFace, createFaceByIds, addFace, addFaces.
+    In the future we can make these Arrays PRIVATE but then the only 
+    way to make them safe is to deliver additionall accessors like 
+    getPoint(index:int), getFace(index:int) what could potentially slow 
+    affect performance of this structure (well, we need to test it, and 
+    if there is no problem, make arrays private and provide accessors for 
+    _SINGLE_ array's elements to make them safe ). 
+    <p>[<b>ToDo</b>: Revise this and adopt tp ASDoc]</p>
+  
+  <p></p>
+<br>
+<hr>
+</div>
+<a name="propertySummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Properties</div>
+<table id="summaryTableProperty" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Property</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#aEdges">aEdges</a> : Array<div class="summaryTableDescription"></div>
+</td><td class="summaryTableOwnerCol">Geometry3D</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#aFaceEdges">aFaceEdges</a> : Array<div class="summaryTableDescription"></div>
+</td><td class="summaryTableOwnerCol">Geometry3D</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#aFacesNormals">aFacesNormals</a> : Array<div class="summaryTableDescription"> Array ov normals </div>
+</td><td class="summaryTableOwnerCol">Geometry3D</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#aFacesUVCoordsID">aFacesUVCoordsID</a> : Array<div class="summaryTableDescription"></div>
+</td><td class="summaryTableOwnerCol">Geometry3D</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#aFacesVertexID">aFacesVertexID</a> : Array<div class="summaryTableDescription"> Array of faces composed from vertices </div>
+</td><td class="summaryTableOwnerCol">Geometry3D</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#aUVCoords">aUVCoords</a> : Array<div class="summaryTableDescription"> UV Coords for faces </div>
+</td><td class="summaryTableOwnerCol">Geometry3D</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#aVertex">aVertex</a> : Array<div class="summaryTableDescription"> Array of vertices </div>
+</td><td class="summaryTableOwnerCol">Geometry3D</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#aVertexNormals">aVertexNormals</a> : Array<div class="summaryTableDescription"></div>
+</td><td class="summaryTableOwnerCol">Geometry3D</td>
+</tr>
+</table>
+</div>
+<a name="methodSummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Methods</div>
+<table id="summaryTableMethod" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Method</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#Geometry3D()">Geometry3D</a>(p_points:Array = null)</div>
+<div class="summaryTableDescription">
+   Creates a 3D geometry.</div>
+</td><td class="summaryTableOwnerCol">Geometry3D</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#clone()">clone</a>():<a href="../scenegraph/Geometry3D.html">Geometry3D</a>
+</div>
+<div class="summaryTableDescription">
+  Returns a clone of this Geometry3D.</div>
+</td><td class="summaryTableOwnerCol">Geometry3D</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#dispose()">dispose</a>():void</div>
+<div class="summaryTableDescription">
+   Dispose all the geometry ressources.</div>
+</td><td class="summaryTableOwnerCol">Geometry3D</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#generateFaceNormals()">generateFaceNormals</a>():void</div>
+<div class="summaryTableDescription"></div>
+</td><td class="summaryTableOwnerCol">Geometry3D</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#generateVertexNormals()">generateVertexNormals</a>():void</div>
+<div class="summaryTableDescription"></div>
+</td><td class="summaryTableOwnerCol">Geometry3D</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#getNextFaceID()">getNextFaceID</a>():int</div>
+<div class="summaryTableDescription">
+   Returns the next unused face id.</div>
+</td><td class="summaryTableOwnerCol">Geometry3D</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#getNextFaceNormalID()">getNextFaceNormalID</a>():int</div>
+<div class="summaryTableDescription">
+   Returns the next unused normal id.</div>
+</td><td class="summaryTableOwnerCol">Geometry3D</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#getNextFaceUVCoordID()">getNextFaceUVCoordID</a>():int</div>
+<div class="summaryTableDescription">
+   Returns the next unused face UV coordinates id.</div>
+</td><td class="summaryTableOwnerCol">Geometry3D</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#getNextUVCoordID()">getNextUVCoordID</a>():int</div>
+<div class="summaryTableDescription">
+   Returns the next unused UV coordinates id.</div>
+</td><td class="summaryTableOwnerCol">Geometry3D</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#getNextVertexID()">getNextVertexID</a>():int</div>
+<div class="summaryTableDescription">
+   Returns the next unused vertex id.</div>
+</td><td class="summaryTableOwnerCol">Geometry3D</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#getNextVertexNormalID()">getNextVertexNormalID</a>():int</div>
+<div class="summaryTableDescription">
+   Returns the next unused vertex normal id.</div>
+</td><td class="summaryTableOwnerCol">Geometry3D</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#getVertexId()">getVertexId</a>(p_point:<a href="../data/Vertex.html">Vertex</a>):int</div>
+<div class="summaryTableDescription">
+   Returns the index of a specified point in the vertex list.</div>
+</td><td class="summaryTableOwnerCol">Geometry3D</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#init()">init</a>():void</div>
+<div class="summaryTableDescription">
+  Not used in this version.</div>
+</td><td class="summaryTableOwnerCol">Geometry3D</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#setFaceNormal()">setFaceNormal</a>(p_nNormalID:int, p_nX:Number, p_nY:Number, p_nZ:Number):int</div>
+<div class="summaryTableDescription">
+   Adds new normal at the specified index of the face normal list.</div>
+</td><td class="summaryTableOwnerCol">Geometry3D</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#setFaceUVCoordsIds()">setFaceUVCoordsIds</a>(p_nFaceID:int, ... arguments):int</div>
+<div class="summaryTableDescription">
+   Set the ID's of face UV coordinates.</div>
+</td><td class="summaryTableOwnerCol">Geometry3D</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#setFaceVertexIds()">setFaceVertexIds</a>(p_nFaceID:int, ... arguments):int</div>
+<div class="summaryTableDescription">
+   Sets the ID's of the face vertices.</div>
+</td><td class="summaryTableOwnerCol">Geometry3D</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#setUVCoords()">setUVCoords</a>(p_nID:int, p_UValue:Number, p_nVValue:Number):int</div>
+<div class="summaryTableDescription">
+   Adds UV coordinates for single face.</div>
+</td><td class="summaryTableOwnerCol">Geometry3D</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#setVertex()">setVertex</a>(p_nVertexID:int, p_nX:Number, p_nY:Number, p_nZ:Number):int</div>
+<div class="summaryTableDescription">
+   Adds new point at the specified index of the vertex list.</div>
+</td><td class="summaryTableOwnerCol">Geometry3D</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#setVertexNormal()">setVertexNormal</a>(p_nNormalID:int, p_nX:Number, p_nY:Number, p_nZ:Number):int</div>
+<div class="summaryTableDescription">
+   Add new point the specified index of the vertex normal list.</div>
+</td><td class="summaryTableOwnerCol">Geometry3D</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#toString()">toString</a>():String</div>
+<div class="summaryTableDescription">
+   Returns a string representation of this geometry.</div>
+</td><td class="summaryTableOwnerCol">Geometry3D</td>
+</tr>
+</table>
+</div>
+<script type="text/javascript" language="javascript">
+<!--
+showHideInherited();
+--></script>
+<div class="MainContent">
+<a name="propertyDetail"></a>
+<div class="detailSectionHeader">Property detail</div>
+<a name="aEdges"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">aEdges</td><td class="detailHeaderType">property</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var aEdges:Array</code>
+</div>
+<a name="aFaceEdges"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">aFaceEdges</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var aFaceEdges:Array</code>
+</div>
+<a name="aFacesNormals"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">aFacesNormals</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var aFacesNormals:Array</code><p> Array ov normals </p></div>
+<a name="aFacesUVCoordsID"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">aFacesUVCoordsID</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var aFacesUVCoordsID:Array</code>
+</div>
+<a name="aFacesVertexID"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">aFacesVertexID</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var aFacesVertexID:Array</code><p> Array of faces composed from vertices </p></div>
+<a name="aUVCoords"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">aUVCoords</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var aUVCoords:Array</code><p> UV Coords for faces </p></div>
+<a name="aVertex"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">aVertex</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var aVertex:Array</code><p> Array of vertices </p></div>
+<a name="aVertexNormals"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">aVertexNormals</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var aVertexNormals:Array</code>
+</div>
+<a name="constructorDetail"></a>
+<div class="detailSectionHeader">Constructor detail</div>
+<a name="Geometry3D()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">Geometry3D</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">constructor</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function Geometry3D(p_points:Array = null)</code><p>
+   Creates a 3D geometry.
+   
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">p_points</span>:Array</code> (default = <code>null</code>)<code></code> &mdash; Not used in this version
+   </td>
+</tr>
+</table>
+</div>
+<a name="methodDetail"></a>
+<div class="detailSectionHeader">Method detail</div>
+<a name="clone()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">clone</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function clone():<a href="../scenegraph/Geometry3D.html">Geometry3D</a></code><p>
+  Returns a clone of this Geometry3D.
+   
+  </p><p>NOTE: Because polygons also stores instance-specific data like Appearance
+  on the Geometry level, we are considering it only as a set of connections between points, 
+  so only coordinates and normals are copied in the clone process.
+  
+  <p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="../scenegraph/Geometry3D.html">Geometry3D</a></code> &mdash; 
+                        A copy of this geometry
+  
+                        
+                     </td>
+</tr>
+</table>
+</div>
+<a name="dispose()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">dispose</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function dispose():void</code><p>
+   Dispose all the geometry ressources.
+   Arrays data is removed, arrays are set to null value to make garbage collection possible
+   </p></div>
+<a name="generateFaceNormals()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">generateFaceNormals</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function generateFaceNormals():void</code>
+</div>
+<a name="generateVertexNormals()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">generateVertexNormals</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function generateVertexNormals():void</code>
+</div>
+<a name="getNextFaceID()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">getNextFaceID</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function getNextFaceID():int</code><p>
+   Returns the next unused face id.
+      </p><p>This is the next free index in the faces list, and used by setFaceVertexIds</p>
+      <p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>int</code> &mdash;  The index
+   </td>
+</tr>
+</table>
+</div>
+<a name="getNextFaceNormalID()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">getNextFaceNormalID</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function getNextFaceNormalID():int</code><p>
+   Returns the next unused normal id.
+      </p><p>This is the next free index in the normal list, and used by setFaceNormal</p>
+      <p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>int</code> &mdash;  The normal id
+   </td>
+</tr>
+</table>
+</div>
+<a name="getNextFaceUVCoordID()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">getNextFaceUVCoordID</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function getNextFaceUVCoordID():int</code><p>
+   Returns the next unused face UV coordinates id.
+      </p><p>This is the next free index in the UV coordinate id list, and used by setFaceUVCoords</p>
+      <p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>int</code> &mdash;  The index
+   </td>
+</tr>
+</table>
+</div>
+<a name="getNextUVCoordID()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">getNextUVCoordID</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function getNextUVCoordID():int</code><p>
+   Returns the next unused UV coordinates id.
+   
+   </p><p>This is the next free index in the UV coordinates list, and used by setUVCoords</p>
+      <p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>int</code> &mdash;  The index
+   </td>
+</tr>
+</table>
+</div>
+<a name="getNextVertexID()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">getNextVertexID</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function getNextVertexID():int</code><p>
+   Returns the next unused vertex id.
+      </p><p>this is the next free index in the verex list, and used by setVertex</p>
+      <p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>int</code> &mdash;  The vertex id
+   </td>
+</tr>
+</table>
+</div>
+<a name="getNextVertexNormalID()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">getNextVertexNormalID</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function getNextVertexNormalID():int</code><p>
+   Returns the next unused vertex normal id.
+      </p><p>This is the next free index in the vertex normal list, and used by setVertexNormal</p>
+      <p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>int</code> &mdash;  The vertex normal id
+   </td>
+</tr>
+</table>
+</div>
+<a name="getVertexId()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">getVertexId</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function getVertexId(p_point:<a href="../data/Vertex.html">Vertex</a>):int</code><p>
+   Returns the index of a specified point in the vertex list.
+      </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">p_point</span>:<a href="../data/Vertex.html">Vertex</a></code></td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>int</code> &mdash;  The index
+   </td>
+</tr>
+</table>
+</div>
+<a name="init()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">init</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function init():void</code><p>
+  Not used in this version.
+  </p></div>
+<a name="setFaceNormal()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">setFaceNormal</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function setFaceNormal(p_nNormalID:int, p_nX:Number, p_nY:Number, p_nZ:Number):int</code><p>
+   Adds new normal at the specified index of the face normal list.
+   
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">p_nNormalID</span>:int</code> &mdash; Index at which to save the normal
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">p_nX</span>:Number</code> &mdash;  The x component of the normal
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">p_nY</span>:Number</code> &mdash;  The y component of the normal
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">p_nZ</span>:Number</code> &mdash;  The z component of the normal
+   </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>int</code> &mdash;   The next free index or -1 it the index is already occupied   
+   </td>
+</tr>
+</table>
+</div>
+<a name="setFaceUVCoordsIds()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">setFaceUVCoordsIds</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function setFaceUVCoordsIds(p_nFaceID:int, ... arguments):int</code><p>
+   Set the ID's of face UV coordinates.
+      </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">p_nFaceID</span>:int</code> &mdash; The id of the face
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code>... <span class="label">arguments</span></code> &mdash;  An array of data containing the ID's of the UV coords list for the face
+   </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>int</code> &mdash;   The next free index or -1 it the index is already occupied
+   </td>
+</tr>
+</table>
+</div>
+<a name="setFaceVertexIds()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">setFaceVertexIds</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function setFaceVertexIds(p_nFaceID:int, ... arguments):int</code><p>
+   Sets the ID's of the face vertices.
+   
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">p_nFaceID</span>:int</code> &mdash; Id of the face
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code>... <span class="label">arguments</span></code></td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>int</code> &mdash;   The next free index or -1 it the index is already occupied
+   </td>
+</tr>
+</table>
+</div>
+<a name="setUVCoords()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">setUVCoords</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function setUVCoords(p_nID:int, p_UValue:Number, p_nVValue:Number):int</code><p>
+   Adds UV coordinates for single face.
+   
+   [<b>ToDo</b>: Explain this ]
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">p_nID</span>:int</code> &mdash;  The id of the face
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">p_UValue</span>:Number</code> &mdash; The u component of the UV coordinate
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">p_nVValue</span>:Number</code> &mdash; The v component of the UV coordinate
+   </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>int</code> &mdash;   The next free index or -1 it the index is already occupied
+   </td>
+</tr>
+</table>
+</div>
+<a name="setVertex()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">setVertex</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function setVertex(p_nVertexID:int, p_nX:Number, p_nY:Number, p_nZ:Number):int</code><p>
+   Adds new point at the specified index of the vertex list.
+   
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">p_nVertexID</span>:int</code> &mdash; Index at which to save the vertex
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">p_nX</span>:Number</code> &mdash;  x coordinate of the vertex
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">p_nY</span>:Number</code> &mdash;  y coordinate of the vertex
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">p_nZ</span>:Number</code> &mdash;  z coordinate of the vertex
+   </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>int</code> &mdash;   The next free index or -1 it the index is already occupied   
+   </td>
+</tr>
+</table>
+</div>
+<a name="setVertexNormal()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">setVertexNormal</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function setVertexNormal(p_nNormalID:int, p_nX:Number, p_nY:Number, p_nZ:Number):int</code><p>
+   Add new point the specified index of the vertex normal list.
+   
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">p_nNormalID</span>:int</code> &mdash; Index at which to save the vertex normal
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">p_nX</span>:Number</code> &mdash;  x coordinate of the vertex normal
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">p_nY</span>:Number</code> &mdash;  y coordinate of the vertex normal
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">p_nZ</span>:Number</code> &mdash;  z coordinate of the vertex normal
+   </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>int</code> &mdash;   The next free index or -1 it the index is already occupied
+   </td>
+</tr>
+</table>
+</div>
+<a name="toString()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">toString</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function toString():String</code><p>
+   Returns a string representation of this geometry.
+      </p><p>The string contins the lengths of the arrays of data defining this geometry.</p>
+   <p>[<b>ToDo</b>: Decide if this is the best representation ]</p>
+      <p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>String</code> &mdash; The string representation
+   </td>
+</tr>
+</table>
+</div>
+<br>
+<br>
+<hr>
+<br>
+<p></p>
+<center class="copyright">API documentation for Sandy 3D Engine, Ver. 3.1.2</center>
+</div>
+</body>
+</html>
+<!--API documentation for Sandy 3D Engine, Ver. 3.1.2-->

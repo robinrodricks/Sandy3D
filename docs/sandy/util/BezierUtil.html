@@ -1,0 +1,430 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="../../style.css" type="text/css" media="screen">
+<link rel="stylesheet" href="../../print.css" type="text/css" media="print">
+<meta content="BezierUtil,sandy.util.BezierUtil,casteljau,casteljau_interval,getCubicControlPoints,getPointsOnCubicCurve,getPointsOnQuadCurve,getQuadControlPoints" name="keywords">
+<title>sandy.util.BezierUtil</title>
+</head>
+<body>
+<script type="text/javascript" language="javascript" src="../../asdoc.js"></script><script type="text/javascript" language="javascript" src="../../cookies.js"></script><script type="text/javascript" language="javascript">
+<!--
+				asdocTitle = 'BezierUtil - Sandy 3.1.2 API Documentation';
+				var baseRef = '../../';
+				window.onload = configPage;
+			--></script>
+<table style="display:none" id="titleTable" cellspacing="0" cellpadding="0" class="titleTable">
+<tr>
+<td align="left" class="titleTableTitle">Sandy 3D Engine, 3.1.2</td><td align="right" class="titleTableTopNav"><a onclick="loadClassListFrame('../../all-classes.html')" href="../../package-summary.html">All&nbsp;Packages</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('../../all-classes.html')" href="../../class-summary.html">All&nbsp;Classes</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('../../index-list.html')" href="../../all-index-A.html">Index</a>&nbsp;|&nbsp;<a href="../../index.html?sandy/util/BezierUtil.html&amp;sandy/util/class-list.html" id="framesLink1">Frames</a><a onclick="parent.location=document.location" href="" style="display:none" id="noFramesLink1">No&nbsp;Frames</a></td><td rowspan="3" align="right" class="titleTableLogo"><img alt="Adobe Logo" title="Adobe Logo" class="logoImage" src="../../images/logo.jpg"></td>
+</tr>
+<tr class="titleTableRow2">
+<td align="left" id="subTitle" class="titleTableSubTitle">Class&nbsp;BezierUtil</td><td align="right" id="subNav" class="titleTableSubNav"><a href="#methodSummary">Methods</a></td>
+</tr>
+<tr class="titleTableRow3">
+<td colspan="2">&nbsp;</td>
+</tr>
+</table>
+<script type="text/javascript" language="javascript">
+<!--
+if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Class BezierUtil"); titleBar_setSubNav(false,false,false,false,false,false,true,false,false,false,false,false,false,false);}
+--></script>
+<div class="MainContent">
+<table cellspacing="0" cellpadding="0" class="classHeaderTable">
+<tr>
+<td class="classHeaderTableLabel">Package</td><td><a onclick="javascript:loadClassListFrame('class-list.html')" href="package-detail.html">sandy.util</a></td>
+</tr>
+<tr>
+<td class="classHeaderTableLabel">Class</td><td class="classSignature">public class BezierUtil</td>
+</tr>
+</table>
+<p></p>
+  Utility class for Bézier calculations.
+  
+  <p>All credits go to Alex Ulhmann and his Animation Package Library.</p>
+    <p></p>
+<br>
+<hr>
+</div>
+<a name="methodSummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Methods</div>
+<table id="summaryTableMethod" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Method</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#casteljau()">casteljau</a>(p:Number, plist:Array):<a href="../core/data/Point3D.html">Point3D</a>
+</div>
+<div class="summaryTableDescription">[static]
+   Applies the de Casteljau's algorithm.</div>
+</td><td class="summaryTableOwnerCol">BezierUtil</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#casteljau_interval()">casteljau_interval</a>(p:Number, plist:Array, pdeb:Number, pfin:Number):<a href="../core/data/Point3D.html">Point3D</a>
+</div>
+<div class="summaryTableDescription">[static]
+   Applies a more robust de Casteljau's algorithm if the intervals are "weird".</div>
+</td><td class="summaryTableOwnerCol">BezierUtil</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#getCubicControlPoints()">getCubicControlPoints</a>(start:<a href="../core/data/Point3D.html">Point3D</a>, through1:<a href="../core/data/Point3D.html">Point3D</a>, through2:<a href="../core/data/Point3D.html">Point3D</a>, end:<a href="../core/data/Point3D.html">Point3D</a>):Array</div>
+<div class="summaryTableDescription">[static]
+   Returns the control points for a qubic Bézier curve.</div>
+</td><td class="summaryTableOwnerCol">BezierUtil</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#getPointsOnCubicCurve()">getPointsOnCubicCurve</a>(p:Number, p1:<a href="../core/data/Point3D.html">Point3D</a>, p2:<a href="../core/data/Point3D.html">Point3D</a>, p3:<a href="../core/data/Point3D.html">Point3D</a>, p4:<a href="../core/data/Point3D.html">Point3D</a>):<a href="../core/data/Point3D.html">Point3D</a>
+</div>
+<div class="summaryTableDescription">[static]
+   Returns a point on a qubic Bézier curve.</div>
+</td><td class="summaryTableOwnerCol">BezierUtil</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#getPointsOnQuadCurve()">getPointsOnQuadCurve</a>(p:Number, p1:<a href="../core/data/Point3D.html">Point3D</a>, p2:<a href="../core/data/Point3D.html">Point3D</a>, p3:<a href="../core/data/Point3D.html">Point3D</a>):<a href="../core/data/Point3D.html">Point3D</a>
+</div>
+<div class="summaryTableDescription">[static]
+   Returns a point on a quadratic Bézier curve.</div>
+</td><td class="summaryTableOwnerCol">BezierUtil</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#getQuadControlPoints()">getQuadControlPoints</a>(start:<a href="../core/data/Point3D.html">Point3D</a>, middle:<a href="../core/data/Point3D.html">Point3D</a>, end:<a href="../core/data/Point3D.html">Point3D</a>):<a href="../core/data/Point3D.html">Point3D</a>
+</div>
+<div class="summaryTableDescription">[static]
+   Returns the control point for a quadratic Bézier curve.</div>
+</td><td class="summaryTableOwnerCol">BezierUtil</td>
+</tr>
+</table>
+</div>
+<script type="text/javascript" language="javascript">
+<!--
+showHideInherited();
+--></script>
+<div class="MainContent">
+<a name="methodDetail"></a>
+<div class="detailSectionHeader">Method detail</div>
+<a name="casteljau()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">casteljau</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static function casteljau(p:Number, plist:Array):<a href="../core/data/Point3D.html">Point3D</a></code><p>
+   Applies the de Casteljau's algorithm.
+      </p><p>[<strong>ToDo</strong>: Better explanations ]</p>
+      <span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">p</span>:Number</code> &mdash;  A fraction between [0-1] of the whole curve.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">plist</span>:Array</code> &mdash; The list of control points of the Bézier curve.
+      </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="../core/data/Point3D.html">Point3D</a></code> &mdash; 
+                        The position on the Bézier curve at the fraction p of the curve.
+      
+                        
+                     </td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="http://en.wikipedia.org/wiki/De_Casteljau's_algorithm" target="mm_external">http://en.wikipedia.org/wiki/De_Casteljau's_algorithm</a>
+</div>
+</div>
+<a name="casteljau_interval()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">casteljau_interval</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static function casteljau_interval(p:Number, plist:Array, pdeb:Number, pfin:Number):<a href="../core/data/Point3D.html">Point3D</a></code><p>
+   Applies a more robust de Casteljau's algorithm if the intervals are "weird".
+   
+   </p><p>UNTESTED METHOD. MAY BE REMOVED IN THE FUTURE VERSION. USE IT CAREFULLY.</p>
+   <p>[<strong>ToDo</strong>: Better explanations ]</p>
+      <span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">p</span>:Number</code> &mdash;  A fraction between [0-1] of the whole curve.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">plist</span>:Array</code> &mdash; The list of control points of the Bézier curve.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">pdeb</span>:Number</code></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">pfin</span>:Number</code></td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="../core/data/Point3D.html">Point3D</a></code> &mdash; 
+                        The position on the Bézier curve at the fraction p of the curve.
+      
+                        
+                     </td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="http://en.wikipedia.org/wiki/De_Casteljau's_algorithm" target="mm_external">http://en.wikipedia.org/wiki/De_Casteljau's_algorithm</a>
+</div>
+</div>
+<a name="getCubicControlPoints()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">getCubicControlPoints</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static function getCubicControlPoints(start:<a href="../core/data/Point3D.html">Point3D</a>, through1:<a href="../core/data/Point3D.html">Point3D</a>, through2:<a href="../core/data/Point3D.html">Point3D</a>, end:<a href="../core/data/Point3D.html">Point3D</a>):Array</code><p>
+   Returns the control points for a qubic Bézier curve.
+   
+   </p><p>If anybody finds a generic method to compute control points 
+   for bezier curves with n control points, if only the points on the curve are given, 
+   please let us know!</p>
+   
+   <span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">start</span>:<a href="../core/data/Point3D.html">Point3D</a></code> &mdash;  The start point of the curve.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">through1</span>:<a href="../core/data/Point3D.html">Point3D</a></code> &mdash;  The second point.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">through2</span>:<a href="../core/data/Point3D.html">Point3D</a></code> &mdash;  The third point.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">end</span>:<a href="../core/data/Point3D.html">Point3D</a></code> &mdash;   The end point.
+      </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>Array</code> &mdash;   A two dimensional array containing the two controls points.
+   </td>
+</tr>
+</table>
+</div>
+<a name="getPointsOnCubicCurve()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">getPointsOnCubicCurve</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static function getPointsOnCubicCurve(p:Number, p1:<a href="../core/data/Point3D.html">Point3D</a>, p2:<a href="../core/data/Point3D.html">Point3D</a>, p3:<a href="../core/data/Point3D.html">Point3D</a>, p4:<a href="../core/data/Point3D.html">Point3D</a>):<a href="../core/data/Point3D.html">Point3D</a></code><p>
+   Returns a point on a qubic Bézier curve.
+   
+   </p><p>Adapted from Paul Bourke.</p>
+   
+   <span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">p</span>:Number</code> &mdash;  A fraction between [0-1] of the whole curve.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">p1</span>:<a href="../core/data/Point3D.html">Point3D</a></code> &mdash;  First point.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">p2</span>:<a href="../core/data/Point3D.html">Point3D</a></code> &mdash;  Second point.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">p3</span>:<a href="../core/data/Point3D.html">Point3D</a></code> &mdash;  Third point.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">p4</span>:<a href="../core/data/Point3D.html">Point3D</a></code> &mdash;  Fourth point.
+      </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="../core/data/Point3D.html">Point3D</a></code> &mdash; 
+                         The resulting position Point3D.
+   
+                        
+                     </td>
+</tr>
+</table>
+</div>
+<a name="getPointsOnQuadCurve()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">getPointsOnQuadCurve</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static function getPointsOnQuadCurve(p:Number, p1:<a href="../core/data/Point3D.html">Point3D</a>, p2:<a href="../core/data/Point3D.html">Point3D</a>, p3:<a href="../core/data/Point3D.html">Point3D</a>):<a href="../core/data/Point3D.html">Point3D</a></code><p>
+   Returns a point on a quadratic Bézier curve.
+   
+   </p><p>Adapted from Robert Penner with Robert Penner's optimization of the standard equation.</p>
+   
+   <span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">p</span>:Number</code> &mdash;  A fraction between [0-1] of the whole curve.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">p1</span>:<a href="../core/data/Point3D.html">Point3D</a></code> &mdash;  First point.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">p2</span>:<a href="../core/data/Point3D.html">Point3D</a></code> &mdash;  Second point.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">p3</span>:<a href="../core/data/Point3D.html">Point3D</a></code> &mdash;  Third point.
+      </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="../core/data/Point3D.html">Point3D</a></code> &mdash; 
+                         The resulting position Point3D.
+   
+                        
+                     </td>
+</tr>
+</table>
+</div>
+<a name="getQuadControlPoints()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">getQuadControlPoints</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static function getQuadControlPoints(start:<a href="../core/data/Point3D.html">Point3D</a>, middle:<a href="../core/data/Point3D.html">Point3D</a>, end:<a href="../core/data/Point3D.html">Point3D</a>):<a href="../core/data/Point3D.html">Point3D</a></code><p>
+   Returns the control point for a quadratic Bézier curve.
+      </p><p>Adapted from Robert Penner's drawCurve3Pts() method.</p>
+      <span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">start</span>:<a href="../core/data/Point3D.html">Point3D</a></code> &mdash;  The start point of the curve.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">middle</span>:<a href="../core/data/Point3D.html">Point3D</a></code> &mdash; The middle point.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">end</span>:<a href="../core/data/Point3D.html">Point3D</a></code> &mdash;   The end point.
+      </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="../core/data/Point3D.html">Point3D</a></code> &mdash; 
+                         The control point.
+   
+                        
+                     </td>
+</tr>
+</table>
+</div>
+<br>
+<br>
+<hr>
+<br>
+<p></p>
+<center class="copyright">API documentation for Sandy 3D Engine, Ver. 3.1.2</center>
+</div>
+</body>
+</html>
+<!--API documentation for Sandy 3D Engine, Ver. 3.1.2-->

@@ -1,0 +1,572 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="../../style.css" type="text/css" media="screen">
+<link rel="stylesheet" href="../../print.css" type="text/css" media="print">
+<meta content="Scene3D,sandy.core.Scene3D,camera,container,m_oRoot,renderer,light,name,rectClipping,root,dispose,getVersion,render" name="keywords">
+<title>sandy.core.Scene3D</title>
+</head>
+<body>
+<script type="text/javascript" language="javascript" src="../../asdoc.js"></script><script type="text/javascript" language="javascript" src="../../cookies.js"></script><script type="text/javascript" language="javascript">
+<!--
+				asdocTitle = 'Scene3D - Sandy 3.1.2 API Documentation';
+				var baseRef = '../../';
+				window.onload = configPage;
+			--></script>
+<table style="display:none" id="titleTable" cellspacing="0" cellpadding="0" class="titleTable">
+<tr>
+<td align="left" class="titleTableTitle">Sandy 3D Engine, 3.1.2</td><td align="right" class="titleTableTopNav"><a onclick="loadClassListFrame('../../all-classes.html')" href="../../package-summary.html">All&nbsp;Packages</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('../../all-classes.html')" href="../../class-summary.html">All&nbsp;Classes</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('../../index-list.html')" href="../../all-index-A.html">Index</a>&nbsp;|&nbsp;<a href="../../index.html?sandy/core/Scene3D.html&amp;sandy/core/class-list.html" id="framesLink1">Frames</a><a onclick="parent.location=document.location" href="" style="display:none" id="noFramesLink1">No&nbsp;Frames</a></td><td rowspan="3" align="right" class="titleTableLogo"><img alt="Adobe Logo" title="Adobe Logo" class="logoImage" src="../../images/logo.jpg"></td>
+</tr>
+<tr class="titleTableRow2">
+<td align="left" id="subTitle" class="titleTableSubTitle">Class&nbsp;Scene3D</td><td align="right" id="subNav" class="titleTableSubNav"><a href="#propertySummary">Properties</a>&nbsp;| <a href="#methodSummary">Methods</a>&nbsp;| <a href="#eventSummary">Events</a></td>
+</tr>
+<tr class="titleTableRow3">
+<td colspan="2">&nbsp;</td>
+</tr>
+</table>
+<script type="text/javascript" language="javascript">
+<!--
+if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Class Scene3D"); titleBar_setSubNav(false,true,false,false,true,false,true,false,false,false,false,false,false,false);}
+--></script>
+<div class="MainContent">
+<table cellspacing="0" cellpadding="0" class="classHeaderTable">
+<tr>
+<td class="classHeaderTableLabel">Package</td><td><a onclick="javascript:loadClassListFrame('class-list.html')" href="package-detail.html">sandy.core</a></td>
+</tr>
+<tr>
+<td class="classHeaderTableLabel">Class</td><td class="classSignature">public class Scene3D</td>
+</tr>
+<tr>
+<td class="classHeaderTableLabel">Inheritance</td><td class="inheritanceList">Scene3D <img class="inheritArrow" alt="Inheritance" title="Inheritance" src="../../images/inherit-arrow.gif"> flash.events.EventDispatcher</td>
+</tr>
+</table>
+<p></p>
+  The Sandy 3D scene.
+    <p>Supercedes deprecated World3D class.</p>
+    <p>The Scene3D object is the central point of a Sandy scene.<br/>
+  You can have multiple scenes.<br/>
+  A scene contains the object tree with groups, a camera, a light source and a canvas to draw on</p>
+    <p></p>
+<br>
+<span class="label">Example</span>
+<br>To create the scene, you invoke the Scene3D constructor, passing it the base movie clip, the camera, and the root group for the scene.<br/>
+  The rendering of the scene is driven by a "heart beat", which may be a Timer or the Event.ENTER_FRAME event.
+    The following pseudo-code approximates the necessary steps. It is very approximate and not meant as a working example:
+  <div class='listing'><pre>
+    var cam:Camera = new Camera3D(600, 450, 45, 0, 2000); // camera viewport height,width, fov, near plane, and far plane
+   var mc:MovieClip = someSceneHoldingMovieClip;  // Programmer must ensure it is a valid movie clip.
+   var rootGroup = new Group("world_root_group");
+   // Add some child objects to the world (not shown), perhaps as follows
+   //rootGroup.addChild(someChild);
+   // Create the scene and render it
+       var myScene:Scene3D = new Scene3D("scene_name", mc, cam, rootGroup);
+   myScene.render();
+  //The enterFrameHandler presumably calls the myScene.render() method to render the scene for each frame.
+  yourMovieRoot.addEventListener( Event.ENTER_FRAME, enterFrameHandler );
+   </pre></div>
+    <p></p>
+<br>
+<hr>
+</div>
+<a name="propertySummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Properties</div>
+<table id="summaryTableProperty" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Property</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#camera">camera</a> : <a href="scenegraph/Camera3D.html">Camera3D</a>
+<div class="summaryTableDescription">
+   The camera looking at this scene.</div>
+</td><td class="summaryTableOwnerCol">Scene3D</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#container">container</a> : Sprite<div class="summaryTableDescription">
+   The container that stores all displayable objects for this scene.</div>
+</td><td class="summaryTableOwnerCol">Scene3D</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#light">light</a> : <a href="light/Light3D.html">Light3D</a>
+<div class="summaryTableDescription">
+   The Light3D object associated with this this scene.</div>
+</td><td class="summaryTableOwnerCol">Scene3D</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#name">name</a> : String<div class="summaryTableDescription">[read-only]
+   The name of this scene.</div>
+</td><td class="summaryTableOwnerCol">Scene3D</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#rectClipping">rectClipping</a> : Boolean<div class="summaryTableDescription">
+   Enable this property to perfectly clip your 3D scene to the viewport's dimensions with a 2D clipping
+   If set to <code>true</code>, nothing will be drawn outside the viewport's dimensions.</div>
+</td><td class="summaryTableOwnerCol">Scene3D</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#renderer">renderer</a> : <a href="../core/Renderer.html">Renderer</a>
+<div class="summaryTableDescription">
+   The renerer choosed for render this scene.</div>
+</td><td class="summaryTableOwnerCol">Scene3D</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#root">root</a> : <a href="scenegraph/Group.html">Group</a>
+<div class="summaryTableDescription"></div>
+</td><td class="summaryTableOwnerCol">Scene3D</td>
+</tr>
+</table>
+</div>
+<a name="protectedPropertySummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Protected Properties</div>
+<table id="summaryTableProtectedProperty" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Property</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#m_oRoot">m_oRoot</a> : <a href="scenegraph/Group.html">Group</a>
+<div class="summaryTableDescription"></div>
+</td><td class="summaryTableOwnerCol">Scene3D</td>
+</tr>
+</table>
+</div>
+<a name="methodSummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Methods</div>
+<table id="summaryTableMethod" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Method</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#Scene3D()">Scene3D</a>(p_sName:String, p_oContainer:Sprite, p_oCamera:<a href="scenegraph/Camera3D.html">Camera3D</a> = null, p_oRootNode:<a href="scenegraph/Group.html">Group</a> = null)</div>
+<div class="summaryTableDescription">
+   Creates a new 3D scene.</div>
+</td><td class="summaryTableOwnerCol">Scene3D</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#dispose()">dispose</a>():Boolean</div>
+<div class="summaryTableDescription">
+   Disposes of all the scene's resources.</div>
+</td><td class="summaryTableOwnerCol">Scene3D</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#getVersion()">getVersion</a>():String</div>
+<div class="summaryTableDescription">[static]
+   Returns a version string ("3.1"), useful for conditional code
+   </div>
+</td><td class="summaryTableOwnerCol">Scene3D</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#render()">render</a>(p_bUseCache:Boolean = true):void</div>
+<div class="summaryTableDescription">
+   Renders the scene in its container.</div>
+</td><td class="summaryTableOwnerCol">Scene3D</td>
+</tr>
+</table>
+</div>
+<a name="eventSummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Events</div>
+<table id="summaryTableEvent" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Event</th><th>Summary</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#event:lightAdded">lightAdded</a>
+</div>
+</td><td class="summaryTableDescription summaryTableCol">
+ Dispatched when a light is added to the scene.</td><td class="summaryTableOwnerCol">Scene3D</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#event:scene_cull">scene_cull</a>
+</div>
+</td><td class="summaryTableDescription summaryTableCol">
+ Dispatched when the scene is culled.</td><td class="summaryTableOwnerCol">Scene3D</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#event:scene_render">scene_render</a>
+</div>
+</td><td class="summaryTableDescription summaryTableCol">
+ Dispatched when the scene is rendered.</td><td class="summaryTableOwnerCol">Scene3D</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#event:scene_render_display_list">scene_render_display_list</a>
+</div>
+</td><td class="summaryTableDescription summaryTableCol">
+ Dispatched when the display list is rendered.</td><td class="summaryTableOwnerCol">Scene3D</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#event:scene_render_finish">scene_render_finish</a>
+</div>
+</td><td class="summaryTableDescription summaryTableCol">
+ Dispatched when the scene has finished its rendering process
+  </td><td class="summaryTableOwnerCol">Scene3D</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#event:scene_update">scene_update</a>
+</div>
+</td><td class="summaryTableDescription summaryTableCol">
+ Dispatched when the scene is updated.</td><td class="summaryTableOwnerCol">Scene3D</td>
+</tr>
+</table>
+</div>
+<script type="text/javascript" language="javascript">
+<!--
+showHideInherited();
+--></script>
+<div class="MainContent">
+<a name="propertyDetail"></a>
+<div class="detailSectionHeader">Property detail</div>
+<a name="camera"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">camera</td><td class="detailHeaderType">property</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var camera:<a href="scenegraph/Camera3D.html">Camera3D</a></code><p>
+   The camera looking at this scene.
+         </p><p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="scenegraph/Camera3D.html" target="">sandy.core.scenegraph.Camera3D</a>
+</div>
+</div>
+<a name="container"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">container</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var container:Sprite</code><p>
+   The container that stores all displayable objects for this scene.
+   </p></div>
+<a name="light"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">light</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>light:<a href="light/Light3D.html">Light3D</a></code>&nbsp;&nbsp;[read-write]<p>
+   The Light3D object associated with this this scene.
+      </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get light():<a href="light/Light3D.html">Light3D</a></code>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set light(value:<a href="light/Light3D.html">Light3D</a>):void</code>
+<br>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="light/Light3D.html" target="">sandy.core.light.Light3D</a>
+</div>
+</div>
+<a name="m_oRoot"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">m_oRoot</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>protected var m_oRoot:<a href="scenegraph/Group.html">Group</a></code>
+</div>
+<a name="name"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">name</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>name:String</code>&nbsp;&nbsp;[read-only]<p>
+   The name of this scene.
+   This value can't be changed.
+   </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get name():String</code>
+<br>
+</div>
+<a name="rectClipping"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">rectClipping</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>rectClipping:Boolean</code>&nbsp;&nbsp;[read-write]<p>
+   Enable this property to perfectly clip your 3D scene to the viewport's dimensions with a 2D clipping
+   If set to <code>true</code>, nothing will be drawn outside the viewport's dimensions.
+      </p><p>The default value is <code>false</code>.</p>
+<span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get rectClipping():Boolean</code>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set rectClipping(value:Boolean):void</code>
+<br>
+</div>
+<a name="renderer"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">renderer</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var renderer:<a href="../core/Renderer.html">Renderer</a></code><p>
+   The renerer choosed for render this scene.
+   In the future, the actual renderer will implement an interface that developers could use to create their own
+   rendering process.
+   </p></div>
+<a name="root"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">root</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>root:<a href="scenegraph/Group.html">Group</a></code>&nbsp;&nbsp;[read-write]<span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get root():<a href="scenegraph/Group.html">Group</a></code>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set root(value:<a href="scenegraph/Group.html">Group</a>):void</code>
+<br>
+</div>
+<a name="constructorDetail"></a>
+<div class="detailSectionHeader">Constructor detail</div>
+<a name="Scene3D()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">Scene3D</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">constructor</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function Scene3D(p_sName:String, p_oContainer:Sprite, p_oCamera:<a href="scenegraph/Camera3D.html">Camera3D</a> = null, p_oRootNode:<a href="scenegraph/Group.html">Group</a> = null)</code><p>
+   Creates a new 3D scene.
+      </p><p>Each scene is automatically registered with the SceneLocator and must be given
+   a unique name to make proper use of the SceneLocator registry.</p>
+      <span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">p_sName</span>:String</code> &mdash;  A unique name for this scene.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">p_oContainer</span>:Sprite</code> &mdash;  The container where the scene will be drawn.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">p_oCamera</span>:<a href="scenegraph/Camera3D.html">Camera3D</a></code> (default = <code>null</code>)<code></code> &mdash;  The camera for this scene.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">p_oRootNode</span>:<a href="scenegraph/Group.html">Group</a></code> (default = <code>null</code>)<code></code> &mdash; The root group of the scene's object tree.
+         </td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="scenegraph/Camera3D.html" target="">sandy.core.scenegraph.Camera3D</a>
+<br>
+<a href="scenegraph/Group.html" target="">sandy.core.scenegraph.Group</a>
+</div>
+</div>
+<a name="methodDetail"></a>
+<div class="detailSectionHeader">Method detail</div>
+<a name="dispose()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">dispose</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function dispose():Boolean</code><p>
+   Disposes of all the scene's resources.
+      </p><p>This method is used to clear memory and will free up all resources of the scene and unregister it from SceneLocator.</p>
+   <p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>Boolean</code></td>
+</tr>
+</table>
+</div>
+<a name="getVersion()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">getVersion</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static function getVersion():String</code><p>
+   Returns a version string ("3.1"), useful for conditional code
+   </p><p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>String</code></td>
+</tr>
+</table>
+</div>
+<a name="render()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">render</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function render(p_bUseCache:Boolean = true):void</code><p>
+   Renders the scene in its container.
+   Several events are dispatched by the scene to allows you to control the rendering pipeline
+   SandyEvent.SCENE_UPDATE is broadcasted before the update phasis of the scenegraph. During this phasis each node updates its information and creates its local matrix if any
+   SandyEvent.SCENE_CULL is bradcasted before the scene cull phasis. This phasis corresponds to the frustum vs nodes bounding objects visibility test. Nodes that aren't in the camera field of view, are removed from the render phasis.
+   SandyEvent.SCENE_RENDER process the render call of the visible nodes. During this process, visible polygons/sprites are registering for the camera display to the screen.
+   SandyEvent.SCENE_RENDER_DISPLAYLIST render the visible polygons to the screen
+      </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">p_bUseCache</span>:Boolean</code> (default = <code>true</code>)<code></code> &mdash; Boolean default true, use the cache system
+         </td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="../events/SandyEvent.html" target="">sandy.events.SandyEvent</a>
+</div>
+</div>
+<div class="detailSectionHeader">Event detail</div>
+<a name="event:lightAdded"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">lightAdded</td><td class="detailHeaderType">event&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<span class="label">Event object type: </span><a href="../events/SandyEvent.html"><code>sandy.events.SandyEvent</code></a>
+<br>
+<span class="label">SandyEvent.type property = </span><a href="../events/SandyEvent.html#LIGHT_ADDED"><code>sandy.events.SandyEvent.LIGHT_ADDED</code></a>
+<br><p>
+ Dispatched when a light is added to the scene.
+  </p><p>
+   Defines the value of the <code>type</code> property of a <code>lightAdded</code> event object.
+            </p></div>
+<a name="event:scene_cull"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">scene_cull</td><td class="detailHeaderType">event&nbsp;</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<span class="label">Event object type: </span><a href="../events/SandyEvent.html"><code>sandy.events.SandyEvent</code></a>
+<br>
+<span class="label">SandyEvent.type property = </span><a href="../events/SandyEvent.html#SCENE_CULL"><code>sandy.events.SandyEvent.SCENE_CULL</code></a>
+<br><p>
+ Dispatched when the scene is culled.
+  </p><p>
+   Defines the value of the <code>type</code> property of a <code>scene_cull</code> event object.
+            </p></div>
+<a name="event:scene_render"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">scene_render</td><td class="detailHeaderType">event&nbsp;</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<span class="label">Event object type: </span><a href="../events/SandyEvent.html"><code>sandy.events.SandyEvent</code></a>
+<br>
+<span class="label">SandyEvent.type property = </span><a href="../events/SandyEvent.html#SCENE_RENDER"><code>sandy.events.SandyEvent.SCENE_RENDER</code></a>
+<br><p>
+ Dispatched when the scene is rendered.
+  </p><p>
+   Defines the value of the <code>type</code> property of a <code>scene_render</code> event object.
+            </p></div>
+<a name="event:scene_render_display_list"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">scene_render_display_list</td><td class="detailHeaderType">event&nbsp;</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<span class="label">Event object type: </span><a href="../events/SandyEvent.html"><code>sandy.events.SandyEvent</code></a>
+<br>
+<span class="label">SandyEvent.type property = </span><a href="../events/SandyEvent.html#SCENE_RENDER_DISPLAYLIST"><code>sandy.events.SandyEvent.SCENE_RENDER_DISPLAYLIST</code></a>
+<br><p>
+ Dispatched when the display list is rendered.
+  </p><p>
+   Defines the value of the <code>type</code> property of a <code>scene_render_display_list</code> event object.
+            </p></div>
+<a name="event:scene_render_finish"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">scene_render_finish</td><td class="detailHeaderType">event&nbsp;</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<span class="label">Event object type: </span><a href="../events/SandyEvent.html"><code>sandy.events.SandyEvent</code></a>
+<br>
+<span class="label">SandyEvent.type property = </span><a href="../events/SandyEvent.html#SCENE_RENDER_FINISH"><code>sandy.events.SandyEvent.SCENE_RENDER_FINISH</code></a>
+<br><p>
+ Dispatched when the scene has finished its rendering process
+  </p><p>
+   Defines the value of the <code>type</code> property of a <code>scene_render_finish</code> event object.
+            </p></div>
+<a name="event:scene_update"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">scene_update</td><td class="detailHeaderType">event&nbsp;</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<span class="label">Event object type: </span><a href="../events/SandyEvent.html"><code>sandy.events.SandyEvent</code></a>
+<br>
+<span class="label">SandyEvent.type property = </span><a href="../events/SandyEvent.html#SCENE_UPDATE"><code>sandy.events.SandyEvent.SCENE_UPDATE</code></a>
+<br><p>
+ Dispatched when the scene is updated.
+  </p><p>
+   Defines the value of the <code>type</code> property of a <code>scene_update</code> event object.
+            </p></div>
+<br>
+<br>
+<hr>
+<br>
+<p></p>
+<center class="copyright">API documentation for Sandy 3D Engine, Ver. 3.1.2</center>
+</div>
+</body>
+</html>
+<!--API documentation for Sandy 3D Engine, Ver. 3.1.2-->

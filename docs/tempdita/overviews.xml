@@ -1,0 +1,73 @@
+
+<overviews>
+    
+	
+<all-classes>
+		
+<description>Documentation for classes includes syntax, usage information, and code samples for methods, properties, and event handlers and listeners for those APIs that belong to a specific class in ActionScript. The classes are listed alphabetically. If you are not sure to which class a certain method or property belongs, you can look it up in the Index.</description>
+	</all-classes>
+	
+<deprecated>
+		
+<shortDescription>A list of deprecated items and suggested alternatives when available.</shortDescription>
+		
+<description></description>
+	</deprecated>
+	
+
+<packages>
+<package name="sandy.bounds">
+<shortDescription>Bounding volumes</shortDescription><longDescription>Bounding volumes</longDescription>
+</package>
+<package name="sandy.core">
+<shortDescription>The core of the Sandy engine</shortDescription><longDescription>The core of the Sandy engine</longDescription>
+</package>
+<package name="sandy.core.data">
+<shortDescription>Sandy specific data structures</shortDescription><longDescription>Sandy specific data structures</longDescription>
+</package>
+<package name="sandy.core.interaction">
+<shortDescription>User interaction classes</shortDescription><longDescription>User interaction classes</longDescription>
+</package>
+<package name="sandy.core.light">
+<shortDescription>Light sources</shortDescription><longDescription>Light sources</longDescription>
+</package>
+<package name="sandy.core.scenegraph">
+<shortDescription>Node classes for building the scenegraph</shortDescription><longDescription>Node classes for building the scenegraph</longDescription>
+</package>
+<package name="sandy.core.scenegraph.mode7">
+<shortDescription>Classes for mode7 restrictions</shortDescription><longDescription>Classes for mode7 restrictions</longDescription>
+</package>
+<package name="sandy.errors">
+<shortDescription>Error handling classes</shortDescription><longDescription>Error handling classes</longDescription>
+</package>
+<package name="sandy.events">
+<shortDescription>Events and broadcasters, specific to Sandy</shortDescription><longDescription>Events and broadcasters, specific to Sandy</longDescription>
+</package>
+<package name="sandy.extrusion">
+<shortDescription>Extrusion classes</shortDescription><longDescription>Extrusion classes</longDescription>
+</package>
+<package name="sandy.extrusion.data">
+<shortDescription>Extrusion data classes</shortDescription><longDescription>Extrusion data classes</longDescription>
+</package>
+<package name="sandy.materials">
+<shortDescription>Appearences and materials</shortDescription><longDescription>Appearences and materials</longDescription>
+</package>
+<package name="sandy.materials.attributes">
+<shortDescription>Material attributes</shortDescription><longDescription>Material attributes</longDescription>
+</package>
+<package name="sandy.math">
+<shortDescription>3D math classes</shortDescription><longDescription>3D math classes</longDescription>
+</package>
+<package name="sandy.parser">
+<shortDescription>Parser classes for importing 3D structures</shortDescription><longDescription>Parser classes for importing 3D structures</longDescription>
+</package>
+<package name="sandy.primitive">
+<shortDescription>3D primitives</shortDescription><longDescription>3D primitives</longDescription>
+</package>
+<package name="sandy.util">
+<shortDescription>Mix of utility classes</shortDescription><longDescription>Mix of utility classes</longDescription>
+</package>
+<package name="sandy.view">
+<shortDescription>Support classes for the Sandy view platform</shortDescription><longDescription>Support classes for the Sandy view platform</longDescription>
+</package>
+</packages></overviews>
